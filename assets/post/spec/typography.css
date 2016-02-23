@@ -6,6 +6,8 @@
 ============================================================================= */
 
 /* Google Fonts ============================================================= */
+$font-roboto: 'Roboto', sans-serif;
+$font-pt: 'PT Serif', serif;
 
 /* Typekit Fonts ============================================================ */
 
@@ -27,6 +29,8 @@ h6 {font-size: 1.2rem;}
 
 h1, h2, h3, h4, h5, h6 {
     color: $black;
+    font-family: $font-roboto;
+    font-weight: 900;
     margin: 2.5rem 0 1rem 0;
 }
 
@@ -34,10 +38,6 @@ h1, h2, h3, h4, h5, h6 {
 
 /* Body Font */
 p,
-a,
-strong,
-em,
-span,
 blockquote,
 article {
     color: $black;
@@ -46,6 +46,20 @@ article {
 
 p {
 
+}
+
+strong {
+
+}
+
+em {
+
+}
+
+span {
+    font-family: inherit;
+    font-size: inherit;
+    font-weight: inherit;
 }
 
 hr {
@@ -65,10 +79,6 @@ blockquote {
 a,
 a:visited,
 a:link {
-
-    &:not(.button) {
-        color: red;
-    }
 
 }
 
