@@ -1,0 +1,22 @@
+{
+    "name": "DatBlogDoh",
+    "description": "A Jekyll Blog",
+    "version": "0.1.0",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/joshdrink/joshdrink.github.io.git"
+    },
+    "license": "CC-BY-4.0",
+    "devDependencies": {
+        "postcss-cli": "latest",
+        "postcss-import": "latest",
+        "postcss-mixins": "latest",
+        "postcss-nested": "latest",
+        "autoprefixer": "latest",
+        "postcss-simple-vars": "latest",
+        "cssnano": "latest"
+    },
+    "scripts": {
+        "post": "postcss -u postcss-import -u postcss-mixins -u postcss-nested -u autoprefixer -u postcss-simple-vars -u cssnano --local-plugins -w -c options.js -d css post/*.css"
+    }
+}

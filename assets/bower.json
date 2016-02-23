@@ -1,0 +1,29 @@
+{
+  "name": "DatBlogDoh",
+  "version": "0.1.0",
+  "homepage": "https://gitlab.com/joshdrink/joshdrink.github.io",
+  "authors": [
+    "Josh Beveridge <me@joshbeveridge.com>"
+  ],
+  "description": "A PostCSS Front-End clone used to init new projects.",
+  "moduleType": [
+    "node"
+  ],
+  "keywords": [
+    "design"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "fontawesome": "~4.3.0",
+    "normalize.css": "~3.0.3",
+    "jQuery": "~2.1.3",
+    "matchMedia": "~0.2.0",
+    "modernizr": "~2.8.3"
+  }
+}
