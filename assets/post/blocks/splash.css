@@ -11,7 +11,7 @@ body {
 }
 
 .splash {
-    background: $blue;
+    background: $red;
     height: 100%;
     position: relative;
     width: 100%;
