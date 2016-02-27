@@ -27,7 +27,7 @@ body {
         transform: translate(-50%, -50%);
 
         img {
-            margin: -.45rem 0 0 0;
+            margin: -.45rem .5rem 0 -.2rem;
             width: 1.6rem;
             vertical-align: middle;
         }
