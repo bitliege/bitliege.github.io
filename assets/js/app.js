@@ -5,7 +5,6 @@
     // Authored by Josh Beveridge and Justin Bellefontaine
 
 // =============================================================================
-
 (function($) {
 
     $(document).ready(function() {
@@ -15,11 +14,6 @@
         ua = ua.toString();
         $('body').attr('id', ua);
 
-        // BuggyFill Initialization ============================================
-        window.viewportUnitsBuggyfill.init({
-            hacks: window.viewportUnitsBuggyfill.hacks
-        });
-
         // Disabled Button Clicks ==============================================
         $('.disabled').on('click', function(e){
             e.preventDefault();
@@ -28,7 +22,7 @@
         });
 
         // Smooth Scrolling ====================================================
-        $('a[href*=#]:not([href=#])').on('click',function() {
+        $("a[href*='#']:not([href='#'])").on('click',function() {
 
            if(!$(this).parent().hasClass('accordion-navigation')) {
 
@@ -61,6 +55,30 @@
             }
             e.preventDefault();
         });
+
+        // Navigation Handler ==================================================
+		var navHeight = $('header').outerHeight();
+
+		$('.content').css('margin-top', navHeight + 'px');
+
+		$(function() {
+
+			var prevScroll = $(document).scrollTop();
+
+			$(window).scroll(function() {
+				scrollPosition = $(document).scrollTop();
+				if(scrollPosition > navHeight) {
+					var newScroll = $(document).scrollTop();
+			        if(newScroll < prevScroll) {
+			            $('header').removeClass('active');
+			        } else {
+			            $('header').addClass('active');
+			        }
+			        prevScroll = newScroll;
+				}
+		    });
+
+		});
 
     });
 

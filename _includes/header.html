@@ -1,4 +1,30 @@
-<header class="site-header">
+<!-- Site Header =========================================================== -->
+<header>
+
+    <div class='content-container'>
+
+        <nav class='mobile'>
+
+        </nav>
+
+        <nav class='desktop'>
+            {% assign sorted_pages = site.pages | sort:"order" %}
+            {% for my_page in sorted_pages %}
+                {% if page.url == my_page.url %}
+                    <a class="nav-item active" href="{{ my_page.url | prepend: site.baseurl }}">{{ my_page.title }}</a>
+                {% else %}
+                    {% if my_page.title %}
+                    <a class="nav-item" href="{{ my_page.url | prepend: site.baseurl }}">{{ my_page.title }}</a>
+                    {% endif %}
+                {% endif %}
+            {% endfor %}
+        </nav>
+
+    </div>
+
+</header>
+
+<!-- <header class="site-header">
 
   <div class="wrapper">
 
@@ -24,4 +50,4 @@
 
   </div>
 
-</header>
+</header> -->

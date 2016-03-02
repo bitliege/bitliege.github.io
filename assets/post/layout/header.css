@@ -4,6 +4,56 @@
     Authored by Josh Beveridge
 
 ============================================================================= */
-.header {
+header {
+    background: $red-transparent;
+    padding: 1rem 0;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    transform: translate(0, 0);
+    transition: all .3s ease;
+    width: 100%;
+    z-index: 50;
+
+    @media $(l-tablet) {
+        top: 0;
+        bottom: auto;
+    }
+
+    nav {
+
+        .nav-item {
+            color: $white;
+            font-family: $font-roboto;
+            font-weight: 300;
+            text-transform: uppercase;
+            text-decoration: none;
+
+            &.active {
+                text-decoration: underline;
+            }
+
+        }
+
+    }
+
+    .mobile {
+
+
+
+    }
+
+    .desktop {
+
+        .nav-item {
+            margin: 0 1rem 0 0;
+        }
+
+    }
+
+    &.active {
+        transform: translate(0, -100%);
+        transition: all .3s ease;
+    }
 
 }

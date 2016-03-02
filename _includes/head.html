@@ -31,9 +31,11 @@
     <!-- Google Fonts -->
     <link href='https://fonts.googleapis.com/css?family=Roboto:400,100,300,500,900,700|PT+Serif:400,400italic,700,700italic' rel='stylesheet' type='text/css'>
 
-    <!-- Stylesheets -->
-    <link rel="stylesheet" href="{{ "/assets/css/landing.css" | prepend: site.baseurl }}">
-    <link rel="stylesheet" href="{{ "/assets/css/splash.css" | prepend: site.baseurl }}">
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="{{ "/assets/bower_components/fontawesome/css/font-awesome.min.css" | prepend: site.baseurl }}">
+
+    <!-- Scripts -->
+    <script type='text/javascript' src="{{ "/assets/bower_components/jQuery/dist/jquery.min.js" | prepend: site.baseurl }}"></script>
 
     <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
     <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ "/feed.xml" | prepend: site.baseurl | prepend: site.url }}">
@@ -47,5 +49,3 @@
         ga('create', 'UA-66136335-1', 'auto');
         ga('send', 'pageview');
     </script>
-
-</head>

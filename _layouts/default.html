@@ -1,16 +1,25 @@
 <!DOCTYPE html>
 <html>
 
-  {% include head.html %}
+    {% include head.html %}
 
-  <body>
+        <!-- Stylesheets -->
+        <link rel="stylesheet" href="{{ "/assets/css/landing.css" | prepend: site.baseurl }}">
 
-    <!-- {% include header.html %} -->
+    </head>
+
+    <body>
+
+        {% include header.html %}
 
         {{ content }}
 
-    <!-- {% include footer.html %} -->
+        {% include footer.html %}
 
-  </body>
+        {% include latest.html %}
+
+        {% include scripts.html %}
+
+    </body>
 
 </html>

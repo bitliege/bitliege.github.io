@@ -10,6 +10,28 @@ $black: rgba(40, 40, 40, 1);
 $grey: rgba(225, 225, 225, 1);
 $white: rgba(250, 250, 250, 1);
 
+/* Font Specific Colours */
+$type: rgba(0, 0, 0, .8);
+
 /* Custom Colours =========================================================== */
-$blue: rgba(19, 208, 234, 1);
+
+/* White */
+$white-transparent: rgba(250, 250, 250, .05);
+
+/* Red */
 $red: rgba(229, 12, 58, 1);
+$red-transparent: rgba(229, 12, 58, .9);
+
+p,
+span,
+a,
+i {
+
+    &.red {
+        color: $red;
+    }
+
+}
+
+/* Blue */
+$blue: rgba(19, 208, 234, 1);

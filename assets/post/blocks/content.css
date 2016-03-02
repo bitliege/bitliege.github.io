@@ -1,20 +1,23 @@
 /* =============================================================================
 
-    FOOTER CSS
+    CONTENT CSS
     Authored by Josh Beveridge
 
 ============================================================================= */
-footer {
-    padding: 0 0 3rem 0;
+.content {
+    padding: $padding-mobile 0 0 0;
 
-    .love {
-        font-size: .8rem;
+    .title {
+        margin-top: 0;
         text-align: center;
+    }
 
-        p {
-            margin: 0;
-        }
-
+    .date {
+        font-family: $font-roboto;
+        font-size: .8rem;
+        font-weight: 300;
+        text-align: center;
+        text-transform: uppercase;
     }
 
 }
