@@ -4,7 +4,25 @@
     <div class='content-container'>
 
         <nav class='mobile'>
-
+            <div class='open'>
+                <h1>Navigate</h1>
+                <p>Viewing: {{ page.title }}<p>
+            </div>
+            <div class='wrapper'>
+                <div class='nav-list'>
+                    {% assign sorted_pages = site.pages | sort:"order" %}
+                    {% for my_page in sorted_pages %}
+                        {% if page.url == my_page.url %}
+                            <a class="nav-item active" href="{{ my_page.url | prepend: site.baseurl }}">{{ my_page.title }}</a>
+                        {% else %}
+                            {% if my_page.title %}
+                            <a class="nav-item" href="{{ my_page.url | prepend: site.baseurl }}">{{ my_page.title }}</a>
+                            {% endif %}
+                        {% endif %}
+                    {% endfor %}
+                    <a class="nav-item close" href="#">Close<i class='fa fa-times'></i></a>
+                </div>
+            </div>
         </nav>
 
         <nav class='desktop'>

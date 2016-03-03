@@ -3,7 +3,7 @@
 
     <div class='row'>
 
-        {% for post in site.posts limit:4 %}
+        {% for post in site.categories.writing limit:4 %}
             <div class='column large-5 post'>
                 <a href='{{post.url}}'>
                     <p class='date red'>{{ post.date | date: '%B %d, %Y' }}</p>

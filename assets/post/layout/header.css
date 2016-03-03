@@ -6,7 +6,6 @@
 ============================================================================= */
 header {
     background: $red-transparent;
-    padding: 1rem 0;
     position: fixed;
     bottom: 0;
     left: 0;
@@ -38,12 +37,69 @@ header {
     }
 
     .mobile {
+        display: block;
+        text-align: center;
 
+        @media $(l-tablet) {
+            display: none;
+        }
 
+        .open {
+            padding: 1rem 0;
+
+            >h1 {
+                color: $white;
+                font-size: 1rem;
+                margin: 0;
+                text-transform: uppercase;
+            }
+
+            >p {
+                font-family: $font-roboto;
+                font-weight: 300;
+                color: $white;
+                font-size: .6rem;
+                margin: 0;
+                text-transform: uppercase;
+            }
+
+        }
+
+        .wrapper {
+            max-height: 0;
+            transition: max-height .3s ease;
+
+            .nav-item {
+                display: block;
+                padding: .5rem 0;
+
+                &:first-of-type {
+                    padding: 1.5rem 0 .5rem 0;
+                }
+
+            }
+
+            .close {
+                color: $type;
+                padding: 2rem 0 1rem 0;
+
+                i {
+                    margin: 0 0 0 .5rem;
+                }
+
+            }
+
+        }
 
     }
 
     .desktop {
+        display: none;
+        padding: 1rem 0;
+
+        @media $(l-tablet) {
+            display: block;
+        }
 
         .nav-item {
             margin: 0 1rem 0 0;

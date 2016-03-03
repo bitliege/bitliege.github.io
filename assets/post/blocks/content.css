@@ -7,17 +7,58 @@
 .content {
     padding: $padding-mobile 0 0 0;
 
+    @media $(l-tablet) {
+        padding: $padding-desktop 0 0 0;
+    }
+
+    .content-container {
+
+        >*:first-child {
+            margin-top: 0;
+        }
+
+    }
+
     .title {
-        margin-top: 0;
         text-align: center;
     }
 
-    .date {
+    .post-date {
         font-family: $font-roboto;
         font-size: .8rem;
         font-weight: 300;
         text-align: center;
         text-transform: uppercase;
+    }
+
+    .article-list {
+
+        dd {
+            margin: 0 0 2.5rem 0;
+
+            .date {
+                font-family: $font-roboto;
+                font-size: .8rem;
+                font-weight: 300;
+                margin: .5rem 0 0 0;
+                text-transform: uppercase;
+            }
+
+            >h3 {
+                margin: 0;
+
+                a {
+                    color: $type;
+                }
+
+            }
+
+            &last-child {
+                margin: 0;
+            }
+
+        }
+
     }
 
 }

@@ -2,11 +2,10 @@
 layout: post
 title:  "Fix the Shit out Of These"
 date:   2016-02-01 12:00:00 -0400
-categories: writing
+categories: personal
 ---
-* Equalize Latest Post Heights
-* Remove Top Padding on Landing
-* Fix Mobile Nav
-* Add `<ul>` Styles
 * Add `code` Styles
-* Migrate Blog Posts
+* Writing Intro text
+* CV Template
+* Projects Template
+* Revamp Landing Header

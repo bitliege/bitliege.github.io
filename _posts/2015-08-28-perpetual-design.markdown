@@ -27,7 +27,7 @@ Unfortunately, this project had budget constraints for a whole new set of reason
 
 >“When I first started at Norex I felt most frustration with executing work that was ‘the best in the world’ while falling in line with client budgets. Finding the balance between the two is extremely difficult, but I believe that truly great designers/creators are able to use it to their advantage.”
 
-She followed this up with a link to an article that she felt might help me wrap my head around the idea of constraints as a motivator. The article, written by Sohrab Vossoughi of Ziba, explores how his designers took advantage of pressures during the process to help them push their innovation further than it would have gone otherwise. Thinking about constraint as a tool as opposed to an inhibitor was challenging, but it changed my perception of design in a fundamental way.
+She followed this up with a link to an article that she felt might help me wrap my head around the idea of constraints as a motivator. The [article](//hbr.org/2012/03/the-silver-lining-to-scarcity), written by Sohrab Vossoughi of [Ziba](//www.ziba.com/), explores how his designers took advantage of pressures during the process to help them push their innovation further than it would have gone otherwise. Thinking about constraint as a tool as opposed to an inhibitor was challenging, but it changed my perception of design in a fundamental way.
 
 ### A Discussion
 

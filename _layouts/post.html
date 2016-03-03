@@ -5,7 +5,7 @@ layout: default
 
     <div class="content-container" itemprop="articleBody">
         <h1 class='title'>{{ page.title }}</h1>
-        <p class='date'>{{ page.date | date: '%B %d, %Y' }}&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;<a href='//en.wikipedia.org/wiki/Words_per_minute#Reading_and_comprehension' target="_blank">{{ page.content | number_of_words | divided_by: 228 | round }} Minute Read</a></p>
+        <p class='post-date'>{{ page.date | date: '%B %d, %Y' }}&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;<a href='//en.wikipedia.org/wiki/Words_per_minute#Reading_and_comprehension' target="_blank">{{ page.content | number_of_words | divided_by: 228 | round }} Minute Read</a></p>
         {{ content }}
     </div>
 

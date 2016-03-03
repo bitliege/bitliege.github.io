@@ -10,10 +10,16 @@
     .row {
 
         .post {
+            border-bottom: 1px solid $white;
             padding: 0;
+
+            @media $(l-tablet) {
+                border-bottom: none;
+            }
 
             >a {
                 display: block;
+                height: 100%;
                 padding: $padding-tablet;
                 text-decoration: none;
                 transition: all .3s ease;

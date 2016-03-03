@@ -25,7 +25,9 @@ $red-transparent: rgba(229, 12, 58, .9);
 p,
 span,
 a,
-i {
+i,
+strong,
+em {
 
     &.red {
         color: $red;
