@@ -8,6 +8,7 @@
     },
     "license": "CC-BY-4.0",
     "devDependencies": {
+        "watch": "latest",
         "postcss-cli": "latest",
         "postcss-import": "latest",
         "postcss-mixins": "latest",
@@ -17,6 +18,7 @@
         "cssnano": "latest"
     },
     "scripts": {
-        "post": "postcss -u postcss-import -u postcss-mixins -u postcss-nested -u autoprefixer -u postcss-simple-vars -u cssnano --local-plugins -w -c options.js -d css post/*.css"
+        "post": "postcss -u postcss-import -u postcss-mixins -u postcss-nested -u autoprefixer -u postcss-simple-vars -u cssnano --local-plugins -c options.js -d css post/*.css",
+        "watch": "watch 'npm run post' post/"
     }
 }

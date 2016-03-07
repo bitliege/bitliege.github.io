@@ -10,32 +10,83 @@
             </div>
             <div class='wrapper'>
                 <div class='nav-list'>
+
+                    <!-- Assign sorted_pages variable so that the menu is sorted by the "Order" item in the Front Matter. -->
                     {% assign sorted_pages = site.pages | sort:"order" %}
+
+                    <!-- Start the array loop. -->
                     {% for my_page in sorted_pages %}
-                        {% if page.url == my_page.url %}
-                            <a class="nav-item active" href="{{ my_page.url | prepend: site.baseurl }}">{{ my_page.title }}</a>
-                        {% else %}
-                            {% if my_page.title %}
-                            <a class="nav-item" href="{{ my_page.url | prepend: site.baseurl }}">{{ my_page.title }}</a>
+
+                        <!-- Check to see if the Front Matter contains the "Exclude" value. This hides pages that exist but shouldn't be in the main navigation. -->
+                        {% if my_page.exclude == null %}
+
+                            <!-- Check to see if the array item's URL matches the user's URL, and if it does, output a navigation item with the "active" class. -->
+                            {% if page.url == my_page.url %}
+                                <a class="nav-item active" href="{{ my_page.url | prepend: site.baseurl }}">{{ my_page.title }}</a>
+                            <!-- If there is no exact match, we have to check for Writing subpages that contain "writing" in the URL. -->
+                            {% else %}
+                                <!-- Check to see if the user's URL contains "writing". -->
+                                {% if page.url contains "writing" %}
+                                    <!-- The user is on a Writing page, so now we check to see if the array item's URL also contains "writing". This will output an "active" class item if both conditions are met. -->
+                                    {% if my_page.url contains "writing" %}
+                                        <a class="nav-item active" href="{{ my_page.url | prepend: site.baseurl }}">{{ my_page.title }}</a>
+                                    <!-- If the user is on a Writing page but the array item isn't a Writing item, it is output as an inactive item. -->
+                                    {% else %}
+                                        <a class="nav-item" href="{{ my_page.url | prepend: site.baseurl }}">{{ my_page.title }}</a>
+                                    {% endif %}
+                                <!-- This else handles all pages that are not writing related. -->
+                                {% else %}
+                                    <a class="nav-item" href="{{ my_page.url | prepend: site.baseurl }}">{{ my_page.title }}</a>
+                                {% endif %}
                             {% endif %}
+
                         {% endif %}
+
                     {% endfor %}
+
                     <a class="nav-item close" href="#">Close<i class='fa fa-times'></i></a>
+
                 </div>
             </div>
         </nav>
 
         <nav class='desktop'>
+
+            <!-- NOTE: THIS WAS PASTED FROM ABOVE -->
+
+            <!-- Assign sorted_pages variable so that the menu is sorted by the "Order" item in the Front Matter. -->
             {% assign sorted_pages = site.pages | sort:"order" %}
+
+            <!-- Start the array loop. -->
             {% for my_page in sorted_pages %}
-                {% if page.url == my_page.url %}
-                    <a class="nav-item active" href="{{ my_page.url | prepend: site.baseurl }}">{{ my_page.title }}</a>
-                {% else %}
-                    {% if my_page.title %}
-                    <a class="nav-item" href="{{ my_page.url | prepend: site.baseurl }}">{{ my_page.title }}</a>
+
+                <!-- Check to see if the Front Matter contains the "Exclude" value. This hides pages that exist but shouldn't be in the main navigation. -->
+                {% if my_page.exclude == null %}
+
+                    <!-- Check to see if the array item's URL matches the user's URL, and if it does, output a navigation item with the "active" class. -->
+                    {% if page.url == my_page.url %}
+                        <a class="nav-item active" href="{{ my_page.url | prepend: site.baseurl }}">{{ my_page.title }}</a>
+                    <!-- If there is no exact match, we have to check for Writing subpages that contain "writing" in the URL. -->
+                    {% else %}
+                        <!-- Check to see if the user's URL contains "writing". -->
+                        {% if page.url contains "writing" %}
+                            <!-- The user is on a Writing page, so now we check to see if the array item's URL also contains "writing". This will output an "active" class item if both conditions are met. -->
+                            {% if my_page.url contains "writing" %}
+                                <a class="nav-item active" href="{{ my_page.url | prepend: site.baseurl }}">{{ my_page.title }}</a>
+                            <!-- If the user is on a Writing page but the array item isn't a Writing item, it is output as an inactive item. -->
+                            {% else %}
+                                <a class="nav-item" href="{{ my_page.url | prepend: site.baseurl }}">{{ my_page.title }}</a>
+                            {% endif %}
+                        <!-- This else handles all pages that are not writing related. -->
+                        {% else %}
+                            <a class="nav-item" href="{{ my_page.url | prepend: site.baseurl }}">{{ my_page.title }}</a>
+                        {% endif %}
                     {% endif %}
+
                 {% endif %}
+
             {% endfor %}
+
         </nav>
 
     </div>

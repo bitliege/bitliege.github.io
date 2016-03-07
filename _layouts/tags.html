@@ -1,0 +1,78 @@
+---
+layout: default
+---
+<section class="content writing tags">
+
+    <div class='content-container'>
+
+        <h1 class='title'>
+            {% if page.url contains "design" %}
+                Design
+            {% endif %}
+            {% if page.url contains "gaming" %}
+                Gaming
+            {% endif %}
+            {% if page.url contains "comics" %}
+                Comics
+            {% endif %}
+        </h1>
+
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+        <input id='writingFilter' type='text' placeholder='Look for something...'>
+
+        <dl class='article-list'>
+            <dt></dt>
+
+            {% if page.url contains "design" %}
+                {% if site.tags.design == null %}
+                    <h6 class='reset center'>Check back soon!</h6>
+                {% else %}
+                    {% for post in site.tags.design %}
+                        <dd>
+                            <p class='date'>
+                                {{ post.date | date: '%B %d, %Y' }}
+                                <a class='tag' href='/writing/design'><i>|</i>Design</a>
+                            </p>
+                            <h3 class='red'><a href='{{post.url}}'>{{ post.title }} <i class='fa fa-angle-double-right'></i></a></h3>
+                        </dd>
+                    {% endfor %}
+                {% endif %}
+            {% endif %}
+
+            {% if page.url contains "gaming" %}
+                {% if site.tags.gaming == null %}
+                    <h6 class='reset center'>Check back soon!</h6>
+                {% else %}
+                    {% for post in site.tags.gaming %}
+                        <dd>
+                            <p class='date'>
+                                {{ post.date | date: '%B %d, %Y' }}
+                                <a class='tag' href='/writing/gaming'><i>|</i>Gaming</a>
+                            </p>
+                            <h3 class='red'><a href='{{post.url}}'>{{ post.title }} <i class='fa fa-angle-double-right'></i></a></h3>
+                        </dd>
+                    {% endfor %}
+                {% endif %}
+            {% endif %}
+
+            {% if page.url contains "comics" %}
+                {% if site.tags.comics == null %}
+                    <h6 class='reset center'>Check back soon!</h6>
+                {% else %}
+                    {% for post in site.tags.comics %}
+                        <dd>
+                            <p class='date'>
+                                {{ post.date | date: '%B %d, %Y' }}
+                                <a class='tag' href='/writing/comics'><i>|</i>Comics</a>
+                            </p>
+                            <h3 class='red'><a href='{{post.url}}'>{{ post.title }} <i class='fa fa-angle-double-right'></i></a></h3>
+                        </dd>
+                    {% endfor %}
+                {% endif %}
+            {% endif %}
+        </dl>
+
+    </div>
+
+</section>

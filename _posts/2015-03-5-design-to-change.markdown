@@ -3,6 +3,7 @@ layout: post
 title:  "Design to Change, Change to Design"
 date:   2015-03-5 12:00:00 -0400
 categories: writing
+tags: design
 ---
 **tl;dr:** As a team building exercise, leadership had us construct towers out of spaghetti, tape, string and a marshmallow. Despite the chaos that ensued, I discovered something very fundamental about myself.
 
@@ -30,7 +31,7 @@ Where we went wrong? We didn’t play. Play. It was such a simple solution and I
 
 We grow up. We’re told to take responsibility for our actions and that every decision we make has consequences. We lose the ability to let our minds wander and dream because we’re weighed down with information, responsibility and a hand-me-down goal that we have to succeed. That means cutting out the play time and trying our hardest to show our chops. We begin to do things with intent instead of out of curiosity. The world loses that gleam of wonder.
 
-**Why?**
+<p class='center'><strong>Why?</strong></p>
 
 Why do we let this happen? I’m happy to be transparent about why I’m scared to play as a designer: I’m terrified that my work will seem inadequate and appear to be a waste of my time. I don’t prototype and iterate because I feel like I’m responsible to know the correct answer already. I’m expected to provide in a small time limit. Playing feels like I’m wasting everyone else’s time. The team is waiting on my work to move forward, the client is paying to use my expertise. Playing is something I should have done in school, or on my own time.
 

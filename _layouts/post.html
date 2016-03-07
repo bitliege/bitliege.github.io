@@ -5,7 +5,19 @@ layout: default
 
     <div class="content-container" itemprop="articleBody">
         <h1 class='title'>{{ page.title }}</h1>
-        <p class='post-date'>{{ page.date | date: '%B %d, %Y' }}&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;<a href='//en.wikipedia.org/wiki/Words_per_minute#Reading_and_comprehension' target="_blank">{{ page.content | number_of_words | divided_by: 228 | round }} Minute Read</a></p>
+        <p class='post-date'>
+            <a href='//en.wikipedia.org/wiki/Words_per_minute#Reading_and_comprehension' target="_blank">{{ page.content | number_of_words | divided_by: 228 | round }} Minute Read</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+            {{ page.date | date: '%B %d, %Y' }}&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+            {% if page.tags contains "design" %}
+                <a href='/writing/design' class='tag'>Design</a>
+            {% endif %}
+            {% if page.tags contains "gaming" %}
+                <a href='/writing/gaming' class='tag'>Gaming</a>
+            {% endif %}
+            {% if page.tags contains "comics" %}
+                <a href='/writing/comics' class='tag'>Comics</a>
+            {% endif %}
+        </p>
         {{ content }}
     </div>
 

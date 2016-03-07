@@ -15,8 +15,19 @@ layout: default
             <dt></dt>
             {% for post in site.categories.writing %}
                 <dd>
-                    <p class='date red'>{{ post.date | date: '%B %d, %Y' }}</p>
-                    <h3><a href='{{post.url}}'>{{ post.title }}</a></h3>
+                    <p class='date'>
+                        {{ post.date | date: '%B %d, %Y' }}
+                        {% if post.tags contains "design" %}
+                            <a class='tag' href='/writing/design'><i>|</i>Design</a>
+                        {% endif %}
+                        {% if post.tags contains "gaming" %}
+                            <a class='tag' href='/writing/gaming'><i>|</i>Gaming</a>
+                        {% endif %}
+                        {% if post.tags contains "comics" %}
+                            <a class='tag' href='/writing/comics'><i>|</i>Comics</a>
+                        {% endif %}
+                    </p>
+                    <h3 class='red'><a href='{{post.url}}'>{{ post.title }} <i class='fa fa-angle-double-right'></i></a></h3>
                 </dd>
             {% endfor %}
         </dl>

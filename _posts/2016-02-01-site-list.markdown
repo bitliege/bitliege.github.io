@@ -4,8 +4,19 @@ title:  "Fix the Shit out Of These"
 date:   2016-02-01 12:00:00 -0400
 categories: personal
 ---
-* Add `code` Styles
+
+## Phase 01
 * Writing Intro text
 * CV Template
 * Projects Template
-* Revamp Landing Header
+* Angries Project
+* Blog Project
+* Fiction Project
+* Design Intro Text
+* Gaming Intro Text
+* Comics Intro Text
+* Update Favicon
+* Search No Results
+
+## Phase 02
+* Post Sharing

@@ -13,6 +13,39 @@ $font-pt: 'PT Serif', serif;
 
 /* Custom Fonts ============================================================= */
 
+/* Typography Scale ========================================================= */
+html,
+body {
+    font-size: 12pt;
+}
+
+@media $(p-tablet) {
+
+    html,
+    body {
+        font-size: 14pt;
+    }
+
+}
+
+@media $(desktop) {
+
+    html,
+    body {
+        font-size: 14pt;
+    }
+
+}
+
+@media $(cinema) {
+
+    html,
+    body {
+        font-size: 16pt;
+    }
+
+}
+
 /* Selection ================================================================ */
 ::selection {
     background: $black;
@@ -20,18 +53,33 @@ $font-pt: 'PT Serif', serif;
 }
 
 /* Headings ================================================================= */
-h1 {font-size: 2rem;}
-h2 {font-size: 1.8rem;}
-h3 {font-size: 1.6rem;}
-h4 {font-size: 1.4rem;}
-h5 {font-size: 1.3rem;}
-h6 {font-size: 1.2rem;}
+h1 {font-size: 2.25rem;}
+h2 {font-size: 2rem;}
+h3 {font-size: 1.5rem;}
+h4 {font-size: 1.35rem;}
+h5 {font-size: 1.175rem;}
+h6 {font-size: 1rem;}
 
 h1, h2, h3, h4, h5, h6 {
     color: $type;
     font-family: $font-roboto;
-    font-weight: 900;
-    margin: 2.5rem 0 1.5rem 0;
+    font-weight: 100;
+    letter-spacing: .2rem;
+    margin: 2.5rem 0 1rem 0;
+    text-transform: uppercase;
+
+    @media $(l-tablet) {
+        margin: 2.5rem 0 1rem -2.5rem;
+    }
+
+    &+p {
+        margin: 1rem 0 1.5rem 0;
+    }
+
+    &.reset {
+        margin: 2.5rem 0 1rem 0;
+    }
+
 }
 
 /* Copy ===================================================================== */
@@ -102,6 +150,17 @@ a,
 a:visited,
 a:link {
     color: $red;
+    transition: color .1s ease;
+
+    &:hover {
+
+        @media $(desktop) {
+            color: rgba(0, 0, 0, .5);
+            transition: color .1s ease;
+        }
+
+    }
+
 }
 
 /* Buttons ================================================================== */
@@ -118,6 +177,27 @@ button {
     border: none;
     box-shadow: none;
     outline: none;
+}
+
+pre {
+    background: $grey;
+    border-radius: .2rem;
+    margin: 1.5rem 0;
+    overflow-x: scroll;
+    padding: .5rem .8rem;
+    width: 100%;
+
+    code {
+        padding: 0;
+    }
+
+}
+
+code {
+    background: $grey;
+    border-radius: .2rem;
+    font-size: .8rem;
+    padding: .2rem .4rem .1rem .4rem;
 }
 
 /* Inputs =================================================================== */
@@ -143,6 +223,11 @@ input {
 ul {
     margin: 1rem 0 1rem 1rem;
     padding: 0;
+
+    li {
+        line-height: 1.5;
+    }
+
 }
 
 dl {

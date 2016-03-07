@@ -25,39 +25,6 @@ $desktop: screen and (min-width: 1025px);
 $cinema: screen and (min-width: 1400px);
 /*$(cinema) {}*/
 
-/* Typography Scale ========================================================= */
-html,
-body {
-    font-size: 14pt;
-}
-
-@media $(p-tablet) {
-
-    html,
-    body {
-        font-size: 16pt;
-    }
-
-}
-
-@media $(desktop) {
-
-    html,
-    body {
-        font-size: 16pt;
-    }
-
-}
-
-@media $(cinema) {
-
-    html,
-    body {
-        font-size: 18pt;
-    }
-
-}
-
 /* Sections ================================================================= */
 * {
     box-sizing: border-box;

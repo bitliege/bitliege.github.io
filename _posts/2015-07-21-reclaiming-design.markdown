@@ -3,6 +3,7 @@ layout: post
 title:  "Reclaiming 'Design'"
 date:   2015-07-21 12:00:00 -0400
 categories: writing
+tags: design
 ---
 **tl;dr:** in an effort to establish a foundation on which to intepret design as a career path, I found myself conflicted with the definitions of the word and how it is perceived in daily life.
 

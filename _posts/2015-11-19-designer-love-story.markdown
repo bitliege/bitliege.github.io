@@ -3,6 +3,7 @@ layout: post
 title:  "The Designer Love Story"
 date:   2015-11-19 12:00:00 -0400
 categories: writing
+tags: design
 ---
 **tl;dr:** that solution? Yeah, it’s about time you looked past it, because there’s something incredible that is going to flip the way you design on its head. It’s called the problem.
 
