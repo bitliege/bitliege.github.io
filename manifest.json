@@ -1,5 +1,5 @@
 {
-	"name": "DatBlogDoh",
+	"name": "Josh Beveridge",
 	"icons": [
 		{
 			"src": "\/android-chrome-36x36.png",
@@ -37,7 +37,5 @@
 			"type": "image\/png",
 			"density": 4
 		}
-	],
-	"display": "standalone",
-	"orientation": "portrait"
+	]
 }

@@ -18,7 +18,7 @@
 
     .post-date {
         font-family: $font-roboto;
-        font-size: .8rem;
+        font-size: .6rem;
         font-weight: 300;
         margin: 2.5rem 0;
         text-align: center;
@@ -33,71 +33,65 @@
         text-align: center;
     }
 
+    /* List of Articles ===================================================== */
     .article-list {
 
         dd {
             margin: 0 0 2.5rem 0;
 
-            .date {
-                font-family: $font-roboto;
-                font-size: .8rem;
-                font-weight: 300;
-                margin: .5rem 0;
-                text-transform: uppercase;
+            .medium-3 {
 
-                .tag {
-                    color: $red;
-                    display: inline;
-                    font-family: $font-roboto;
-                    font-size: .8rem;
-                    font-weight: 300;
-                    text-transform: uppercase;
+                @media $(p-tablet) {
+                    padding-left: 0;
+                    text-align: right;
+                }
 
-                    i {
-                        color: $type;
-                        display: inline-block;
-                        font-style: normal;
-                        margin: 0 .5rem;
+                p {
+                    font-size: .6rem;
+                    margin: 0;
+
+                    span {
+                        font-size: inherit;
                     }
 
-                    &:hover {
+                    a {
+                        font-family: $font-roboto;
+                        font-weight: 300;
+                        text-transform: uppercase;
+                    }
 
-                        @media $(desktop) {
-                            color: rgba(0, 0, 0, .5);
-                        }
-
+                    &.date {
+                        border-top: .5rem solid $black;
+                        font-family: $font-roboto;
+                        font-weight: 300;
+                        margin: .3rem 0 .5rem 0;
+                        padding: .8rem 0 0 0;
+                        text-transform: uppercase;
                     }
 
                 }
 
             }
 
-            >h3 {
-                /*font-weight: 500;*/
-                /*letter-spacing: normal;*/
-                margin: 0;
+            .medium-7 {
 
-                a {
-                    /*color: $type;*/
-                    text-decoration: none;
+                h3 {
+                    /*font-weight: 500;*/
+                    /*letter-spacing: normal;*/
+                    margin: 0 0 1rem 0;
 
-                    i {
-                        color: $black;
-                        transform: translate(0, 0);
-                        transition: all .3s ease;
+                    a {
+                        /*color: $type;*/
+                        text-decoration: none;
                     }
 
-                    &:hover {
+                }
 
-                        @media $(desktop) {
+                .excerpt {
+                    font-size: .8rem;
 
-                            i {
-                                transform: translate(50%, 0);
-                                transition: all .3s ease;
-                            }
-
-                        }
-
+                    p {
+                        margin: 0;
                     }
 
                 }
@@ -106,6 +100,40 @@
 
             &last-child {
                 margin: 0;
+            }
+
+        }
+
+    }
+
+    /* CV Navigation ======================================================== */
+    .cv-navigation {
+
+        .column {
+            text-align: center;
+
+            a {
+                text-decoration: none;
+
+                h6 {
+                    font-size: .8rem;
+                    margin: .5rem 0;
+                    transition: all .3s ease;
+                }
+
+                &:hover {
+
+                    h6 {
+
+                        @media $(desktop) {
+                            color: $red;
+                            transition: all .3s ease;
+                        }
+
+                    }
+
+                }
+
             }
 
         }

@@ -1,0 +1,18 @@
+/* =============================================================================
+
+    PROFILE CSS
+    Authored by Josh Beveridge
+
+============================================================================= */
+.profile {
+    padding: $padding;
+
+    @media $(p-tablet) {
+        padding: 1.6rem $padding 0 $padding;
+    }
+
+    p:first-child {
+        margin-top: 0;
+    }
+
+}

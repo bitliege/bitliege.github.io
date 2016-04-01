@@ -78,24 +78,70 @@
 
         }
 
-        // Latest Post Equalizer ===============================================
-        var postHeight = '';
-        $('.latest-posts .post').each(function(e) {
-            var thisHeight = $(this).outerHeight();
-            if (matchMedia('screen and (min-width: 1024px)').matches) {
-                if(thisHeight > postHeight) {
-                    postHeight = thisHeight;
-                }
+        // Sidebar Height Handler ==============================================
+        // var screenHeight = $(window).height();
+        // var sidebarTopHeight = $("section.main").css("margin-top").replace("px", "");
+        // var sidebarTitleHeight = $(".sidebar >h3").outerHeight();
+        // var sidebarTitleMargin = $(".sidebar >h3").css("margin-top").replace("px", "");
+        //
+        // if (matchMedia("screen and (min-width: 64em)").matches) {
+        //     $(".sidebar >dl").css("height", screenHeight - sidebarTopHeight - sidebarTitleHeight - (sidebarTitleMargin*2) - sidebarTopHeight - sidebarTitleMargin + "px");
+        // }
+        //
+        // $( window ).resize(function() {
+        //
+        //     var screenHeight = $(window).height();
+        //     var sidebarTopHeight = $("section.main").css("margin-top").replace("px", "");
+        //     var sidebarTitleHeight = $(".sidebar >h3").outerHeight();
+        //     var sidebarTitleMargin = $(".sidebar >h3").css("margin-top").replace("px", "");
+        //
+        //     if (matchMedia("screen and (min-width: 64em)").matches) {
+        //         $(".sidebar >dl").css("height", screenHeight - sidebarTopHeight - sidebarTitleHeight - (sidebarTitleMargin*2) - sidebarTopHeight - sidebarTitleMargin + "px");
+        //     }
+        //
+        // });
+
+        // Post Sidebar Timer Handler ==========================================
+        if($(".main").hasClass("post")) {
+
+            if (matchMedia("screen and (min-width: 64em)").matches) {
+
+                var postTime = $(".sidebar .length p span").text();
+                var postLength = $(document).height();
+                var windowHeight = $(window).height();
+
+                $(window).resize(function() {
+                    windowHeight = $(window).height();
+                });
+
+                $(window).scroll(function() {
+                    var userPosition = $(document).scrollTop();
+                    var remainingPost = (userPosition/(postLength - windowHeight));
+                    var timeLeft = Math.ceil((postTime - (postTime*remainingPost)));
+
+                    $(".sidebar .length p span").text(timeLeft);
+                    if(timeLeft == 1) {
+                        $(".sidebar .length p").text(timeLeft + " Minute Left");
+                    }
+                    if(timeLeft == 0) {
+                        $(".sidebar .length p").text("All Done!");
+                    }
+                    if(timeLeft > 1) {
+                        $(".sidebar .length p").text(timeLeft + " Minutes Left");
+                    }
+
+                });
+
             }
-        });
-        $('.latest-posts .post').css('height', postHeight + 'px');
+
+        }
 
         // Post Filters ========================================================
         $('#writingFilter').keyup(function(e) {
 
             var input = this.value.toLowerCase()
 
-            $('.content.writing .article-list dd h3').each(function () {
+            $('.main.archive .article-list dd h3').each(function () {
                 var text  = $(this).text().toLowerCase();
 
                 if(text.indexOf(input) >= 0) {
@@ -107,6 +153,13 @@
                 }
 
             });
+
+            if($('.article-list dd.summary:visible').length) {
+                $('.no-result').hide();
+            }
+            else {
+                $('.no-result').show();
+            }
 
             e.preventDefault();
 

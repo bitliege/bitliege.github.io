@@ -1,77 +1,147 @@
 ---
 layout: default
 ---
-<section class="content writing tags">
 
-    <div class='content-container'>
+<!-- Archive =============================================================== -->
+<section class="main archive">
 
-        <h1 class='title'>
-            {% if page.url contains "design" %}
-                Design
-            {% endif %}
-            {% if page.url contains "gaming" %}
-                Gaming
-            {% endif %}
-            {% if page.url contains "comics" %}
-                Comics
-            {% endif %}
-        </h1>
+    <div class="container flex-grid top">
 
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        <div class="box lg-7of10">
 
-        <input id='writingFilter' type='text' placeholder='Look for something...'>
+            <dl class='article-list flex-grid'>
+                <dt></dt>
 
-        <dl class='article-list'>
-            <dt></dt>
+                <dd class='box med-1of2 intro'>
+                    <div>
+                        <h1 class='title'>Posts in
+                            {% if page.url contains "design" %}
+                                Design
+                            {% endif %}
+                            {% if page.url contains "gaming" %}
+                                Gaming
+                            {% endif %}
+                            {% if page.url contains "comics" %}
+                                Comics
+                            {% endif %}
+                        </h1>
+                        {% if page.url contains "design" %}
+                            <a href="/writing">Return to the Archive</a>
+                            <p>Design is my muse. It is a means of achieving understanding with people I would have never otherwise had the opportunity to engage, and it provides me with a perpetual means of helping solve problems that affect people around the world. You can find articles I've written on design in this archive.</p>
+                        {% endif %}
+                        {% if page.url contains "gaming" %}
+                            <a href="/writing">Return to the Archive</a>
+                            <p>This archive holds all posts I've written that relate to the games I play. It took me some time, but once I accepted that video games were going to be a permanent part of my life, I began to understand and observe the value they bring to my everyday adventures. These posts vary from observational reviews to simple recollections of my time in game.</p>
+                        {% endif %}
+                        {% if page.url contains "comics" %}
+                            <a href="/writing">Return to the Archive</a>
+                            <p>Interested in what I have to say about some of my favourite comics? You can find everything under the comics tag in this archive.</p>
+                            <p>My current lineup includes:</p>
+                            <ul>
+                                <li><a href="http://www.comics.org/series/59922/" target="_blank">Action Comics</a></li>
+                                <li><a href="http://www.comics.org/series/94488/" target="_blank">Dark Knight III: The Master Race</a></li>
+                                <li><a href="http://www.comics.org/series/90250/" target="_blank">Doctor Fate</a></li>
+                                <li><a href="http://www.comics.org/series/89717/" target="_blank">Midnighter</a></li>
+                                <li><a href="http://www.comics.org/series/59921/" target="_blank">Superman</a></li>
+                                <li><a href="http://www.comics.org/series/93778/" target="_blank">Superman: American Alien</a></li>
+                            </ul>
+                        {% endif %}
+                        {% if page.url contains "design" %}
+                            {% if site.tags.design == null %}
+                                <!-- Show Nothing -->
+                            {% else %}
+                                <input id='writingFilter' type='text' placeholder='Look for something...'>
+                            {% endif %}
+                        {% endif %}
 
-            {% if page.url contains "design" %}
-                {% if site.tags.design == null %}
-                    <h6 class='reset center'>Check back soon!</h6>
-                {% else %}
-                    {% for post in site.tags.design %}
-                        <dd>
-                            <p class='date'>
-                                {{ post.date | date: '%B %d, %Y' }}
-                                <a class='tag' href='/writing/design'><i>|</i>Design</a>
-                            </p>
-                            <h3 class='red'><a href='{{post.url}}'>{{ post.title }} <i class='fa fa-angle-double-right'></i></a></h3>
-                        </dd>
-                    {% endfor %}
+                        {% if page.url contains "gaming" %}
+                            {% if site.tags.gaming == null %}
+                                <!-- Show Nothing -->
+                            {% else %}
+                                <input id='writingFilter' type='text' placeholder='Look for something...'>
+                            {% endif %}
+                        {% endif %}
+
+                        {% if page.url contains "comics" %}
+                            {% if site.tags.comics == null %}
+                                <!-- Show Nothing -->
+                            {% else %}
+                                <input id='writingFilter' type='text' placeholder='Look for something...'>
+                            {% endif %}
+                        {% endif %}
+                    </div>
+                </dd>
+
+                {% if page.url contains "design" %}
+                    {% if site.tags.design == null %}
+                        <h3 class='tbd'>Check back soon!</h3>
+                    {% else %}
+                        {% for post in site.tags.design %}
+                            <dd class='box med-1of2 summary'>
+                                <div>
+                                    <a href="/writing/design" class="label">In Design</a>
+                                    <span class="date">{{ post.date | date: '%A, %B %d, %Y' }}</span>
+                                    <h3>
+                                        <a href='{{post.url}}'>{{ post.title }}</a>
+                                    </h3>
+                                    <p>{{ post.excerpt }}</p>
+                                    <a href="{{post.url}}" class="read-more">Read More <i class="fa fa-angle-double-right"></i></a>
+                                </div>
+                            </dd>
+                        {% endfor %}
+                    {% endif %}
                 {% endif %}
-            {% endif %}
 
-            {% if page.url contains "gaming" %}
-                {% if site.tags.gaming == null %}
-                    <h6 class='reset center'>Check back soon!</h6>
-                {% else %}
-                    {% for post in site.tags.gaming %}
-                        <dd>
-                            <p class='date'>
-                                {{ post.date | date: '%B %d, %Y' }}
-                                <a class='tag' href='/writing/gaming'><i>|</i>Gaming</a>
-                            </p>
-                            <h3 class='red'><a href='{{post.url}}'>{{ post.title }} <i class='fa fa-angle-double-right'></i></a></h3>
-                        </dd>
-                    {% endfor %}
+                {% if page.url contains "gaming" %}
+                    {% if site.tags.gaming == null %}
+                        <h3 class='tbd'>Check back soon!</h3>
+                    {% else %}
+                        {% for post in site.tags.gaming %}
+                            <dd class='box med-1of2 summary'>
+                                <div>
+                                    <a href="/writing/gaming" class="label">In Gaming</a>
+                                    <span class="date">{{ post.date | date: '%A, %B %d, %Y' }}</span>
+                                    <h3>
+                                        <a href='{{post.url}}'>{{ post.title }}</a>
+                                    </h3>
+                                    <p>{{ post.excerpt }}</p>
+                                    <a href="{{post.url}}" class="read-more">Read More <i class="fa fa-angle-double-right"></i></a>
+                                </div>
+                            </dd>
+                        {% endfor %}
+                    {% endif %}
                 {% endif %}
-            {% endif %}
 
-            {% if page.url contains "comics" %}
-                {% if site.tags.comics == null %}
-                    <h6 class='reset center'>Check back soon!</h6>
-                {% else %}
-                    {% for post in site.tags.comics %}
-                        <dd>
-                            <p class='date'>
-                                {{ post.date | date: '%B %d, %Y' }}
-                                <a class='tag' href='/writing/comics'><i>|</i>Comics</a>
-                            </p>
-                            <h3 class='red'><a href='{{post.url}}'>{{ post.title }} <i class='fa fa-angle-double-right'></i></a></h3>
-                        </dd>
-                    {% endfor %}
+                {% if page.url contains "comics" %}
+                    {% if site.tags.comics == null %}
+                        <h3 class='tbd'>Check back soon!</h3>
+                    {% else %}
+                        {% for post in site.tags.comics %}
+                            <dd class='box med-1of2 summary'>
+                                <div>
+                                    <a href="/writing/comics" class="label">In Comics</a>
+                                    <span class="date">{{ post.date | date: '%A, %B %d, %Y' }}</span>
+                                    <h3>
+                                        <a href='{{post.url}}'>{{ post.title }}</a>
+                                    </h3>
+                                    <p>{{ post.excerpt }}</p>
+                                    <a href="{{post.url}}" class="read-more">Read More <i class="fa fa-angle-double-right"></i></a>
+                                </div>
+                            </dd>
+                        {% endfor %}
+                    {% endif %}
                 {% endif %}
-            {% endif %}
-        </dl>
+
+                <dd class='no-result box med-1of2'>
+                    <h3>Sorry, try a different term.</h3>
+                    <p>Oops! It seems that you're searching for an article that doesn't exist! Give it another go, or, checkout the latest posts column for something new!</p>
+                </dd>
+
+            </dl>
+
+        </div>
+
+        {% include sidebar.html %}
 
     </div>
 

@@ -3,20 +3,13 @@ layout: post
 title:  "Fix the Shit out Of These"
 date:   2016-02-01 12:00:00 -0400
 categories: personal
+tags:
 ---
 
-## Phase 01
-* Writing Intro text
-* CV Template
-* Projects Template
-* Angries Project
-* Blog Project
-* Fiction Project
-* Design Intro Text
-* Gaming Intro Text
-* Comics Intro Text
-* Update Favicon
-* Search No Results
+## For Launch
+* Mailchimp Form
+* Projects?
 
-## Phase 02
-* Post Sharing
+## Posts
+* DCU Rebirth Announcement
+* First Impressions: Stardew Valley

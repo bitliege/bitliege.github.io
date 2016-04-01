@@ -1,0 +1,24 @@
+<div class="sidebar box lg-3of10">
+    <h3>What's New</h3>
+    <dl>
+        <dt></dt>
+        {% for post in site.categories.writing limit:5 %}
+            <dd>
+                <span class="date">
+                    {% if post.tags contains "design" %}
+                        <a href="/writing/design">In Design</a>
+                    {% endif %}
+                    {% if post.tags contains "gaming" %}
+                        <a href="/writing/gaming">In Gaming</a>
+                    {% endif %}
+                    {% if post.tags contains "comics" %}
+                        <a href="/writing/comics">In Comics</a>
+                    {% endif %}
+                    &nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;{{ post.date | date: '%A, %B %d, %Y' }}</span>
+                <h5>
+                    <a href='{{post.url}}'>{{ post.title }}</a>
+                </h5>
+            </dd>
+        {% endfor %}
+    </dl>
+</div>

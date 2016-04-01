@@ -1,0 +1,21 @@
+/* =============================================================================
+
+    IMG CSS
+    Authored by Josh Beveridge
+
+============================================================================= */
+.img {
+    overflow: hidden;
+    padding: $padding-double $padding;
+
+    img {
+        /*border: .5rem solid $grey;*/
+        height: auto;
+        width: 100%;
+    }
+
+    &.offset {
+        padding: $padding $padding $padding-double $padding;
+    }
+
+}

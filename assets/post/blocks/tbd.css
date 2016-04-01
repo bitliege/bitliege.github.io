@@ -1,0 +1,17 @@
+/* =============================================================================
+
+    TBD CSS
+    Authored by Josh Beveridge
+
+============================================================================= */
+.tbd {
+    margin: 0;
+    padding: $padding;
+    text-align: center;
+    width: 100%;
+
+    @media $(l-tablet) {
+        padding: $padding-double $padding;
+    }
+
+}

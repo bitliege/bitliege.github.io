@@ -1,0 +1,40 @@
+/* =============================================================================
+
+    INTRO CSS
+    Authored by Josh Beveridge
+
+============================================================================= */
+.intro {
+    margin: $padding-half 0 $padding 0;
+    padding: $padding;
+
+    @media $(l-tablet) {
+        margin: 0;
+        padding: $padding-double $padding;
+    }
+
+    >div {
+        background: $grey-light;
+        padding: $padding-double;
+
+        h1 {
+            margin: 0 0 $padding 0;
+        }
+
+        >a {
+            font-family: $font-pt;
+            font-size: 1rem;
+        }
+
+        p {
+            margin: $padding 0;
+        }
+
+        input {
+            background: $white;
+            margin: 0;
+        }
+
+    }
+
+}

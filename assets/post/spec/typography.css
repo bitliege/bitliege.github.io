@@ -13,37 +13,10 @@ $font-pt: 'PT Serif', serif;
 
 /* Custom Fonts ============================================================= */
 
-/* Typography Scale ========================================================= */
+/* Font Standard ============================================================ */
 html,
 body {
-    font-size: 12pt;
-}
-
-@media $(p-tablet) {
-
-    html,
-    body {
-        font-size: 14pt;
-    }
-
-}
-
-@media $(desktop) {
-
-    html,
-    body {
-        font-size: 14pt;
-    }
-
-}
-
-@media $(cinema) {
-
-    html,
-    body {
-        font-size: 16pt;
-    }
-
+    font-size: 100%;
 }
 
 /* Selection ================================================================ */
@@ -63,17 +36,25 @@ h6 {font-size: 1rem;}
 h1, h2, h3, h4, h5, h6 {
     color: $type;
     font-family: $font-roboto;
-    font-weight: 100;
-    letter-spacing: .2rem;
+    font-weight: 300;
+    line-height: 1.2;
+    /*letter-spacing: .2rem;*/
     margin: 2.5rem 0 1rem 0;
     text-transform: uppercase;
 
-    @media $(l-tablet) {
-        margin: 2.5rem 0 1rem -2.5rem;
-    }
-
     &+p {
         margin: 1rem 0 1.5rem 0;
+    }
+
+    &.title {
+        margin: 1rem 0 2rem;
+        text-align: center;
+
+        @media $(l-tablet) {
+            margin: 2rem 0;
+            text-align: left;
+        }
+
     }
 
     &.reset {
@@ -115,9 +96,14 @@ hr {
     border: none;
     border-top: 1px solid $black;
     height: 0;
-    margin: 2.5rem 0;
+    margin: 1.5rem 0;
     padding: 0;
     width: 100%;
+
+    @media $(l-tablet) {
+        margin: 2.5rem 0;
+    }
+
 }
 
 blockquote {
@@ -150,6 +136,8 @@ a,
 a:visited,
 a:link {
     color: $red;
+    font-family: inherit;
+    font-size: inherit;
     transition: color .1s ease;
 
     &:hover {
@@ -157,6 +145,33 @@ a:link {
         @media $(desktop) {
             color: rgba(0, 0, 0, .5);
             transition: color .1s ease;
+        }
+
+    }
+
+}
+
+.post-date {
+    color: $grey;
+    font-family: $font-roboto;
+    font-size: .8rem;
+    font-weight: 700;
+    margin: 1rem auto 1.5rem auto;
+    text-align: center;
+    text-transform: uppercase;
+    width: 75%;
+
+    @media $(p-tablet) {
+        text-align: left;
+        width: 100%;
+    }
+
+    a {
+        color: $red;
+        text-decoration: none;
+
+        &.tag {
+
         }
 
     }
@@ -221,10 +236,16 @@ input {
 
 /* Lists ==================================================================== */
 ul {
+    color: $type;
+    font-family: $font-pt;
+    font-size: 1rem;
     margin: 1rem 0 1rem 1rem;
     padding: 0;
 
     li {
+        color: $type;
+        font-family: $font-pt;
+        font-size: 1rem;
         line-height: 1.5;
     }
 

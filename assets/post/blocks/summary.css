@@ -1,0 +1,132 @@
+/* =============================================================================
+
+    SUMMARY CSS
+    Authored by Josh Beveridge
+
+============================================================================= */
+.summary {
+    padding: $padding;
+
+    @media $(p-tablet) {
+        padding: $padding-double $padding;
+    }
+
+    >div {
+        border-top: .5rem solid $black;
+        position: relative;
+
+        .label {
+            color: $red;
+            display: block;
+            font-family: $font-roboto;
+            font-size: .7rem;
+            font-weight: 800;
+            position: absolute;
+            top: 0;
+            right: 0;
+            text-decoration: none;
+            text-transform: uppercase;
+            transform: translate(0, -200%);
+        }
+
+        .date {
+            color: $grey;
+            display: block;
+            font-family: $font-roboto;
+            font-size: .7rem;
+            font-weight: 800;
+            margin: $padding 0;
+            text-transform: uppercase;
+        }
+
+        h1 {
+            margin: $padding 0 $padding -.2rem;
+
+            a {
+                color: $type;
+                text-decoration: none;
+            }
+
+            &.featured {
+                font-size: 3rem;
+            }
+
+            &.author {
+                text-align: center;
+
+                @media $(p-tablet) {
+                    text-align: left;
+                }
+
+            }
+
+        }
+
+        h3 {
+            margin: $padding 0 $padding -.05rem;
+
+            a {
+                color: $type;
+                text-decoration: none;
+            }
+
+        }
+
+        p {
+            margin: $padding 0;
+        }
+
+        dl {
+            margin: $padding-double 0 0 0;
+            text-align: center;
+
+            @media $(p-tablet) {
+                text-align: left;
+            }
+
+            @media $(l-tablet) {
+                margin: $padding-double 0;
+            }
+
+            dd {
+                display: inline-block;
+                margin: 0 $padding;
+
+                @media $(p-tablet) {
+                    margin: 0 $padding-double 0 0;
+                }
+
+                a {
+                    color: $type;
+                    font-size: .8rem;
+                }
+
+            }
+
+        }
+
+        .read-more {
+            font-family: $font-pt;
+            font-size: 1rem;
+            text-decoration: none;
+
+            i {
+                font-size: .8rem;
+                transform: translate(0, 0);
+                transition: transform .3s ease;
+            }
+
+            &:hover {
+
+                i {
+                    transform: translate(50%, 0);
+                    transition: transform .3s ease;
+                }
+
+            }
+
+        }
+
+    }
+
+}

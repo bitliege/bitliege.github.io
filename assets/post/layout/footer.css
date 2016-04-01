@@ -5,14 +5,44 @@
 
 ============================================================================= */
 footer {
-    padding: 0 0 3rem 0;
 
-    .love {
-        font-size: .8rem;
-        text-align: center;
+    .box {
+        padding: 0 $padding;
 
-        p {
-            margin: 0;
+        hr {
+            margin: 0 0 1.5rem 0;
+
+            @media $(l-tablet) {
+                margin: 2.5rem 0;
+            }
+
+        }
+
+        .love {
+            font-family: $font-roboto;
+            font-size: .8rem;
+            font-weight: 700;
+            line-height: 1.25;
+            margin: 3.05rem 0 7rem 0;
+            text-align: center;
+            text-transform: uppercase;
+
+            @media $(l-tablet) {
+                margin: 4rem 0;
+            }
+
+            span {
+                color: $grey;
+            }
+
+            a {
+                text-decoration: none;
+            }
+
+        }
+
+        &.lg-4of6 {
+            padding: 0;
         }
 
     }

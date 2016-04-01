@@ -1,24 +1,44 @@
 ---
-layout: default
+layout: content
 ---
-<article class="content" itemscope itemtype="http://schema.org/BlogPosting">
+<section class="main post">
 
-    <div class="content-container" itemprop="articleBody">
-        <h1 class='title'>{{ page.title }}</h1>
-        <p class='post-date'>
-            <a href='//en.wikipedia.org/wiki/Words_per_minute#Reading_and_comprehension' target="_blank">{{ page.content | number_of_words | divided_by: 228 | round }} Minute Read</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-            {{ page.date | date: '%B %d, %Y' }}&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-            {% if page.tags contains "design" %}
-                <a href='/writing/design' class='tag'>Design</a>
-            {% endif %}
-            {% if page.tags contains "gaming" %}
-                <a href='/writing/gaming' class='tag'>Gaming</a>
-            {% endif %}
-            {% if page.tags contains "comics" %}
-                <a href='/writing/comics' class='tag'>Comics</a>
-            {% endif %}
-        </p>
-        {{ content }}
+    <div class="container flex-grid top">
+
+        {% include post-sidebar.html %}
+
+        <div class='box lg-2of6'>
+            &nbsp;
+        </div>
+
+        <div class="box lg-4of6">
+
+            <article class="copy-container" itemscope itemtype="http://schema.org/BlogPosting">
+
+                <div temprop="articleBody">
+                    <h1 class='title'>{{ page.title }}</h1>
+                    <p class='post-date'>
+                        <a href='//en.wikipedia.org/wiki/Words_per_minute#Reading_and_comprehension' target="_blank">{{ page.content | number_of_words | divided_by: 228.0 | ceil }} Minute Read</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+                        {{ page.date | date: '%A, %B %d, %Y' }}&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+                        {% if page.tags contains "design" %}
+                            <a href='/writing/design' class='tag'>In Design</a>
+                        {% endif %}
+                        {% if page.tags contains "gaming" %}
+                            <a href='/writing/gaming' class='tag'>In Gaming</a>
+                        {% endif %}
+                        {% if page.tags contains "comics" %}
+                            <a href='/writing/comics' class='tag'>In Comics</a>
+                        {% endif %}
+                    </p>
+                    {{ content }}
+                </div>
+
+            </article>
+
+        </div>
+
     </div>
 
-</article>
+    {% include post-footer.html %}
+
+</section>
