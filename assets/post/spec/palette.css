@@ -23,6 +23,8 @@ $white-transparent: rgba(250, 250, 250, .05);
 $red: rgba(229, 12, 58, 1);
 $red-transparent: rgba(229, 12, 58, .9);
 
+$red: #FF0000;
+
 p,
 span,
 a,

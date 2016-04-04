@@ -1,0 +1,88 @@
+/* =============================================================================
+
+    MAILCHIMP CSS
+    Authored by Josh Beveridge
+
+============================================================================= */
+.mailchimp {
+
+    #mc_embed_signup_scroll {
+        position: relative;
+
+        >h3 {
+            border-bottom: 1px solid $grey;
+            font-weight: 800;
+            margin: 4rem 0 $padding-double 0;
+            padding: 0 0 $padding-double 0;
+        }
+
+    }
+
+    .indicates-required {
+        color: $grey;
+        display: block;
+        font-family: $font-roboto;
+        font-size: .6rem;
+        font-weight: 800;
+        margin: 0;
+        position: absolute;
+        right: 0;
+        text-transform: uppercase;
+    }
+
+    .mc-field-group {
+        position: relative;
+
+        label {
+            display: block;
+            font-family: $font-roboto;
+            font-size: 1rem;
+            font-weight: 300;
+            line-height: 1.2;
+            margin: 0;
+            position: absolute;
+            top: $padding;
+            left: 0;
+            text-transform: uppercase;
+            transition: all .3s ease;
+            z-index: 5;
+
+            &.active {
+                top: 0;
+                font-size: .6rem;
+                transition: all .3s ease;
+            }
+
+        }
+
+        input {
+            border: none;
+            border-bottom: 1px solid $black;
+            color: $black;
+            font-family: $font-roboto;
+            margin: 0 0 $padding-double 0;
+            padding: $padding 0 $padding-half 0;
+            position: relative;
+            z-index: 10;
+
+            &:focus {
+                border-bottom: 1px solid $red;
+            }
+
+        }
+
+    }
+
+    .clear {
+
+        input {
+            background: $white;
+            border: 1px solid $red;
+            cursor: pointer;
+            font-family: $font-roboto;
+            text-transform: uppercase;
+        }
+
+    }
+
+}

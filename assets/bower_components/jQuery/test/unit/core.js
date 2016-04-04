@@ -268,13 +268,26 @@ QUnit.test( "type for `Symbol`", function( assert ) {
 } );
 
 QUnit.asyncTest( "isPlainObject", function( assert ) {
-	assert.expect( 15 );
 
-	var pass, iframe, doc,
+	assert.expect( 22 );
+
+	var pass, iframe, doc, parentObj, childObj, deep,
 		fn = function() {};
 
 	// The use case that we want to match
 	assert.ok( jQuery.isPlainObject( {} ), "{}" );
+	assert.ok( jQuery.isPlainObject( new window.Object() ), "new Object" );
+	assert.ok( jQuery.isPlainObject( { constructor: fn } ),
+		"plain object with constructor property" );
+	assert.ok( jQuery.isPlainObject( { constructor: "foo" } ),
+		"plain object with primitive constructor property" );
+
+	parentObj = { foo: "bar" };
+	childObj = Object.create( parentObj );
+
+	assert.ok( !jQuery.isPlainObject( childObj ), "isPlainObject(Object.create({}))" );
+	childObj.bar = "foo";
+	assert.ok( !jQuery.isPlainObject( childObj ), "isPlainObject(Object.create({}))" );
 
 	// Not objects shouldn't be matched
 	assert.ok( !jQuery.isPlainObject( "" ), "string" );
@@ -301,6 +314,14 @@ QUnit.asyncTest( "isPlainObject", function( assert ) {
 
 	// Again, instantiated objects shouldn't be matched
 	assert.ok( !jQuery.isPlainObject( new fn() ), "new fn" );
+
+	// Instantiated objects with primitive constructors shouldn't be matched
+	fn.prototype.constructor = "foo";
+	assert.ok( !jQuery.isPlainObject( new fn() ), "new fn with primitive constructor" );
+
+	// Deep object
+	deep = { "foo": { "baz": true }, "foo2": document };
+	assert.ok( jQuery.isPlainObject( deep ), "Object with objects is still plain" );
 
 	// DOM Element
 	assert.ok( !jQuery.isPlainObject( document.createElement( "div" ) ), "DOM Element" );
@@ -1490,22 +1511,6 @@ QUnit.test("jQuery.parseHTML", function( assert ) {
 		"parentNode should be documentFragment for wrapMap (variable in manipulation module) elements too" );
 	assert.ok( jQuery.parseHTML("<#if><tr><p>This is a test.</p></tr><#/if>") || true, "Garbage input should not cause error" );
 });
-
-if ( jQuery.support.createHTMLDocument && !/opera.*version\/12\.1/i.test( navigator.userAgent ) ) {
-	QUnit.asyncTest( "jQuery.parseHTML", function( assert ) {
-		assert.expect( 1 );
-
-		Globals.register( "parseHTMLError" );
-
-		jQuery.globalEval( "parseHTMLError = false;" );
-		jQuery.parseHTML( "<img src=x onerror='parseHTMLError = true'>" );
-
-		window.setTimeout( function() {
-			QUnit.start();
-			assert.equal( window.parseHTMLError, false, "onerror eventhandler has not been called." );
-		}, 2000 );
-	} );
-}
 
 QUnit.test( "jQuery.parseJSON", function( assert ) {
 	assert.expect( 20 );

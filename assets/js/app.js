@@ -9,6 +9,10 @@
 
     $(document).ready(function() {
 
+        jQuery.extend(jQuery.expr[':'], {
+            focus: "a == document.activeElement"
+        });
+
         // Smooth Scrolling ====================================================
         $("a[href*='#']:not([href='#'])").on('click',function() {
 
@@ -100,6 +104,15 @@
         //     }
         //
         // });
+
+        // Mailchimp Labels ====================================================
+        $(".mailchimp input").on("click", function(e) {
+
+            if($(this).is(":focus")) {
+                $(this).parent().find("label").addClass("active");
+            }
+
+        });
 
         // Post Sidebar Timer Handler ==========================================
         if($(".main").hasClass("post")) {

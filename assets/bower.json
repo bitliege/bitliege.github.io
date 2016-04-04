@@ -21,9 +21,7 @@
   ],
   "dependencies": {
     "fontawesome": "latest",
-    "normalize.css": "latest",
     "jQuery": "latest",
-    "matchMedia": "latest",
-    "modernizr": "latest"
+    "matchMedia": "latest"
   }
 }
