@@ -1,14 +1,17 @@
 ---
 layout: post
 title:  "Fix the Shit out Of These"
-date:   2016-02-01 12:00:00 -0400
+date:   2016-03-30 12:00:00 -0400
 categories: personal
-tags:
+tags: comics
 ---
 
 ## For Launch
-* Mailchimp Form
 * Projects?
+* Refactor CSS
+* Fix up Mobile Padding
+* Refactor Mobile Navigation
+* Rewrite Bio on Landing
 
 ## Posts
 * DCU Rebirth Announcement

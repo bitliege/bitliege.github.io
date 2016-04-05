@@ -11,14 +11,26 @@
         padding: 0 $padding 0 $padding-double;
     }
 
-    >h3 {
-        font-weight: 800;
-        line-height: .7;
-        margin: $padding-double 0;
-    }
-
     >dl {
-        border-top: 1px solid $grey;
+        border-top: .5rem solid $black;
+        margin: $padding-double 0 5rem 0;
+        position: relative;
+
+        .label {
+            /*color: $red;*/
+            color: $black;
+            display: block;
+            font-family: $font-roboto;
+            font-size: .7rem;
+            font-weight: 800;
+            margin: 0;
+            position: absolute;
+            top: 0;
+            right: 0;
+            text-decoration: none;
+            text-transform: uppercase;
+            transform: translate(0, -200%);
+        }
 
         dd {
             margin: $padding-double 0;
@@ -33,7 +45,8 @@
                 text-transform: uppercase;
 
                 a {
-                    color: $red;
+                    /*color: $red;*/
+                    color: $grey;
                     text-decoration: none;
                 }
 
@@ -58,24 +71,37 @@
 
         @media $(l-tablet) {
             display: block;
-            margin-left: 11.8333%;
+            margin-left: 6.34%;
             padding: 0 $padding-double 0 0;
             position: fixed;
-            width: 15.8333%;
+            width: 12.7%;
         }
 
-        @media screen and (min-width: 70em) {
-            margin-left: 10.6666em;
-            width: 11.6666em;
-        }
+        /* Hey, if you need to calculate the position values again, all you haver to do is create the layout using the media query below. Once it looks like you want it to, divide the position values by the media query value to get the percentage values for the positioning above. */
 
-        >h3 {
-            line-height: 1.8;
-            margin: $padding-double 0 1.5rem 0;
+        @media screen and (min-width: 78.75em) {
+            margin-left: 5rem;
+            width: 10rem;
         }
 
         >dl {
             border-bottom: none;
+
+            .label {
+                /*color: $red;*/
+                color: $black;
+                display: block;
+                font-family: $font-roboto;
+                font-size: .7rem;
+                font-weight: 800;
+                margin: 0;
+                position: absolute;
+                top: 0;
+                right: 0;
+                text-decoration: none;
+                text-transform: uppercase;
+                transform: translate(0, -200%);
+            }
 
             dd {
                 margin: $padding-double 0;

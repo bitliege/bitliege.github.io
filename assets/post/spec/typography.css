@@ -36,14 +36,14 @@ h6 {font-size: 1rem;}
 h1, h2, h3, h4, h5, h6 {
     color: $type;
     font-family: $font-roboto;
-    font-weight: 300;
+    font-weight: 700;
     line-height: 1.2;
     /*letter-spacing: .2rem;*/
-    margin: 2.5rem 0 1rem 0;
+    margin: 3.5rem 0 1rem 0;
     text-transform: uppercase;
 
     &+p {
-        margin: 1rem 0 1.5rem 0;
+        margin: 1rem 0 2rem 0;
     }
 
     &.title {
@@ -51,6 +51,7 @@ h1, h2, h3, h4, h5, h6 {
         text-align: center;
 
         @media $(l-tablet) {
+            line-height: .7;
             margin: 2rem 0;
             text-align: left;
         }
@@ -71,7 +72,8 @@ blockquote {
     color: $type;
     line-height: 1.5;
     font-family: $font-pt;
-    margin: 1.5rem 0;
+    font-size: 1.2rem;
+    margin: 2rem 0;
 }
 
 p {
@@ -112,7 +114,7 @@ blockquote {
     padding: 0 0 0 2rem;
 
     @media $(l-tablet) {
-        margin: 0 0 0 -2.5rem;
+        /*margin: 0 0 0 -2.5rem;*/
     }
 
     p {
@@ -156,7 +158,7 @@ a:link {
     font-family: $font-roboto;
     font-size: .8rem;
     font-weight: 700;
-    margin: 1rem auto 1.5rem auto;
+    margin: 2.5rem auto 2rem auto;
     text-align: center;
     text-transform: uppercase;
     width: 75%;
@@ -239,7 +241,7 @@ ul {
     color: $type;
     font-family: $font-pt;
     font-size: 1rem;
-    margin: 1rem 0 1rem 1rem;
+    margin: 1rem 0 1rem 1.5rem;
     padding: 0;
 
     li {

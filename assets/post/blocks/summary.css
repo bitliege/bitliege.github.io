@@ -16,7 +16,8 @@
         position: relative;
 
         .label {
-            color: $red;
+            /*color: $red;*/
+            color: $black;
             display: block;
             font-family: $font-roboto;
             font-size: .7rem;
