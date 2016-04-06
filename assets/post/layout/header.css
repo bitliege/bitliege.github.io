@@ -8,7 +8,7 @@ header {
     /*background: $red-transparent;*/
     background: rgba(255, 255, 255, .95);
     /*border-top: 1px solid $black;*/
-    box-shadow: 0 2px 3px rgba(0, 0, 0, .3);
+    box-shadow: 0 -1px 3px rgba(0, 0, 0, .3);
     position: fixed;
     bottom: 0;
     left: 0;
@@ -19,6 +19,7 @@ header {
 
     @media $(l-tablet) {
         border-top: none;
+        box-shadow: 0 2px 3px rgba(0, 0, 0, .3);
         /*border-bottom: 1px solid $black;*/
         /*box-shadow: 0 2px 3px rgba(0, 0, 0, .3);*/
         top: 0;

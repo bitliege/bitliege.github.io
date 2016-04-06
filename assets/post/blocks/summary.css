@@ -16,8 +16,8 @@
         position: relative;
 
         .label {
-            /*color: $red;*/
-            color: $black;
+            color: $red;
+            /*color: $black;*/
             display: block;
             font-family: $font-roboto;
             font-size: .7rem;
@@ -48,10 +48,6 @@
                 text-decoration: none;
             }
 
-            &.featured {
-                font-size: 3rem;
-            }
-
             &.author {
                 text-align: center;
 
@@ -74,7 +70,16 @@
         }
 
         p {
+            font-size: .8rem;
             margin: $padding 0;
+        }
+
+        ul {
+
+            li {
+                font-size: .8rem;
+            }
+
         }
 
         dl {
@@ -108,7 +113,7 @@
 
         .read-more {
             font-family: $font-pt;
-            font-size: 1rem;
+            font-size: .8rem;
             text-decoration: none;
 
             i {
@@ -124,6 +129,39 @@
                     transition: transform .3s ease;
                 }
 
+            }
+
+        }
+
+    }
+
+    &.featured {
+
+        >div {
+
+            .date {
+                margin: 1.2rem 0 $padding 0;
+            }
+
+            h1 {
+                font-size: 3rem;
+                line-height: 1;
+            }
+
+            p {
+                font-size: 1rem;
+            }
+
+            ul {
+
+                li {
+                    font-size: 1rem;
+                }
+
+            }
+
+            .read-more {
+                font-size: 1rem;
             }
 
         }

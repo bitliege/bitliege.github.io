@@ -5,13 +5,20 @@
 
 ============================================================================= */
 .img {
+    align-items: stretch;
+    display: flex;
     overflow: hidden;
     padding: $padding-double $padding;
 
-    img {
-        /*border: .5rem solid $grey;*/
-        height: auto;
-        width: 100%;
+    >div {
+        background-position: center;
+        background-size: cover;
+        flex: 1;
+        min-height: 15rem;
+    }
+
+    &.full {
+        display: block;
     }
 
     &.offset {

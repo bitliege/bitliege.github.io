@@ -105,11 +105,40 @@
             flex: 0 0 80%
         }
 
+        /* 7 Column */
+        &.med-1of7 {
+            flex: 0 0 14.28%
+        }
+
+        &.med-2of7 {
+            flex: 0 0 28.57%
+        }
+
+        &.med-3of7 {
+            flex: 0 0 42.86%
+        }
+
+        &.med-4of7 {
+            flex: 0 0 57.14%
+        }
+
+        &.med-5of7 {
+            flex: 0 0 71.43%
+        }
+
+        &.med-6of7 {
+            flex: 0 0 85.71%
+        }
+
     }
 
     /* Large Boxes: Landscape Tablet Devices ================================ */
 
     @media $(l-tablet) {
+
+        .lg-full {
+            flex: 0 0 100%;
+        }
 
         /* 2 Column */
         &.lg-1of2 {

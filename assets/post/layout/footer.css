@@ -5,44 +5,65 @@
 
 ============================================================================= */
 footer {
+    background: $white;
+    border-top: 1px solid $grey-light;
+    margin: $padding-double 0 0 0;
+    padding: $padding-double 0 5rem 0;
 
-    .box {
-        padding: 0 $padding;
+    @media $(l-tablet) {
+        padding: $padding-double 0;
+    }
 
-        hr {
-            margin: 0 0 1.5rem 0;
+    img {
+        display: block;
+        margin: 0 auto;
+        padding: $padding-double 0;
+        width: 25%;
 
-            @media $(l-tablet) {
-                margin: 2.5rem 0;
-            }
-
-        }
-
-        .love {
-            font-family: $font-roboto;
-            font-size: .8rem;
-            font-weight: 700;
-            line-height: 1.25;
-            margin: 3.05rem 0 7rem 0;
-            text-align: center;
-            text-transform: uppercase;
-
-            @media $(l-tablet) {
-                margin: 4rem 0;
-            }
-
-            span {
-                color: $grey;
-            }
-
-            a {
-                text-decoration: none;
-            }
-
-        }
-
-        &.lg-3of4 {
+        @media $(p-tablet) {
             padding: 0;
+            width: 35%;
+        }
+
+    }
+
+    .love {
+        font-family: $font-roboto;
+        font-size: .7rem;
+        font-weight: 700;
+        line-height: 1.25;
+        margin: 0;
+        padding: $padding-double $padding;
+        text-align: center;
+        text-transform: uppercase;
+
+        @media $(p-tablet) {
+            text-align: left;
+        }
+
+        span {
+            color: $grey;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+    }
+
+    .copy {
+        color: $grey;
+        font-family: $font-roboto;
+        font-size: .7rem;
+        font-weight: 700;
+        line-height: 1.25;
+        margin: 0;
+        padding: $padding-double $padding;
+        text-align: center;
+        text-transform: uppercase;
+
+        @media $(p-tablet) {
+            text-align: right;
         }
 
     }

@@ -3,13 +3,12 @@ layout: post
 title:  "Fix the Shit out Of These"
 date:   2016-03-30 12:00:00 -0400
 categories: personal
-tags: comics
+tags:
 ---
 
 ## For Launch
 * Projects?
 * Refactor CSS
-* Fix up Mobile Padding
 * Refactor Mobile Navigation
 * Rewrite Bio on Landing
 

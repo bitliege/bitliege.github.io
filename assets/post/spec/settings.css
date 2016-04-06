@@ -76,7 +76,7 @@ section {
 
     @media $(p-tablet) {
         margin: 0 auto;
-        width: 40em;
+        width: 35em;
     }
 
     @media $(l-tablet) {

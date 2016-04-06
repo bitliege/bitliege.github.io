@@ -11,8 +11,13 @@
         padding: 1.6rem $padding 0 $padding;
     }
 
-    p:first-child {
-        margin-top: 0;
+    p {
+        font-size: 1rem;
+
+        &:first-child {
+            margin-top: 0;
+        }
+
     }
 
 }

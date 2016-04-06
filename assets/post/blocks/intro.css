@@ -24,10 +24,22 @@
         >a {
             font-family: $font-pt;
             font-size: 1rem;
+
+            @media $(l-tablet) {
+                display: block;
+                margin: $padding-double 0;
+            }
+
         }
 
         p {
+            font-size: 1rem;
             margin: $padding 0;
+
+            @media $(l-tablet) {
+                margin: $padding-double 0;
+            }
+
         }
 
         input {
