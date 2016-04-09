@@ -95,7 +95,7 @@
             width: 12.7%;
         }
 
-        /* Hey, if you need to calculate the position values again, all you haver to do is create the layout using the media query below. Once it looks like you want it to, divide the position values by the media query value to get the percentage values for the positioning above. */
+        /* Hey, if you need to calculate the position values again, all you have to do is create the layout using the media query below. Once it looks like you want it to, divide the position values by the media query value to get the percentage values for the positioning above. */
 
         @media screen and (min-width: 78.75em) {
             margin-left: 5rem;
@@ -115,7 +115,7 @@
                 margin: 0;
                 position: absolute;
                 top: 0;
-                right: 0;
+                right: 1rem;
                 text-decoration: none;
                 text-transform: uppercase;
                 transform: translate(0, -200%);

@@ -241,7 +241,7 @@ ul {
     color: $type;
     font-family: $font-pt;
     font-size: 1rem;
-    margin: 1rem 0 1rem 1.5rem;
+    margin: 2rem 0 2rem 1.5rem;
     padding: 0;
 
     li {

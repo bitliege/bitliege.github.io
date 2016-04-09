@@ -1,13 +1,13 @@
 ---
 layout: post
-title:  "Review: Superman #50"
-date:   2016-03-16 12:00:00 -0400
+title:  "Review: Midnighter #11"
+date:   2016-04-06 12:00:00 -0400
 categories: writing
-tags: comics
+tags: comics featured
 ---
 Superman #50 is a beautiful issue packed with conflict that rushes what could otherwise be an interesting trip through a variety of what ifs. Vandal Savage is somewhat flat as a villain and Clark's inability to keep his cool creates dissonance between the character and the reader's expectations.
 
-Score: <strong>6.0</strong>
+Score: <strong>9.0</strong>
 
 <hr>
 

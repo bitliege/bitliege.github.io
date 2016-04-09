@@ -8,10 +8,11 @@ tags:
 
 ## For Launch
 * Projects?
-* Refactor CSS
-* Refactor Mobile Navigation
-* Rewrite Bio on Landing
+* Fix Active Menu States for Posts
+* Design Archive Intro Text
+* Review CV Content
 
 ## Posts
+* Midnighter 11 Review
 * DCU Rebirth Announcement
 * First Impressions: Stardew Valley
