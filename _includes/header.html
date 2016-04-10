@@ -11,20 +11,70 @@
             <div class='wrapper'>
                 <div class='nav-list'>
 
-                    <!-- Assign sorted_pages variable so that the menu is sorted by the "Order" item in the Front Matter. -->
                     {% assign sorted_pages = site.pages | sort:"order" %}
 
-                    <!-- Start the array loop. -->
                     {% for my_page in sorted_pages %}
 
-                        <!-- Check to see if the Front Matter contains the "Exclude" value. This hides pages that exist but shouldn't be in the main navigation. -->
                         {% if my_page.exclude == null %}
 
-                            <!-- Check to see if the array item's URL matches the user's URL, and if it does, output a navigation item with the "active" class. -->
                             {% if page.url == my_page.url %}
+
                                 <a class="nav-item active" href="{{ my_page.url | prepend: site.baseurl }}">{{ my_page.title }}</a>
+
                             {% else %}
-                                <a class="nav-item" href="{{ my_page.url | prepend: site.baseurl }}">{{ my_page.title }}</a>
+
+                                {% if page.url contains "design" %}
+
+                                    {% if my_page.url contains "design" %}
+
+                                        <a class="nav-item active" href="{{ my_page.url | prepend: site.baseurl }}">{{ my_page.title }}</a>
+
+                                    {% elsif post.tags contains "design" %}
+
+                                        <a class="nav-item active" href="{{ my_page.url | prepend: site.baseurl }}">{{ my_page.title }}</a>
+
+                                    {% else %}
+
+                                        <a class="nav-item" href="{{ my_page.url | prepend: site.baseurl }}">{{ my_page.title }}</a>
+
+                                    {% endif %}
+
+                                {% elsif page.url contains "gaming" %}
+
+                                    {% if my_page.url contains "gaming" %}
+
+                                        <a class="nav-item active" href="{{ my_page.url | prepend: site.baseurl }}">{{ my_page.title }}</a>
+
+                                    {% elsif post.tags contains "gaming" %}
+
+                                        <a class="nav-item active" href="{{ my_page.url | prepend: site.baseurl }}">{{ my_page.title }}</a>
+
+                                    {% else %}
+
+                                        <a class="nav-item" href="{{ my_page.url | prepend: site.baseurl }}">{{ my_page.title }}</a>
+
+                                    {% endif %}
+
+                                {% elsif page.url contains "comics" %}
+
+                                    {% if my_page.url contains "comics" %}
+
+                                        <a class="nav-item active" href="{{ my_page.url | prepend: site.baseurl }}">{{ my_page.title }}</a>
+
+                                    {% elsif post.tags contains "comics" %}
+
+                                        <a class="nav-item active" href="{{ my_page.url | prepend: site.baseurl }}">{{ my_page.title }}</a>
+
+                                    {% else %}
+
+                                        <a class="nav-item" href="{{ my_page.url | prepend: site.baseurl }}">{{ my_page.title }}</a>
+
+                                    {% endif %}
+
+                                {% else %}
+                                    <a class="nav-item" href="{{ my_page.url | prepend: site.baseurl }}">{{ my_page.title }}</a>
+                                {% endif %}
+
                             {% endif %}
 
                         {% endif %}
@@ -39,22 +89,70 @@
 
         <nav class='desktop'>
 
-            <!-- NOTE: THIS WAS PASTED FROM ABOVE -->
-
-            <!-- Assign sorted_pages variable so that the menu is sorted by the "Order" item in the Front Matter. -->
             {% assign sorted_pages = site.pages | sort:"order" %}
 
-            <!-- Start the array loop. -->
             {% for my_page in sorted_pages %}
 
-                <!-- Check to see if the Front Matter contains the "Exclude" value. This hides pages that exist but shouldn't be in the main navigation. -->
                 {% if my_page.exclude == null %}
 
-                    <!-- Check to see if the array item's URL matches the user's URL, and if it does, output a navigation item with the "active" class. -->
                     {% if page.url == my_page.url %}
+
                         <a class="nav-item active" href="{{ my_page.url | prepend: site.baseurl }}">{{ my_page.title }}</a>
+
                     {% else %}
-                        <a class="nav-item" href="{{ my_page.url | prepend: site.baseurl }}">{{ my_page.title }}</a>
+
+                        {% if page.url contains "design" %}
+
+                            {% if my_page.url contains "design" %}
+
+                                <a class="nav-item active" href="{{ my_page.url | prepend: site.baseurl }}">{{ my_page.title }}</a>
+
+                            {% elsif post.tags contains "design" %}
+
+                                <a class="nav-item active" href="{{ my_page.url | prepend: site.baseurl }}">{{ my_page.title }}</a>
+
+                            {% else %}
+
+                                <a class="nav-item" href="{{ my_page.url | prepend: site.baseurl }}">{{ my_page.title }}</a>
+
+                            {% endif %}
+
+                        {% elsif page.url contains "gaming" %}
+
+                            {% if my_page.url contains "gaming" %}
+
+                                <a class="nav-item active" href="{{ my_page.url | prepend: site.baseurl }}">{{ my_page.title }}</a>
+
+                            {% elsif post.tags contains "gaming" %}
+
+                                <a class="nav-item active" href="{{ my_page.url | prepend: site.baseurl }}">{{ my_page.title }}</a>
+
+                            {% else %}
+
+                                <a class="nav-item" href="{{ my_page.url | prepend: site.baseurl }}">{{ my_page.title }}</a>
+
+                            {% endif %}
+
+                        {% elsif page.url contains "comics" %}
+
+                            {% if my_page.url contains "comics" %}
+
+                                <a class="nav-item active" href="{{ my_page.url | prepend: site.baseurl }}">{{ my_page.title }}</a>
+
+                            {% elsif post.tags contains "comics" %}
+
+                                <a class="nav-item active" href="{{ my_page.url | prepend: site.baseurl }}">{{ my_page.title }}</a>
+
+                            {% else %}
+
+                                <a class="nav-item" href="{{ my_page.url | prepend: site.baseurl }}">{{ my_page.title }}</a>
+
+                            {% endif %}
+
+                        {% else %}
+                            <a class="nav-item" href="{{ my_page.url | prepend: site.baseurl }}">{{ my_page.title }}</a>
+                        {% endif %}
+
                     {% endif %}
 
                 {% endif %}

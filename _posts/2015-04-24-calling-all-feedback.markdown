@@ -2,8 +2,7 @@
 layout: post
 title:  "Calling All Feedback"
 date:   2015-04-24 12:00:00 -0400
-categories: writing
-tags: design
+categories: writing design
 ---
 **tl;dr:** Feedback is a powerful tool that is often underused because of a negative misconception. When giving and receiving feedback, a thorough understanding of how that feedback is presented can make a world of difference in ensuring that the feedback is acted upon.
 

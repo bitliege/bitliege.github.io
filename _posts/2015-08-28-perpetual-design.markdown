@@ -2,8 +2,7 @@
 layout: post
 title:  "Perpetual Design"
 date:   2015-08-28 12:00:00 -0400
-categories: writing
-tags: design
+categories: writing design
 ---
 **tl;dr:** at a time when I was feeling particularly tied down by client constraints, I decided to explore what makes the design process so difficult to master. This lead to a fantastic discussion with Sohrab Vossoughi of Ziba about the endlessly evolving nature of design.
 

@@ -20,14 +20,14 @@ layout: default
                     <p class='post-date'>
                         <a href='//en.wikipedia.org/wiki/Words_per_minute#Reading_and_comprehension' target="_blank">{{ page.content | number_of_words | divided_by: 228.0 | ceil }} Minute Read</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
                         {{ page.date | date: '%A, %B %d, %Y' }}&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-                        {% if page.tags contains "design" %}
-                            <a href='/writing/design' class='tag'>In Design</a>
+                        {% if page.categories contains "design" %}
+                            <a href='/writing/design/' class='tag'>In Design</a>
                         {% endif %}
-                        {% if page.tags contains "gaming" %}
-                            <a href='/writing/gaming' class='tag'>In Gaming</a>
+                        {% if page.categories contains "gaming" %}
+                            <a href='/writing/gaming/' class='tag'>In Gaming</a>
                         {% endif %}
-                        {% if page.tags contains "comics" %}
-                            <a href='/writing/comics' class='tag'>In Comics</a>
+                        {% if page.categories contains "comics" %}
+                            <a href='/writing/comics/' class='tag'>In Comics</a>
                         {% endif %}
                     </p>
                     {{ content }}

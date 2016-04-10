@@ -2,8 +2,7 @@
 layout: post
 title:  "Why I Prefer 'Flat' Design"
 date:   2015-02-9 12:00:00 -0400
-categories: writing
-tags: design
+categories: writing design
 ---
 **tl;dr:** an opinion on why I believe that the migration towards “flat” design is better suited to the medium of the screen and where this will lead as digital media evolve.
 

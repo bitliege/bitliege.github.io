@@ -5,14 +5,14 @@
         {% for post in site.categories.writing limit:5 %}
             <dd>
                 <span class="date">
-                    {% if post.tags contains "design" %}
-                        <a href="/writing/design">In Design</a>
+                    {% if post.categories contains "design" %}
+                        <a href="/writing/design/">In Design</a>
                     {% endif %}
-                    {% if post.tags contains "gaming" %}
-                        <a href="/writing/gaming">In Gaming</a>
+                    {% if post.categories contains "gaming" %}
+                        <a href="/writing/gaming/">In Gaming</a>
                     {% endif %}
-                    {% if post.tags contains "comics" %}
-                        <a href="/writing/comics">In Comics</a>
+                    {% if post.categories contains "comics" %}
+                        <a href="/writing/comics/">In Comics</a>
                     {% endif %}
                     &nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;{{ post.date | date: '%A, %B %d, %Y' }}</span>
                 <h5>

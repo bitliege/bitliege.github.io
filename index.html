@@ -15,7 +15,7 @@ order: 1
             <div class="flex-grid">
 
                 <div class="box med-1of3 img">
-                    <div style="background-image: url('/assets/img/20160409_midnighter_11.png')"></div>
+                    <div style="background-image: url('/assets/img/2016/04/midnighter_11.jpg')"></div>
                 </div>
 
                 {% for post in site.tags.featured limit:1 %}
@@ -32,12 +32,12 @@ order: 1
                     </div>
                 {% endfor %}
 
-                {% for post in site.tags.design limit:1 %}
+                {% for post in site.categories.design limit:1 %}
                     {% if post.tags contains "featured" %}
-                        {% for post in site.tags.design offset:1 limit:1 %}
+                        {% for post in site.categories.design offset:1 limit:1 %}
                             <div class="box med-1of3 summary">
                                 <div>
-                                    <a href="/writing/design" class="label">In Design</a>
+                                    <a href="/writing/design/" class="label">In Design</a>
                                     <span class="date">{{ post.date | date: '%A, %B %d, %Y' }}</span>
                                     <h3>
                                         <a href='{{post.url}}'>{{ post.title }}</a>
@@ -48,10 +48,10 @@ order: 1
                             </div>
                         {% endfor %}
                     {% else %}
-                        {% for post in site.tags.design limit:1 %}
+                        {% for post in site.categories.design limit:1 %}
                             <div class="box med-1of3 summary">
                                 <div>
-                                    <a href="/writing/design" class="label">In Design</a>
+                                    <a href="/writing/design/" class="label">In Design</a>
                                     <span class="date">{{ post.date | date: '%A, %B %d, %Y' }}</span>
                                     <h3>
                                         <a href='{{post.url}}'>{{ post.title }}</a>
@@ -64,12 +64,12 @@ order: 1
                     {% endif %}
                 {% endfor %}
 
-                {% for post in site.tags.gaming limit:1 %}
+                {% for post in site.categories.gaming limit:1 %}
                     {% if post.tags contains "featured" %}
-                        {% for post in site.tags.gaming offset:1 limit:1 %}
+                        {% for post in site.categories.gaming offset:1 limit:1 %}
                             <div class="box med-1of3 summary">
                                 <div>
-                                    <a href="/writing/gaming" class="label">In Gaming</a>
+                                    <a href="/writing/gaming/" class="label">In Gaming</a>
                                     <span class="date">{{ post.date | date: '%A, %B %d, %Y' }}</span>
                                     <h3>
                                         <a href='{{post.url}}'>{{ post.title }}</a>
@@ -80,10 +80,10 @@ order: 1
                             </div>
                         {% endfor %}
                     {% else %}
-                        {% for post in site.tags.gaming limit:1 %}
+                        {% for post in site.categories.gaming limit:1 %}
                             <div class="box med-1of3 summary">
                                 <div>
-                                    <a href="/writing/gaming" class="label">In Gaming</a>
+                                    <a href="/writing/gaming/" class="label">In Gaming</a>
                                     <span class="date">{{ post.date | date: '%A, %B %d, %Y' }}</span>
                                     <h3>
                                         <a href='{{post.url}}'>{{ post.title }}</a>
@@ -96,12 +96,12 @@ order: 1
                     {% endif %}
                 {% endfor %}
 
-                {% for post in site.tags.comics limit:1 %}
+                {% for post in site.categories.comics limit:1 %}
                     {% if post.tags contains "featured" %}
-                        {% for post in site.tags.comics offset:1 limit:1 %}
+                        {% for post in site.categories.comics offset:1 limit:1 %}
                             <div class="box med-1of3 summary">
                                 <div>
-                                    <a href="/writing/comics" class="label">In Comics</a>
+                                    <a href="/writing/comics/" class="label">In Comics</a>
                                     <span class="date">{{ post.date | date: '%A, %B %d, %Y' }}</span>
                                     <h3>
                                         <a href='{{post.url}}'>{{ post.title }}</a>
@@ -112,10 +112,10 @@ order: 1
                             </div>
                         {% endfor %}
                     {% else %}
-                        {% for post in site.tags.comics limit:1 %}
+                        {% for post in site.categories.comics limit:1 %}
                             <div class="box med-1of3 summary">
                                 <div>
-                                    <a href="/writing/comics" class="label">In Comics</a>
+                                    <a href="/writing/comics/" class="label">In Comics</a>
                                     <span class="date">{{ post.date | date: '%A, %B %d, %Y' }}</span>
                                     <h3>
                                         <a href='{{post.url}}'>{{ post.title }}</a>

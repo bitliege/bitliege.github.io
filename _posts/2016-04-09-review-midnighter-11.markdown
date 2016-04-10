@@ -2,14 +2,18 @@
 layout: post
 title:  "Review: Midnighter #11"
 date:   2016-04-06 12:00:00 -0400
-categories: writing
-tags: comics featured
+categories: writing comics
+tags: featured
 ---
 Superman #50 is a beautiful issue packed with conflict that rushes what could otherwise be an interesting trip through a variety of what ifs. Vandal Savage is somewhat flat as a villain and Clark's inability to keep his cool creates dissonance between the character and the reader's expectations.
 
 Score: <strong>9.0</strong>
 
 <hr>
+
+<div class="img-wrapper">
+    <img src="../../../../../assets/img/2016/04/midnighter_11_wide.jpg" title="Panel from Midnighter 11" alt="Apollo Saves the Day">
+</div>
 
 ## Plot Summary
 

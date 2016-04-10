@@ -21,3 +21,5 @@ github_username:  joshdrink
 markdown: kramdown
 
 exclude: [assets/node_modules]
+
+permalink: /:categories/:year/:month/:title/

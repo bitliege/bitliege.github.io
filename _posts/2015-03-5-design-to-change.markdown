@@ -2,8 +2,7 @@
 layout: post
 title:  "Design to Change, Change to Design"
 date:   2015-03-5 12:00:00 -0400
-categories: writing
-tags: design
+categories: writing design
 ---
 **tl;dr:** As a team building exercise, leadership had us construct towers out of spaghetti, tape, string and a marshmallow. Despite the chaos that ensued, I discovered something very fundamental about myself.
 
