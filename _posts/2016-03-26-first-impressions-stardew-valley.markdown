@@ -9,7 +9,13 @@ Summary
 
 <hr>
 
-Things.
+## What Stardew Valley Is
+
+## What It Does Well
+
+## Where There's Room for Improvement
+
+## What I'd Like to See Next
 
 <hr>
 
