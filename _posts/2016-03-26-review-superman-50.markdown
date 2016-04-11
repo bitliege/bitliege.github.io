@@ -4,7 +4,7 @@ title:  "Review: Superman #50"
 date:   2016-03-16 12:00:00 -0400
 categories: writing comics
 ---
-Superman #50 is a beautiful issue packed with conflict that rushes what could otherwise be an interesting trip through a variety of what ifs. Vandal Savage is somewhat flat as a villain and Clark's inability to keep his cool creates dissonance between the character and the reader's expectations.
+Superman #50 is a beautiful issue packed with conflict that rushes what could otherwise be an interesting trip through a variety of what ifs. Vandal Savage falls flat as a villain and Clark's inability to keep his cool creates dissonance between the character and the reader's expectations of him.
 
 Score: <strong>6.0</strong>
 
@@ -44,6 +44,4 @@ Unfortunately, the pacing suffered again during the climax of the issue. Clark, 
 
 <hr>
 
-The art was the real star of the show in issue #50. While the plot contained some typical Superman overtones, I was disappointed by the climax. Overall, this issue felt rushed, oddly paced, and I felt that the Puzzler's decision could have been handled more emotionally.
-
-If you're interested in following the Superman series, I highly recommend checking out Superman: Issue #50 over at [DC's Digital Comic Archive](//www.readdcentertainment.com/Superman-2011-50/digital-comic/T1054700505001). Let me know what you thought about this issue on [Twitter](//twitter.com/joshdrink)!
+If you're interested in following the Superman series, I highly recommend checking out Superman #50 over at [DC's Digital Comic Collection](//www.readdcentertainment.com/Superman-2011-50/digital-comic/T1054700505001). Let me know what you thought about this issue on [Twitter](//twitter.com/joshdrink)!
