@@ -56,7 +56,10 @@ layout: default
                             {% if site.categories.design == null %}
                                 <!-- Show Nothing -->
                             {% else %}
-                                <input id='writingFilter' type='text' placeholder='Look for something...'>
+                                <div>
+                                    <label for="writingFilter">Find something in design...</label>
+                                    <input id='writingFilter' type='text'>
+                                </div>
                             {% endif %}
                         {% endif %}
 
@@ -64,7 +67,10 @@ layout: default
                             {% if site.categories.gaming == null %}
                                 <!-- Show Nothing -->
                             {% else %}
-                                <input id='writingFilter' type='text' placeholder='Look for something...'>
+                                <div>
+                                    <label for="writingFilter">Find something in gaming...</label>
+                                    <input id='writingFilter' type='text'>
+                                </div>
                             {% endif %}
                         {% endif %}
 
@@ -72,7 +78,10 @@ layout: default
                             {% if site.categories.comics == null %}
                                 <!-- Show Nothing -->
                             {% else %}
-                                <input id='writingFilter' type='text' placeholder='Look for something...'>
+                                <div>
+                                    <label for="writingFilter">Find something in comics...</label>
+                                    <input id='writingFilter' type='text'>
+                                </div>
                             {% endif %}
                         {% endif %}
                     </div>
@@ -83,7 +92,7 @@ layout: default
                         <h3 class='tbd'>Check back soon!</h3>
                     {% else %}
                         {% for post in site.categories.design %}
-                            <dd class='box med-1of2 summary'>
+                            <dd class='box med-1of2 lg-1of3 summary'>
                                 <div>
                                     <a href="/writing/design/" class="label">In Design</a>
                                     <span class="date">{{ post.date | date: '%A, %B %d, %Y' }}</span>
@@ -103,7 +112,7 @@ layout: default
                         <h3 class='tbd'>Check back soon!</h3>
                     {% else %}
                         {% for post in site.categories.gaming %}
-                            <dd class='box med-1of2 summary'>
+                            <dd class='box med-1of2 lg-1of3 summary'>
                                 <div>
                                     <a href="/writing/gaming/" class="label">In Gaming</a>
                                     <span class="date">{{ post.date | date: '%A, %B %d, %Y' }}</span>
@@ -123,7 +132,7 @@ layout: default
                         <h3 class='tbd'>Check back soon!</h3>
                     {% else %}
                         {% for post in site.categories.comics %}
-                            <dd class='box med-1of2 summary'>
+                            <dd class='box med-1of2 lg-1of3 summary'>
                                 <div>
                                     <a href="/writing/comics/" class="label">In Comics</a>
                                     <span class="date">{{ post.date | date: '%A, %B %d, %Y' }}</span>

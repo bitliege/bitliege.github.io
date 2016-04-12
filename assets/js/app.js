@@ -114,6 +114,15 @@
 
         });
 
+        // Intro Labels ====================================================
+        $(".intro input").on("click", function(e) {
+
+            if($(this).is(":focus")) {
+                $(this).parent().find("label").addClass("active");
+            }
+
+        });
+
         // Post Sidebar Timer Handler ==========================================
         if($(".main").hasClass("post")) {
 

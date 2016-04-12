@@ -14,7 +14,8 @@
     }
 
     >div {
-        background: $grey-light;
+        /*background: $grey-light;*/
+        border: 1px solid $grey;
         padding: $padding-double;
 
         h1 {
@@ -54,9 +55,47 @@
 
         }
 
-        input {
-            background: $white;
-            margin: 0;
+        >div {
+            position: relative;
+
+            label {
+                display: block;
+                font-family: $font-roboto;
+                font-size: 1rem;
+                font-weight: 300;
+                line-height: 1.2;
+                margin: 0;
+                position: absolute;
+                top: $padding;
+                left: 0;
+                text-transform: uppercase;
+                transition: all .3s ease;
+                z-index: 5;
+
+                &.active {
+                    top: 0;
+                    font-size: .6rem;
+                    transition: all .3s ease;
+                }
+
+            }
+
+            input {
+                border: none;
+                border-bottom: 1px solid $black;
+                color: $black;
+                font-family: $font-roboto;
+                margin: 0;
+                padding: $padding 0 $padding-half 0;
+                position: relative;
+                z-index: 10;
+
+                &:focus {
+                    border-bottom: 1px solid $red;
+                }
+
+            }
+
         }
 
     }
