@@ -17,6 +17,7 @@
         /*background: $grey-light;*/
         border: 1px solid $grey;
         padding: $padding-double;
+        position: relative;
 
         h1 {
             margin: 0 0 $padding 0;
@@ -55,10 +56,43 @@
 
         }
 
+        dl {
+            margin: $padding-double 0;
+            /*text-align: center;*/
+
+            @media $(p-tablet) {
+                position: absolute;
+                top: .2rem;
+                right: 3rem;
+                /*text-align: left;*/
+            }
+
+            @media $(l-tablet) {
+                /*margin: $padding-double 0;*/
+            }
+
+            dd {
+                display: inline-block;
+                margin: 0 $padding-double 0 0;
+
+                @media $(p-tablet) {
+                    margin: 0 0 0 $padding-double;
+                }
+
+                a {
+                    color: $type;
+                    font-size: .8rem;
+                }
+
+            }
+
+        }
+
         >div {
             position: relative;
 
             label {
+                color: $grey;
                 display: block;
                 font-family: $font-roboto;
                 font-size: 1rem;
@@ -71,6 +105,10 @@
                 text-transform: uppercase;
                 transition: all .3s ease;
                 z-index: 5;
+
+                i {
+                    margin: 0 .5rem 0 0 ;
+                }
 
                 &.active {
                     top: 0;

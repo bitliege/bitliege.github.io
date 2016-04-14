@@ -5,8 +5,7 @@ date:   2016-03-30 12:00:00 -0400
 categories: personal
 ---
 
-## For Launch
-* Projects?
-
-## Posts
-* First Impressions: Stardew Valley
+## Post Launch
+* Angries Project
+* Author Block (Image background?)
+* Featured Image (find it here: http://stackoverflow.com/questions/25463865/in-jekyll-how-do-i-grab-a-posts-first-image)

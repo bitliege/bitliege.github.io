@@ -4,7 +4,7 @@ title:  "The Designer Love Story"
 date:   2015-11-19 12:00:00 -0400
 categories: writing design
 ---
-**tl;dr:** that solution? Yeah, it’s about time you looked past it, because there’s something incredible that is going to flip the way you design on its head. It’s called the problem.
+**tl;dr:** everyone gets excited about a project's solution when it becomes seemingly apparent. Recently however, I've learned that there is a much more effective piece of every project all designers should be far more excited about: the problem. Solutions confirm our beliefs and are something to be proud of, and it is precisely for these reasons that you should let them go.
 
 <hr>
 

@@ -82,43 +82,28 @@
 
         }
 
-        // Sidebar Height Handler ==============================================
-        // var screenHeight = $(window).height();
-        // var sidebarTopHeight = $("section.main").css("margin-top").replace("px", "");
-        // var sidebarTitleHeight = $(".sidebar >h3").outerHeight();
-        // var sidebarTitleMargin = $(".sidebar >h3").css("margin-top").replace("px", "");
-        //
-        // if (matchMedia("screen and (min-width: 64em)").matches) {
-        //     $(".sidebar >dl").css("height", screenHeight - sidebarTopHeight - sidebarTitleHeight - (sidebarTitleMargin*2) - sidebarTopHeight - sidebarTitleMargin + "px");
-        // }
-        //
-        // $( window ).resize(function() {
-        //
-        //     var screenHeight = $(window).height();
-        //     var sidebarTopHeight = $("section.main").css("margin-top").replace("px", "");
-        //     var sidebarTitleHeight = $(".sidebar >h3").outerHeight();
-        //     var sidebarTitleMargin = $(".sidebar >h3").css("margin-top").replace("px", "");
-        //
-        //     if (matchMedia("screen and (min-width: 64em)").matches) {
-        //         $(".sidebar >dl").css("height", screenHeight - sidebarTopHeight - sidebarTitleHeight - (sidebarTitleMargin*2) - sidebarTopHeight - sidebarTitleMargin + "px");
-        //     }
-        //
-        // });
-
         // Mailchimp Labels ====================================================
-        $(".mailchimp input").on("click", function(e) {
+        $(".mailchimp input").focus(function(e) {
+            $(this).parent().find("label").addClass("active");
+        });
 
-            if($(this).is(":focus")) {
-                $(this).parent().find("label").addClass("active");
+        $(".mailchimp input").blur(function(e) {
+
+            if(!$(this).val()) {
+                $(this).parent().find("label").removeClass('active');
             }
 
         });
 
-        // Intro Labels ====================================================
-        $(".intro input").on("click", function(e) {
+        // Intro Labels ========================================================
+        $(".intro input").focus(function(e) {
+            $(this).parent().find("label").addClass("active");
+        });
 
-            if($(this).is(":focus")) {
-                $(this).parent().find("label").addClass("active");
+        $(".intro input").blur(function(e) {
+
+            if(!$(this).val()) {
+                $(this).parent().find("label").removeClass('active');
             }
 
         });

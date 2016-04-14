@@ -176,8 +176,11 @@ a:link {
     width: 75%;
 
     @media $(p-tablet) {
-        text-align: left;
         width: 100%;
+    }
+
+    @media $(l-tablet) {
+        text-align: left;
     }
 
     a {

@@ -5,7 +5,7 @@
 
 ============================================================================= */
 .summary {
-    padding: $padding;
+    padding: $padding $padding $padding-double $padding;
 
     @media $(p-tablet) {
         padding: $padding-double $padding;
@@ -78,35 +78,6 @@
 
             li {
                 font-size: .8rem;
-            }
-
-        }
-
-        dl {
-            margin: $padding-double 0 0 0;
-            text-align: center;
-
-            @media $(p-tablet) {
-                text-align: left;
-            }
-
-            @media $(l-tablet) {
-                margin: $padding-double 0;
-            }
-
-            dd {
-                display: inline-block;
-                margin: 0 $padding;
-
-                @media $(p-tablet) {
-                    margin: 0 $padding-double 0 0;
-                }
-
-                a {
-                    color: $type;
-                    font-size: .8rem;
-                }
-
             }
 
         }

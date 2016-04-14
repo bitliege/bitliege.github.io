@@ -50,6 +50,7 @@
         position: relative;
 
         label {
+            color: $grey;
             display: block;
             font-family: $font-roboto;
             font-size: 1rem;
