@@ -123,41 +123,6 @@
 
         });
 
-        // Post Sidebar Timer Handler ==========================================
-        if($(".main").hasClass("post")) {
-
-            if (matchMedia("screen and (min-width: 64em)").matches) {
-
-                var postTime = $(".sidebar .length p span").text();
-                var postLength = $(document).height();
-                var windowHeight = $(window).height();
-
-                $(window).resize(function() {
-                    windowHeight = $(window).height();
-                });
-
-                $(window).scroll(function() {
-                    var userPosition = $(document).scrollTop();
-                    var remainingPost = (userPosition/(postLength - windowHeight));
-                    var timeLeft = Math.ceil((postTime - (postTime*remainingPost)));
-
-                    $(".sidebar .length p span").text(timeLeft);
-                    if(timeLeft == 1) {
-                        $(".sidebar .length p").text(timeLeft + " Minute Left");
-                    }
-                    if(timeLeft == 0) {
-                        $(".sidebar .length p").text("All Done!");
-                    }
-                    if(timeLeft > 1) {
-                        $(".sidebar .length p").text(timeLeft + " Minutes Left");
-                    }
-
-                });
-
-            }
-
-        }
-
         // Post Filters ========================================================
         $('#writingFilter').keyup(function(e) {
 
@@ -188,5 +153,48 @@
         });
 
     });
+
+    window.onload = function () {
+
+        // Post Sidebar Timer Handler ==========================================
+        if($(".main").hasClass("post")) {
+
+            if (matchMedia("screen and (min-width: 64em)").matches) {
+
+                var postTime = $(".sidebar .length p span").text();
+                var postLength = $(document).height();
+                var windowHeight = $(window).height();
+
+                console.log(postTime);
+                console.log(postLength);
+                console.log(windowHeight);
+
+                $(window).resize(function() {
+                    windowHeight = $(window).height();
+                });
+
+                $(window).scroll(function() {
+                    var userPosition = $(document).scrollTop();
+                    var remainingPost = (userPosition/(postLength - windowHeight));
+                    var timeLeft = Math.ceil((postTime - (postTime*remainingPost)));
+
+                    $(".sidebar .length p span").text(timeLeft);
+                    if(timeLeft == 1) {
+                        $(".sidebar .length p").text(timeLeft + " Minute Left");
+                    }
+                    if(timeLeft == 0) {
+                        $(".sidebar .length p").text("All Done!");
+                    }
+                    if(timeLeft > 1) {
+                        $(".sidebar .length p").text(timeLeft + " Minutes Left");
+                    }
+
+                });
+
+            }
+
+        }
+
+    }
 
 })(jQuery);
