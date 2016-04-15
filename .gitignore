@@ -4,18 +4,18 @@ npm-debug.log
 
 .DS_Store
 
-/assets/node_modules
+assets/node_modules
 
-/assets/bower_components/*
-!/assets/bower_components/fontawesome/*
-!/assets/bower_components/jQuery/*
-!/assets/bower_components/matchMedia/*
+assets/bower_components/*
+!assets/bower_components/fontawesome/*
+!assets/bower_components/jQuery/*
+!assets/bower_components/matchMedia/*
 
-/assets/bower_components/jQuery/*
-!/assets/bower_components/jQuery/dist
+assets/bower_components/jQuery/*
+!assets/bower_components/jQuery/dist
 
-/assets/bower_components/matchMedia/*
-!/assets/bower_components/matchMedia/matchMedia.js
+assets/bower_components/matchMedia/*
+!assets/bower_components/matchMedia/matchMedia.js
 
-/assets/bower_components/fontawesome/*
-!/assets/bower_components/fontawesome/css
+assets/bower_components/fontawesome/*
+!assets/bower_components/fontawesome/css
