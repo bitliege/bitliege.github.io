@@ -25,11 +25,10 @@
             font-weight: 800;
             margin: 0;
             position: absolute;
-            top: 0;
+            top: -1.5rem;
             right: 0;
             text-decoration: none;
             text-transform: uppercase;
-            transform: translate(0, -200%);
         }
 
     }

@@ -20,6 +20,6 @@ github_username:  joshdrink
 # Build settings
 markdown: kramdown
 
-exclude: [assets/node_modules]
+exclude: [assets/post, assets/node_modules, assets/bower_components/*/build, assets/bower_components/*/external, assets/bower_components/*/node_modules, assets/bower_components/*/src, assets/bower_components/*/test]
 
 permalink: /:categories/:year/:month/:title/
