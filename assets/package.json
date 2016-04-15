@@ -24,6 +24,10 @@
         }
     },
     "scripts": {
+        "fontawesome": "cp bower_components/fontawesome/css/font-awesome.min.css vendor/",
+        "jQuery": "cp bower_components/jQuery/dist/jquery.min.js vendor/",
+        "matchMedia": "cp bower_components/matchMedia/matchMedia.js vendor/",
+        "vendor": "npm run fontawesome && npm run jQuery && npm run matchMedia",
         "post": "postcss -u postcss-import -u postcss-mixins -u postcss-nested -u autoprefixer -u postcss-simple-vars -u cssnano --local-plugins -c options.js -d css post/*.css",
         "watch": "npm-watch"
     }
