@@ -12,3 +12,4 @@ categories: personal
 * Featured Image (find it here: http://stackoverflow.com/questions/25463865/in-jekyll-how-do-i-grab-a-posts-first-image)
 * image include file
 * README Edit
+* Mailchimp Upgrades

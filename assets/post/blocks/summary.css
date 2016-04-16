@@ -5,7 +5,7 @@
 
 ============================================================================= */
 .summary {
-    padding: $padding $padding $padding-double $padding;
+    padding: $padding-double $padding;
 
     @media $(p-tablet) {
         padding: $padding-double $padding;

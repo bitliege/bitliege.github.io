@@ -79,6 +79,10 @@
                 padding: $padding-double 0 0 0;
             }
 
+            &:last-child {
+                margin: $padding 0 $padding-double 0;
+            }
+
         }
 
     }
