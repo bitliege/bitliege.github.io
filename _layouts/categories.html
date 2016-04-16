@@ -13,8 +13,10 @@ layout: default
                 <dt></dt>
 
                 <dd class='box full intro'>
+
                     <div>
-                        <h1>// Posts in
+
+                        <h1><span>//</span> Posts in
                             {% if page.url contains "design" %}
                                 Design
                             {% endif %}
@@ -40,17 +42,22 @@ layout: default
                         {% endif %}
                         {% if page.url contains "comics" %}
                             <p>You can find reviews and commentary on some of my favourite series here. I do my best to publish reviews the week of the book's release, so check back soon if you don't see the review you're looking for. If there is a series you think I'd enjoy, I'd love to hear from you! <a href="//twitter.com/joshdrink" target='_blank'>Send me a tweet with your suggestions!</a></p>
-                            <ul>
-                                <span>My current lineup includes:</span>
-                                <li><a href="http://www.comics.org/series/59922/" target="_blank">Action Comics</a></li>
-                                <li><a href="http://www.comics.org/series/94488/" target="_blank">Dark Knight III: The Master Race</a></li>
-                                <li><a href="http://www.comics.org/series/89717/" target="_blank">Midnighter</a></li>
-                                <li><a href="http://www.comics.org/series/99285/" target="_blank">Poe Dameron</a></li>
-                                <li><a href="http://www.comics.org/series/59921/" target="_blank">Superman</a></li>
-                                <li><a href="http://www.comics.org/series/93778/" target="_blank">Superman: American Alien</a></li>
-                                <li><a href="http://www.comics.org/series/93064/" target="_blank">Superman: Lois &amp; Clark</a></li>
-                                <li><a href="http://www.comics.org/series/93867/" target="_blank">The Goddamned</a></li>
-                            </ul>
+                            <div class="flex-grid">
+                                <ul class="box med-1of2">
+                                    <span>My current lineup includes:</span>
+                                    <li><a href="http://www.comics.org/series/59922/" target="_blank">Action Comics</a></li>
+                                    <li><a href="http://www.comics.org/series/94488/" target="_blank">Dark Knight III: The Master Race</a></li>
+                                    <li><a href="http://www.comics.org/series/89717/" target="_blank">Midnighter</a></li>
+                                    <li><a href="http://www.comics.org/series/99285/" target="_blank">Poe Dameron</a></li>
+                                </ul>
+                                <ul class="box med-1of2">
+                                    <span>&nbsp;</span>
+                                    <li><a href="http://www.comics.org/series/59921/" target="_blank">Superman</a></li>
+                                    <li><a href="http://www.comics.org/series/93778/" target="_blank">Superman: American Alien</a></li>
+                                    <li><a href="http://www.comics.org/series/93064/" target="_blank">Superman: Lois &amp; Clark</a></li>
+                                    <li><a href="http://www.comics.org/series/93867/" target="_blank">The Goddamned</a></li>
+                                </ul>
+                            </div>
                         {% endif %}
                         {% if page.url contains "design" %}
                             {% if site.categories.design == null %}

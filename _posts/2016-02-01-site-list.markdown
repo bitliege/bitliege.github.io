@@ -7,5 +7,8 @@ categories: personal
 
 ## Post Launch
 * Angries Project
-* Author Block (Image background?)
+* Refactor CSS
+* Edit Superman 50
 * Featured Image (find it here: http://stackoverflow.com/questions/25463865/in-jekyll-how-do-i-grab-a-posts-first-image)
+* image include file
+* README Edit

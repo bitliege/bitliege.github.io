@@ -88,17 +88,17 @@
 
         @media $(l-tablet) {
             display: block;
-            margin-left: 6.34%;
+            margin-left: 3.8%;
             padding: 0 $padding-double 0 0;
             position: fixed;
-            width: 12.7%;
+            width: 15.23%;
         }
 
         /* Hey, if you need to calculate the position values again, all you have to do is create the layout using the media query below. Once it looks like you want it to, divide the position values by the media query value to get the percentage values for the positioning above. */
 
         @media screen and (min-width: 78.75em) {
-            margin-left: 5rem;
-            width: 10rem;
+            margin-left: 3rem;
+            width: 12rem;
         }
 
         >dl {
@@ -109,19 +109,18 @@
             }
 
             .label {
-                /*color: $red;*/
-                color: $black;
+                color: $red;
+                /*color: $black;*/
                 display: block;
                 font-family: $font-roboto;
                 font-size: .7rem;
                 font-weight: 800;
                 margin: 0;
                 position: absolute;
-                top: 0;
+                top: -1rem;
                 right: 0;
                 text-decoration: none;
                 text-transform: uppercase;
-                transform: translate(0, -200%);
             }
 
             dd {

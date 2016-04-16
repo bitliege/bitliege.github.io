@@ -10,16 +10,16 @@ Stardew Valley is a very carefully crafted work of art from a powerful storytell
 <hr>
 
 <div class="img-wrapper">
-    <img src="../../../../../assets/img/2016/04/stardew_02.png" title="My Treasured Rabbit Pen" alt="Stardew is All About the Farm">
+    <img src="{{ '/assets/img/2016/04/stardew_02.png' | prepend: site.baseurl }}" title="My Treasured Rabbit Pen" alt="Stardew is All About the Farm">
 </div>
 
 ## What Is Stardew Valley?
 
-This quaint little masterpiece begins with a very real commentary on day-to-day life. Your character begins their journey by shedding their monotonous day-to-day working for JojaMart by accepting a generous plot of land from their late grandfather. Without having moved my character once, this game spoke to a part of me I didn't know existed. From this point on, I knew I had discovered something incredible.
+This quaint little masterpiece begins with a very real commentary on day-to-day life. Your character begins their journey by shedding their monotonous career working for JojaMart by accepting a generous plot of land from their late grandfather. Without having moved my character once, this game spoke to a part of me I didn't know existed. From this point on, I knew I had discovered something incredible.
 
 Stardew Valley, at its heart, is an escape to a simpler time, where the player can focus on building their own business, establishing relationships with incredible townsfolk, and building a life for themselves in this little corner of paradise. From harvesting corn to playing arcade machines, Stardew Valley offers an impressively wide variety of game mechanics to hook the player into hours of refined, quality content.
 
-## Where the Game Succeeds
+<h2 class="section">Where the Game Succeeds</h2>
 
 ### Play Mechanics & Scale
 
@@ -30,7 +30,7 @@ Stardew Valley has a lot to offer: you can farm, raise animals, fall in love, ma
 ### Storytelling
 
 <div class="img-wrapper">
-    <img src="../../../../../assets/img/2016/04/stardew_04.png" title="The Egg Festival" alt="Stardew Valley's Many Events Provide Depth and Community">
+    <img src="{{ '/assets/img/2016/04/stardew_04.png' | prepend: site.baseurl }}" title="The Egg Festival" alt="Stardew Valley's Many Events Provide Depth and Community">
 </div>
 
 Beyond the numerous activities that take place on the farm, the player very quickly discovers that their new plot of land is a small part in a much larger community. Pelican Town offers much more than housing the shops and services the player will need access to. Characters, events and secrets appear at every turn, and the town succeeds at feeling alive. Each season during the year provides the player with new and exciting events to participate in. Modeled after real world holidays, these community gatherings include an Egg Hunt in the spring, Spirit's Eve in the fall and even the Feast of the Winter Star to help get the player through the cold.  
@@ -38,7 +38,7 @@ Beyond the numerous activities that take place on the farm, the player very quic
 ### Art Direction
 
 <div class="img-wrapper">
-    <img src="../../../../../assets/img/2016/04/stardew_06.png" title="Deep in the Abandoned Mine" alt="Various Environments Provide Diversity and Encourage Curiosity">
+    <img src="{{ '/assets/img/2016/04/stardew_06.png' | prepend: site.baseurl }}" title="Deep in the Abandoned Mine" alt="Various Environments Provide Diversity and Encourage Curiosity">
 </div>
 
 The in-game art style is a fantastic choice that returns many players (myself included) to a simpler time in gaming. This couples very well with the overarching theme of the game. This particular style provides the game with a quaint, colourful palette, reminiscent of early Gameboy Advance. The modern variety however, is where the game's art truly shines. Seasonal differences, item design, and character art all vary greatly while maintaining a cohesive presence. This is coupled with an incredibly catchy, custom score that ties the entire setting together and breathes life into each and every locale.
@@ -50,7 +50,7 @@ The incredibly well designed atmosphere is paired with an equally well designed 
 ### Character Development & Relationships
 
 <div class="img-wrapper">
-    <img src="../../../../../assets/img/2016/04/stardew_01.png" title="Alex, my Gridball Obsessed Husband" alt="Relationships are Rewarding and Well Written">
+    <img src="{{ '/assets/img/2016/04/stardew_01.png' | prepend: site.baseurl }}" title="Alex, my Gridball Obsessed Husband" alt="Relationships are Rewarding and Well Written">
 </div>
 
 One of the most charming aspects of the game is the community that [@ConcernedApe](//twitter.com/ConcernedApe) has constructed to provide Stardew Valley with its setting. Pelican Town is home to a variety of characters who have their own unique backgrounds, tastes, activities and events. The player is provided with the opportunity to become friends with any one of these characters over the course of their play through by chatting with them and providing gifts that appeal to their tastes. As the player's relationships progress, small cutscenes occur that further reveal that particular characters personality. Most impressively, each character has been written well enough to feel and react in a realistic fashion. Cutscenes vary from heartache to hot air balloons and highlight the best these characters have to offer.
@@ -61,7 +61,7 @@ This mechanic is further refined through a marriage system. Players are allowed 
 
 One of the most obvious reasons Stardew Valley succeeds at retaining a player's attention is the sheer number of details that hint towards hidden or otherwise locked content. Pelican Town holds its fair share of secrets, and the game rarely provides a direct path to revealing them. From locked sewers to a mysterious Wizard, these oddities consistently tantalize the player into believing every little corner of the game serves a purpose. More often than not, Stardew Valley rewards this stubborn curiosity, and it does so in a manner that is almost always satisfying. This allows players to explore for hours on end without ever feeling that they haven't accomplished something great. Paired with a save system that only allows the player to record their progress before the next day begins, Stardew Valley demands the player's attention in every way possible.
 
-## Where the Game can be Improved
+<h2 class="section">Where the Game can be Improved</h2>
 
 ### Endgame Content
 
@@ -69,9 +69,9 @@ After having invested over 70 hours of in-game time developing my farm, I am sti
 
 ### Controls
 
-The second major flaw that plagues this game is an inaccurate set of controls. Initially, the game feels very responsive, but as the player warms up to the controls, they develop an eagerness and memory for certain activities. This begins to reveal certain inaccuracies or mishaps that can occur by miss-clicking or targeting the wrong square. More than one pig has been accidentally milked and dozens of crops sacrificed in the name of tilling the land. More reliable, accurate targeting (a target square outline perhaps?) would benefit the experience tremendously.
+The second major flaw that plagues this game is an inaccurate set of controls. Initially, the game feels very responsive, but as the player warms up to the controls, they develop an eagerness and memory for certain activities. This begins to reveal certain inaccuracies or mishaps that can occur by miss-clicking or targeting the wrong square. More than one pig has been accidentally milked and dozens of crops sacrificed in the name of tilling the land. A handy setting allows the player to turn on tile targeting, however I believe that more reliable, accurate controls would benefit the experience tremendously.
 
-## What I Hope Comes Soon
+<h2 class="section">What I Hope Comes Soon</h2>
 
 ### Marriage Events
 

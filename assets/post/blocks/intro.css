@@ -21,6 +21,11 @@
 
         h1 {
             margin: 0 0 $padding 0;
+
+            span {
+                color: $red;
+            }
+
         }
 
         >a {
@@ -48,7 +53,35 @@
 
         }
 
+        >.flex-grid {
+
+            ul:first-of-type {
+                margin: 0;
+
+                @media $(p-tablet) {
+                    margin: 0 0 2rem 0;
+                }
+
+            }
+
+            ul:last-of-type {
+
+                span {
+                    display: none;
+
+                    @media $(p-tablet) {
+                        display: block;
+                    }
+
+                }
+
+            }
+
+        }
+
         ul {
+            margin: 0 0 2rem 0;
+            padding: 0 0 0 1.5rem;
 
             span {
                 margin: 0 0 0 -1.5rem;

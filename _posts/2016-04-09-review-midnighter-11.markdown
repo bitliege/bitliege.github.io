@@ -12,7 +12,7 @@ Score: <strong>9.0</strong>
 <hr>
 
 <div class="img-wrapper">
-    <img src="../../../../../assets/img/2016/04/midnighter_11_wide.jpg" title="Panel from Midnighter 11" alt="Apollo Saves the Day">
+    <img src="{{ '/assets/img/2016/04/midnighter_11_wide.jpg' | prepend: site.baseurl }}" title="Panel from Midnighter 11" alt="Apollo Saves the Day">
 </div>
 
 Issue #11 is a fantastic reintroduction to Apollo's character that accomplishes the impressive goal of establishing his past relationship with Midnighter while simultaneously presenting his powers and motivation as a hero. The idea behind his reintroduction made me hesitant about this issue due to the quick pace of Midnighter's plot thus far, however Orlando has written this character in flawlessly, without a single moment feeling forced or out of place.
