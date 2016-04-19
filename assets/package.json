@@ -28,7 +28,7 @@
         "jQuery": "cd bower_components/jQuery/ && npm run build && cd ../../ && cp bower_components/jQuery/dist/jquery.min.js vendor/",
         "matchMedia": "cp bower_components/matchMedia/matchMedia.js vendor/",
         "modernizr": "cd bower_components/modernizr/ && npm install && ./bin/modernizr -c lib/config-all.json && cd ../../ && cp bower_components/modernizr/modernizr.js vendor/",
-        "vendor": "mkkdir vendor && && npm run fontawesome && npm run jQuery && npm run matchMedia && npm run modernizr",
+        "vendor": "mkdir vendor && npm run fontawesome && npm run jQuery && npm run matchMedia && npm run modernizr",
         "post": "postcss -u postcss-import -u postcss-mixins -u postcss-nested -u autoprefixer -u postcss-simple-vars -u cssnano --local-plugins -c options.js -d css post/*.css",
         "watch": "npm-watch"
     }
