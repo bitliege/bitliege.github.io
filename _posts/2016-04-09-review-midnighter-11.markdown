@@ -4,16 +4,21 @@ title:  "Review: Midnighter #11"
 date:   2016-04-06 12:00:00 -0400
 categories: writing comics
 tags: featured
+images:
+  - url: /assets/img/2016/04/midnighter_11_wide.jpg
+    alt: Apollo Saves the Day
+    title: Panel from Midnighter 11
+  - url: /assets/img/2016/04/midnighter_11.jpg
+    alt: Apollo Saves the Day
+    title: Panel from Midnighter 11
 ---
 Midnighter #11 highlights some of the best writing and comic art DC has in print. While the pacing of Midnighter has suffered in past issues, #11 immediately redeems any past mistakes by establishing a great character into an already great universe.
 
-Score: <strong>9.0</strong>
+<p class="center">Score: <strong>9.0</strong></p>
 
 <hr>
 
-<div class="img-wrapper">
-    <img src="{{ '/assets/img/2016/04/midnighter_11_wide.jpg' | prepend: site.baseurl }}" title="Panel from Midnighter 11" alt="Apollo Saves the Day">
-</div>
+![{{ page.images[0].alt }}]({{ page.images[0].url }} "{{ page.images[0].title }}")
 
 Issue #11 is a fantastic reintroduction to Apollo's character that accomplishes the impressive goal of establishing his past relationship with Midnighter while simultaneously presenting his powers and motivation as a hero. The idea behind his reintroduction made me hesitant about this issue due to the quick pace of Midnighter's plot thus far, however Orlando has written this character in flawlessly, without a single moment feeling forced or out of place.
 

@@ -93,8 +93,10 @@
         @media $(l-tablet) {
             display: block;
             margin-left: 3.8%;
+            opacity: 0;
             padding: 0 $padding-double 0 0;
-            position: fixed;
+            position: absolute;
+            top: 35rem;
             width: 15.23%;
         }
 

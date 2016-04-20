@@ -45,11 +45,15 @@ body {
 .main {
 
     @media $(p-tablet) {
-        margin-top: 2rem;
+        margin-top: 1rem;
     }
 
     @media $(l-tablet) {
-        margin-top: 6rem;
+        margin-top: 5rem;
+    }
+
+    &.post {
+        margin-top: 0;
     }
 
 }
@@ -76,7 +80,7 @@ section {
 
     @media $(p-tablet) {
         margin: 0 auto;
-        width: 35em;
+        width: 40em;
     }
 
     @media $(l-tablet) {

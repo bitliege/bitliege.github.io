@@ -18,7 +18,7 @@
         position: relative;
         z-index: 0;
 
-        &:before {
+        /*&:before {
             @mixin red-purple-trans;
             content: ' ';
             height: 100%;
@@ -27,7 +27,7 @@
             left: 0;
             width: 100%;
             z-index: 5;
-        }
+        }*/
 
     }
 

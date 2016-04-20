@@ -3,15 +3,26 @@ layout: post
 title:  "First Impressions: Stardew Valley"
 date:   2016-03-20 12:00:00 -0400
 categories: writing gaming
+images:
+  - url: /assets/img/2016/04/stardew_04.png
+    alt: Stardew Valley's Many Events Provide Depth and Community
+    title: The Egg Festival
+  - url: /assets/img/2016/04/stardew_01.png
+    alt: Relationships are Rewarding and Well Written
+    title: Alex, my Gridball Obsessed Husband
+  - url: /assets/img/2016/04/stardew_02.png
+    alt: Stardew is All About the Farm
+    title: My Treasured Rabbit Pen
+  - url: /assets/img/2016/04/stardew_06.png
+    alt: Various Environments Provide Diversity and Encourage Curiosity
+    title: Deep in the Abandoned Mine
 ---
 
 Stardew Valley is a very carefully crafted work of art from a powerful storyteller and skilled developer. [@ConcernedApe](//twitter.com/ConcernedApe)'s journey towards publishing this game echoes the sheer amount of work and love that went into its creation. Stardew Valley is more than a farming sim, and branches into the realms of action, adventure and RPG.
 
 <hr>
 
-<div class="img-wrapper">
-    <img src="{{ '/assets/img/2016/04/stardew_02.png' | prepend: site.baseurl }}" title="My Treasured Rabbit Pen" alt="Stardew is All About the Farm">
-</div>
+![{{ page.images[2].alt }}]({{ page.images[2].url }} "{{ page.images[2].title }}")
 
 ## What Is Stardew Valley?
 
@@ -29,17 +40,13 @@ Stardew Valley has a lot to offer: you can farm, raise animals, fall in love, ma
 
 ### Storytelling
 
-<div class="img-wrapper">
-    <img src="{{ '/assets/img/2016/04/stardew_04.png' | prepend: site.baseurl }}" title="The Egg Festival" alt="Stardew Valley's Many Events Provide Depth and Community">
-</div>
+![{{ page.images[0].alt }}]({{ page.images[0].url }} "{{ page.images[0].title }}")
 
 Beyond the numerous activities that take place on the farm, the player very quickly discovers that their new plot of land is a small part in a much larger community. Pelican Town offers much more than housing the shops and services the player will need access to. Characters, events and secrets appear at every turn, and the town succeeds at feeling alive. Each season during the year provides the player with new and exciting events to participate in. Modeled after real world holidays, these community gatherings include an Egg Hunt in the spring, Spirit's Eve in the fall and even the Feast of the Winter Star to help get the player through the cold.  
 
 ### Art Direction
 
-<div class="img-wrapper">
-    <img src="{{ '/assets/img/2016/04/stardew_06.png' | prepend: site.baseurl }}" title="Deep in the Abandoned Mine" alt="Various Environments Provide Diversity and Encourage Curiosity">
-</div>
+![{{ page.images[3].alt }}]({{ page.images[3].url }} "{{ page.images[3].title }}")
 
 The in-game art style is a fantastic choice that returns many players (myself included) to a simpler time in gaming. This couples very well with the overarching theme of the game. This particular style provides the game with a quaint, colourful palette, reminiscent of early Gameboy Advance. The modern variety however, is where the game's art truly shines. Seasonal differences, item design, and character art all vary greatly while maintaining a cohesive presence. This is coupled with an incredibly catchy, custom score that ties the entire setting together and breathes life into each and every locale.
 
@@ -49,9 +56,7 @@ The incredibly well designed atmosphere is paired with an equally well designed 
 
 ### Character Development & Relationships
 
-<div class="img-wrapper">
-    <img src="{{ '/assets/img/2016/04/stardew_01.png' | prepend: site.baseurl }}" title="Alex, my Gridball Obsessed Husband" alt="Relationships are Rewarding and Well Written">
-</div>
+![{{ page.images[1].alt }}]({{ page.images[1].url }} "{{ page.images[1].title }}")
 
 One of the most charming aspects of the game is the community that [@ConcernedApe](//twitter.com/ConcernedApe) has constructed to provide Stardew Valley with its setting. Pelican Town is home to a variety of characters who have their own unique backgrounds, tastes, activities and events. The player is provided with the opportunity to become friends with any one of these characters over the course of their play through by chatting with them and providing gifts that appeal to their tastes. As the player's relationships progress, small cutscenes occur that further reveal that particular characters personality. Most impressively, each character has been written well enough to feel and react in a realistic fashion. Cutscenes vary from heartache to hot air balloons and highlight the best these characters have to offer.
 

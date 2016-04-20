@@ -137,6 +137,34 @@
 
         });
 
+        // Post Sidebar Handler ================================================
+        if (matchMedia('screen and (min-width: 64em)').matches) {
+
+            var heroHeight = $(".post-hero").outerHeight();
+
+            $(".sidebar.post").css("top", heroHeight + 50 + "px");
+            $(".sidebar.post").css("opacity", 1);
+
+            var sidebarPosition = parseInt($(".sidebar.post").css("top"));
+            var sidebarDiff = sidebarPosition - heroHeight;
+
+            $(window).scroll(function() {
+
+                var scrollPosition = $(document).scrollTop();
+
+                if(scrollPosition > heroHeight) {
+                    $('.sidebar.post').css('position', "fixed");
+                    $('.sidebar.post').css('top', sidebarDiff + "px");
+                }
+                else {
+                    $('.sidebar.post').css('position', "absolute");
+                    $('.sidebar.post').css('top', sidebarPosition + "px");
+                }
+
+            });
+
+        }
+
     });
 
     window.onload = function () {
@@ -149,10 +177,6 @@
                 var postTime = $(".sidebar .length p span").text();
                 var postLength = $(document).height();
                 var windowHeight = $(window).height();
-
-                console.log(postTime);
-                console.log(postLength);
-                console.log(windowHeight);
 
                 $(window).resize(function() {
                     windowHeight = $(window).height();

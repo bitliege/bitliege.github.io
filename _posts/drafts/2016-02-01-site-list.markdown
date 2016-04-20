@@ -9,7 +9,7 @@ categories: personal
 * Angries Project
 * Refactor CSS
 * Edit Superman 50
-* Featured Image (find it here: http://stackoverflow.com/questions/25463865/in-jekyll-how-do-i-grab-a-posts-first-image)
-* image include file
 * README Edit
 * Mailchimp Upgrades
+* post sidebar stopper
+* 404 Page

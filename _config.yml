@@ -18,7 +18,7 @@ github_username:  joshdrink
 # Build settings
 markdown: kramdown
 
-exclude: [assets/post, assets/node_modules, assets/bower_components, assets/fonts/4.4.0, projects.html, _posts/2016-02-01-site-list.markdown, _posts/2016-03-26-dcu-rebirth.markdown]
+exclude: [_posts/drafts, assets/post, assets/node_modules, assets/bower_components, assets/fonts/4.4.0, projects.html, _posts/2016-02-01-site-list.markdown, _posts/2016-03-26-dcu-rebirth.markdown]
 
 permalink: /:categories/:year/:month/:title/
 

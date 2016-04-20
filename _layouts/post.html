@@ -3,6 +3,14 @@ layout: default
 ---
 <section class="main post">
 
+    {% if page.images[0].url == null %}
+        <div class="post-hero" style="background-image: url('/assets/img/temp.jpg')">
+    {% else %}
+        <div class="post-hero" style="background-image: url('{{ page.images[0].url }}')">
+    {% endif %}
+        <h1 class='title'>{{ page.title }}</h1>
+    </div>
+
     <div class="container flex-grid top">
 
         {% include post-sidebar.html %}
@@ -16,7 +24,7 @@ layout: default
             <article class="copy-container" itemscope itemtype="http://schema.org/BlogPosting">
 
                 <div temprop="articleBody">
-                    <h1 class='title'>{{ page.title }}</h1>
+                    <!-- <h1 class='title'>{{ page.title }}</h1> -->
                     <p class='post-date'>
                         <a href='//en.wikipedia.org/wiki/Words_per_minute#Reading_and_comprehension' target="_blank">{{ page.content | number_of_words | divided_by: 228.0 | ceil }} Minute Read</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
                         {{ page.date | date: '%A, %B %d, %Y' }}&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
@@ -31,6 +39,11 @@ layout: default
                         {% endif %}
                     </p>
                     {{ content }}
+
+                    <hr>
+
+                    {% include feedback.html %}
+
                 </div>
 
             </article>

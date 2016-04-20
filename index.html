@@ -40,11 +40,11 @@ order: 1
 
                 </div>
 
-                <div class="box med-1of3 img">
-                    <div style="background-image: url('/assets/img/2016/04/midnighter_11.jpg')"></div>
-                </div>
-
                 {% for post in site.tags.featured limit:1 %}
+                    <div class="box med-1of3 img">
+                        <div style="background-image: url('{{ post.images[1].url }}')"></div>
+                    </div>
+
                     <div class="box med-2of3 summary featured">
                         <div>
                             <span class="label">Featured</span>

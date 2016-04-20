@@ -69,7 +69,7 @@ h1, h2, h3, h4, h5, h6 {
     }
 
     &.section {
-        border-bottom: 1px solid $type;
+        border-bottom: 1px solid $grey-light;
         padding: 0 0 $padding-double 0;
 
         &+h1,
@@ -95,9 +95,9 @@ h1, h2, h3, h4, h5, h6 {
 p,
 blockquote {
     color: $type;
-    line-height: 1.5;
+    line-height: 1.6;
     font-family: $font-pt;
-    font-size: 1.1rem;
+    font-size: 1.2rem;
     margin: 2rem 0;
 }
 
@@ -121,7 +121,7 @@ span {
 
 hr {
     border: none;
-    border-top: 1px solid $type;
+    border-top: 1px solid $grey-light;
     height: 0;
     margin: 1.5rem 0;
     padding: 0;
@@ -139,10 +139,11 @@ blockquote {
     padding: 0 0 0 2rem;
 
     @media $(l-tablet) {
-        /*margin: 0 0 0 -2.5rem;*/
+        margin: 0 0 0 -2.5rem;
     }
 
     p {
+        font-size: 1.5rem;
         font-style: italic;
         margin: 1.5rem 0;
 
@@ -156,6 +157,10 @@ blockquote {
 
     }
 
+}
+
+.center {
+    text-align: center;
 }
 
 /* Anchors */
@@ -183,7 +188,7 @@ a:link {
     font-family: $font-roboto;
     font-size: .8rem;
     font-weight: 700;
-    margin: 2.5rem auto 2rem auto;
+    margin: 2rem auto 2.5rem;
     text-align: center;
     text-transform: uppercase;
     width: 75%;
@@ -193,7 +198,7 @@ a:link {
     }
 
     @media $(l-tablet) {
-        text-align: left;
+        margin: 4rem auto;
     }
 
     a {
@@ -237,6 +242,21 @@ a:link {
 .button:link,
 .button:visited,
 input[type='submit'] {
+    background: #fff;
+    border: 1px solid #282828;
+    color: $type;
+    cursor: pointer;
+    display: inline-block;
+    font-family: Roboto,sans-serif;
+    padding: 1rem 2rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: border .3s linear;
+
+    &:hover {
+        border: 1px solid $red;
+        transition: border .3s linear;
+    }
 
 }
 
