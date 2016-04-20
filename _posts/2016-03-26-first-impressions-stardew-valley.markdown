@@ -4,16 +4,16 @@ title:  "First Impressions: Stardew Valley"
 date:   2016-03-20 12:00:00 -0400
 categories: writing gaming
 images:
-  - url: /assets/img/2016/04/stardew_04.png
+  - url: /assets/img/2016/04/stardew_04.PNG
     alt: Stardew Valley's Many Events Provide Depth and Community
     title: The Egg Festival
-  - url: /assets/img/2016/04/stardew_01.png
+  - url: /assets/img/2016/04/stardew_01.PNG
     alt: Relationships are Rewarding and Well Written
     title: Alex, my Gridball Obsessed Husband
-  - url: /assets/img/2016/04/stardew_02.png
+  - url: /assets/img/2016/04/stardew_02.PNG
     alt: Stardew is All About the Farm
     title: My Treasured Rabbit Pen
-  - url: /assets/img/2016/04/stardew_06.png
+  - url: /assets/img/2016/04/stardew_06.PNG
     alt: Various Environments Provide Diversity and Encourage Curiosity
     title: Deep in the Abandoned Mine
 ---
