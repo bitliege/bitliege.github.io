@@ -3,7 +3,6 @@ layout: post
 title:  "Review: Midnighter #11"
 date:   2016-04-06 12:00:00 -0400
 categories: writing comics
-tags: featured
 images:
   - url: /assets/img/2016/04/midnighter_11_wide.jpg
     alt: Apollo Saves the Day
