@@ -7,10 +7,6 @@
 .summary {
     padding: $padding-double $padding;
 
-    @media $(p-tablet) {
-        padding: $padding-double $padding;
-    }
-
     >div {
         border-top: .5rem solid $black;
         position: relative;
@@ -44,7 +40,7 @@
             margin: $padding 0 $padding -.2rem;
 
             a {
-                color: $type;
+                color: $type-headings;
                 text-decoration: none;
             }
 
@@ -63,7 +59,7 @@
             margin: $padding 0 $padding -.05rem;
 
             a {
-                color: $type;
+                color: $type-headings;
                 text-decoration: none;
             }
 

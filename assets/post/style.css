@@ -44,8 +44,13 @@
 /* Sidebar ================================================================== */
 @import "blocks/sidebar.css";
 
-/* Mailchimp ================================================================ */
-@import "blocks/mailchimp.css";
-
 /* Footer =================================================================== */
+
+/* Latest Posts */
+@import "blocks/latest-posts.css";
+
+/* Subscribe */
+@import "blocks/subscribe.css";
+
+/* Footer */
 @import "layout/footer.css";

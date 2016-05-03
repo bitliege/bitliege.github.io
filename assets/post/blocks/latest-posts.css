@@ -1,0 +1,99 @@
+/* =============================================================================
+
+    LATEST POSTS CSS
+    Authored by Josh Beveridge
+
+============================================================================= */
+.latest-posts {
+
+    dl {
+        padding: $padding 0 $padding-double;
+
+        dd {
+            background-position: center;
+            background-size: cover;
+            border-bottom: 1px solid $white;
+            position: relative;
+
+            @media $(l-tablet) {
+                padding: $padding-double 0;
+            }
+
+            &:before {
+                background: $type-headings;
+                content: ' ';
+                height: 100%;
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                z-index: 5;
+            }
+
+            .container {
+                padding: $padding-double $padding;
+                position: relative;
+                text-align: center;
+                z-index: 10;
+
+                @media $(p-tablet) {
+                    padding: $padding-double $padding;
+                }
+
+                .date {
+                    color: $grey;
+                    display: block;
+                    font-family: $font-roboto;
+                    font-size: .7rem;
+                    font-weight: 800;
+                    margin: $padding-double 0 $padding 0;
+                    text-transform: uppercase;
+
+                    a {
+                        color: $grey;
+                        text-decoration: none;
+                    }
+
+                }
+
+                h2 {
+                    margin: $padding 0 $padding-double 0;
+
+                    a {
+                        color: $white;
+                        text-decoration: none;
+                    }
+
+                }
+
+                .read-more {
+                    display: inline-block;
+                    font-family: $font-pt;
+                    margin: $padding 0 $padding-double 0;
+                    text-decoration: none;
+
+                    i {
+                        font-size: .8rem;
+                        transform: translate(0, 0);
+                        transition: transform .3s ease;
+                    }
+
+                    &:hover {
+                        color: $grey;
+
+                        i {
+                            transform: translate(50%, 0);
+                            transition: transform .3s ease;
+                        }
+
+                    }
+
+                }
+
+            }
+
+        }
+
+    }
+
+}

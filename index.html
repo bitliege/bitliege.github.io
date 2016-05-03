@@ -8,157 +8,147 @@ order: 1
 <!-- Landing =============================================================== -->
 <section class="main landing">
 
-    <div class="container flex-grid top">
+    <div class="container flex-grid">
 
-        <div class="box lg-7of10">
+        <div class="box full intro">
 
-            <div class="flex-grid">
+            <div>
 
-                <div class="box full intro">
+                <h1><span>//</span> Welcome, Friend</h1>
 
-                    <div>
+                <dl>
+                    <dt></dt>
+                    <dd>
+                        <a href="//twitter.com/joshdrink" target='_blank'><i class="fa fa-twitter"></i></a>
+                    </dd>
+                    <dd>
+                        <a href="//github.com/joshdrink" target='_blank'><i class="fa fa-github-alt"></i></a>
+                    </dd>
+                    <dd>
+                        <a href="//ca.linkedin.com/in/joshdrink" target='_blank'><i class="fa fa-linkedin"></i></a>
+                    </dd>
+                </dl>
 
-                        <h1><span>//</span> Welcome, Friend</h1>
-
-                        <dl>
-                            <dt></dt>
-                            <dd>
-                                <a href="//twitter.com/joshdrink" target='_blank'><i class="fa fa-twitter"></i></a>
-                            </dd>
-                            <dd>
-                                <a href="//github.com/joshdrink" target='_blank'><i class="fa fa-github-alt"></i></a>
-                            </dd>
-                            <dd>
-                                <a href="//ca.linkedin.com/in/joshdrink" target='_blank'><i class="fa fa-linkedin"></i></a>
-                            </dd>
-                        </dl>
-
-                        <p><strong>I'm Josh, a systems designer and front-end developer working out of Halifax, Canada.</strong></p>
-                        <p>I currently work with the <a href="//sitebynorex.com" target="_blank">Norex</a> team creating delightful experiences for the web. In my spare time, I capture Pok&eacute;mon, slay Dragons, and love to get lost in my favourite comic books. If you'd like to get in touch, I'm always available to chat through <a href="//twitter.com/joshdrink" target="_blank">Twitter</a>!</p>
-
-                    </div>
-
-                </div>
-
-                {% for post in site.tags.featured limit:1 %}
-                    <div class="box med-1of3 img">
-                        <div style="background-image: url('{{ post.images[1].url }}')"></div>
-                    </div>
-
-                    <div class="box med-2of3 summary featured">
-                        <div>
-                            <span class="label">Featured</span>
-                            <span class="date">{{ post.date | date: '%A, %B %d, %Y' }}</span>
-                            <h1>
-                                <a href='{{post.url}}'>{{ post.title }}</a>
-                            </h1>
-                            <div class="featured">{{ post.excerpt }}</div>
-                            <a href="{{post.url}}" class="read-more">Read More <i class="fa fa-angle-double-right"></i></a>
-                        </div>
-                    </div>
-                {% endfor %}
-
-                {% for post in site.categories.design limit:1 %}
-                    {% if post.tags contains "featured" %}
-                        {% for post in site.categories.design offset:1 limit:1 %}
-                            <div class="box med-1of3 summary">
-                                <div>
-                                    <a href="/writing/design/" class="label">In Design</a>
-                                    <span class="date">{{ post.date | date: '%A, %B %d, %Y' }}</span>
-                                    <h3>
-                                        <a href='{{post.url}}'>{{ post.title }}</a>
-                                    </h3>
-                                    {{ post.excerpt }}
-                                    <a href="{{post.url}}" class="read-more">Read More <i class="fa fa-angle-double-right"></i></a>
-                                </div>
-                            </div>
-                        {% endfor %}
-                    {% else %}
-                        {% for post in site.categories.design limit:1 %}
-                            <div class="box med-1of3 summary">
-                                <div>
-                                    <a href="/writing/design/" class="label">In Design</a>
-                                    <span class="date">{{ post.date | date: '%A, %B %d, %Y' }}</span>
-                                    <h3>
-                                        <a href='{{post.url}}'>{{ post.title }}</a>
-                                    </h3>
-                                    {{ post.excerpt }}
-                                    <a href="{{post.url}}" class="read-more">Read More <i class="fa fa-angle-double-right"></i></a>
-                                </div>
-                            </div>
-                        {% endfor %}
-                    {% endif %}
-                {% endfor %}
-
-                {% for post in site.categories.gaming limit:1 %}
-                    {% if post.tags contains "featured" %}
-                        {% for post in site.categories.gaming offset:1 limit:1 %}
-                            <div class="box med-1of3 summary">
-                                <div>
-                                    <a href="/writing/gaming/" class="label">In Gaming</a>
-                                    <span class="date">{{ post.date | date: '%A, %B %d, %Y' }}</span>
-                                    <h3>
-                                        <a href='{{post.url}}'>{{ post.title }}</a>
-                                    </h3>
-                                    {{ post.excerpt }}
-                                    <a href="{{post.url}}" class="read-more">Read More <i class="fa fa-angle-double-right"></i></a>
-                                </div>
-                            </div>
-                        {% endfor %}
-                    {% else %}
-                        {% for post in site.categories.gaming limit:1 %}
-                            <div class="box med-1of3 summary">
-                                <div>
-                                    <a href="/writing/gaming/" class="label">In Gaming</a>
-                                    <span class="date">{{ post.date | date: '%A, %B %d, %Y' }}</span>
-                                    <h3>
-                                        <a href='{{post.url}}'>{{ post.title }}</a>
-                                    </h3>
-                                    {{ post.excerpt }}
-                                    <a href="{{post.url}}" class="read-more">Read More <i class="fa fa-angle-double-right"></i></a>
-                                </div>
-                            </div>
-                        {% endfor %}
-                    {% endif %}
-                {% endfor %}
-
-                {% for post in site.categories.comics limit:1 %}
-                    {% if post.tags contains "featured" %}
-                        {% for post in site.categories.comics offset:1 limit:1 %}
-                            <div class="box med-1of3 summary">
-                                <div>
-                                    <a href="/writing/comics/" class="label">In Comics</a>
-                                    <span class="date">{{ post.date | date: '%A, %B %d, %Y' }}</span>
-                                    <h3>
-                                        <a href='{{post.url}}'>{{ post.title }}</a>
-                                    </h3>
-                                    {{ post.excerpt }}
-                                    <a href="{{post.url}}" class="read-more">Read More <i class="fa fa-angle-double-right"></i></a>
-                                </div>
-                            </div>
-                        {% endfor %}
-                    {% else %}
-                        {% for post in site.categories.comics limit:1 %}
-                            <div class="box med-1of3 summary">
-                                <div>
-                                    <a href="/writing/comics/" class="label">In Comics</a>
-                                    <span class="date">{{ post.date | date: '%A, %B %d, %Y' }}</span>
-                                    <h3>
-                                        <a href='{{post.url}}'>{{ post.title }}</a>
-                                    </h3>
-                                    {{ post.excerpt }}
-                                    <a href="{{post.url}}" class="read-more">Read More <i class="fa fa-angle-double-right"></i></a>
-                                </div>
-                            </div>
-                        {% endfor %}
-                    {% endif %}
-                {% endfor %}
+                <p><strong>I'm Josh, a systems designer and front-end developer working out of Halifax, Canada.</strong></p>
+                <p>I currently work with the <a href="//sitebynorex.com" target="_blank">Norex</a> team creating delightful experiences for the web. In my spare time, I capture Pok&eacute;mon, slay Dragons, and love to get lost in my favourite comic books. If you'd like to get in touch, I'm always available to chat through <a href="//twitter.com/joshdrink" target="_blank">Twitter</a>!</p>
 
             </div>
 
         </div>
 
-        {% include sidebar.html %}
+        {% for post in site.tags.featured limit:1 %}
+            <div class="box med-1of3 img">
+                <div style="background-image: url('{{ post.images[1].url }}')"></div>
+            </div>
+
+            <div class="box med-2of3 summary featured">
+                <div>
+                    <span class="label">Featured</span>
+                    <span class="date">{{ post.date | date: '%A, %B %d, %Y' }}</span>
+                    <h1>
+                        <a href='{{post.url}}'>{{ post.title }}</a>
+                    </h1>
+                    <div class="featured">{{ post.excerpt }}</div>
+                    <a href="{{post.url}}" class="read-more">Read More <i class="fa fa-angle-double-right"></i></a>
+                </div>
+            </div>
+        {% endfor %}
+
+        {% for post in site.categories.design limit:1 %}
+            {% if post.tags contains "featured" %}
+                {% for post in site.categories.design offset:1 limit:1 %}
+                    <div class="box med-1of3 summary">
+                        <div>
+                            <a href="/writing/design/" class="label">In Design</a>
+                            <span class="date">{{ post.date | date: '%A, %B %d, %Y' }}</span>
+                            <h3>
+                                <a href='{{post.url}}'>{{ post.title }}</a>
+                            </h3>
+                            {{ post.excerpt }}
+                            <a href="{{post.url}}" class="read-more">Read More <i class="fa fa-angle-double-right"></i></a>
+                        </div>
+                    </div>
+                {% endfor %}
+            {% else %}
+                {% for post in site.categories.design limit:1 %}
+                    <div class="box med-1of3 summary">
+                        <div>
+                            <a href="/writing/design/" class="label">In Design</a>
+                            <span class="date">{{ post.date | date: '%A, %B %d, %Y' }}</span>
+                            <h3>
+                                <a href='{{post.url}}'>{{ post.title }}</a>
+                            </h3>
+                            {{ post.excerpt }}
+                            <a href="{{post.url}}" class="read-more">Read More <i class="fa fa-angle-double-right"></i></a>
+                        </div>
+                    </div>
+                {% endfor %}
+            {% endif %}
+        {% endfor %}
+
+        {% for post in site.categories.gaming limit:1 %}
+            {% if post.tags contains "featured" %}
+                {% for post in site.categories.gaming offset:1 limit:1 %}
+                    <div class="box med-1of3 summary">
+                        <div>
+                            <a href="/writing/gaming/" class="label">In Gaming</a>
+                            <span class="date">{{ post.date | date: '%A, %B %d, %Y' }}</span>
+                            <h3>
+                                <a href='{{post.url}}'>{{ post.title }}</a>
+                            </h3>
+                            {{ post.excerpt }}
+                            <a href="{{post.url}}" class="read-more">Read More <i class="fa fa-angle-double-right"></i></a>
+                        </div>
+                    </div>
+                {% endfor %}
+            {% else %}
+                {% for post in site.categories.gaming limit:1 %}
+                    <div class="box med-1of3 summary">
+                        <div>
+                            <a href="/writing/gaming/" class="label">In Gaming</a>
+                            <span class="date">{{ post.date | date: '%A, %B %d, %Y' }}</span>
+                            <h3>
+                                <a href='{{post.url}}'>{{ post.title }}</a>
+                            </h3>
+                            {{ post.excerpt }}
+                            <a href="{{post.url}}" class="read-more">Read More <i class="fa fa-angle-double-right"></i></a>
+                        </div>
+                    </div>
+                {% endfor %}
+            {% endif %}
+        {% endfor %}
+
+        {% for post in site.categories.comics limit:1 %}
+            {% if post.tags contains "featured" %}
+                {% for post in site.categories.comics offset:1 limit:1 %}
+                    <div class="box med-1of3 summary">
+                        <div>
+                            <a href="/writing/comics/" class="label">In Comics</a>
+                            <span class="date">{{ post.date | date: '%A, %B %d, %Y' }}</span>
+                            <h3>
+                                <a href='{{post.url}}'>{{ post.title }}</a>
+                            </h3>
+                            {{ post.excerpt }}
+                            <a href="{{post.url}}" class="read-more">Read More <i class="fa fa-angle-double-right"></i></a>
+                        </div>
+                    </div>
+                {% endfor %}
+            {% else %}
+                {% for post in site.categories.comics limit:1 %}
+                    <div class="box med-1of3 summary">
+                        <div>
+                            <a href="/writing/comics/" class="label">In Comics</a>
+                            <span class="date">{{ post.date | date: '%A, %B %d, %Y' }}</span>
+                            <h3>
+                                <a href='{{post.url}}'>{{ post.title }}</a>
+                            </h3>
+                            {{ post.excerpt }}
+                            <a href="{{post.url}}" class="read-more">Read More <i class="fa fa-angle-double-right"></i></a>
+                        </div>
+                    </div>
+                {% endfor %}
+            {% endif %}
+        {% endfor %}
 
     </div>
 

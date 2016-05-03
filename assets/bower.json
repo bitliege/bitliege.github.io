@@ -1,11 +1,11 @@
 {
-  "name": "DatBlogDoh",
-  "version": "0.1.0",
+  "name": "Maxwell",
+  "version": "0.2.0",
   "homepage": "https://gitlab.com/joshdrink/joshdrink.github.io",
   "authors": [
     "Josh Beveridge <me@joshbeveridge.com>"
   ],
-  "description": "A PostCSS Front-End clone used to init new projects.",
+  "description": "A Jekyll blog inspired by quality content that provides the best reading experience possible.",
   "moduleType": [
     "node"
   ],

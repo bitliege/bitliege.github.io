@@ -11,5 +11,5 @@ categories: personal
 * Edit Superman 50
 * README Edit
 * Mailchimp Upgrades
-* post sidebar stopper
 * 404 Page
+* Page Heroes

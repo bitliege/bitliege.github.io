@@ -248,6 +248,7 @@ input[type='submit'] {
     cursor: pointer;
     display: inline-block;
     font-family: Roboto,sans-serif;
+    line-height: 1.2;
     padding: 1rem 2rem;
     text-decoration: none;
     text-transform: uppercase;
