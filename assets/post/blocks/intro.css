@@ -6,7 +6,11 @@
 ============================================================================= */
 .intro {
     margin: $padding-half 0 $padding 0;
-    padding: $padding;
+    padding: $padding 0;
+
+    @media $(p-tablet) {
+        padding: $padding;
+    }
 
     @media $(l-tablet) {
         margin: 0;

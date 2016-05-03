@@ -8,7 +8,11 @@
     align-items: stretch;
     display: flex;
     overflow: hidden;
-    padding: $padding-double $padding;
+    padding: $padding-double 0;
+
+    @media $(p-tablet) {
+        padding: $padding-double $padding;
+    }
 
     >div {
         background-position: center;

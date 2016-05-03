@@ -68,30 +68,32 @@ section {
 .container {
     display: block;
     margin: 0 auto;
-    max-width: 95%;
+    max-width: 85%;
     width: 60em;
 }
 
 .post-container {
     display: block;
     margin: 0 auto;
-    max-width: 95%;
+    max-width: 85%;
     width: 75em;
 }
 
 .copy-container {
     display: block;
     margin: 0 auto;
-    max-width: 95%;
-    padding: 0 0 5rem 0;
-    width: 95%; /* The Flex Grid class on this was messing with the width if I set it to rems. Not sure why. */
+    max-width: 100%;
+    padding: 0 0 2rem 0;
+    width: 100%; /* The Flex Grid class on this was messing with the width if I set it to rems. Not sure why. */
 
     @media $(p-tablet) {
+        padding: 0 0 4rem 0;
         width: 40em;
     }
 
     @media $(l-tablet) {
         margin: 0;
+        padding: 0 0 5rem 0;
     }
 
     *:last-child {

@@ -5,7 +5,11 @@
 
 ============================================================================= */
 .summary {
-    padding: $padding-double $padding;
+    padding: $padding-double 0;
+
+    @media $(p-tablet) {
+        padding: $padding-double $padding;
+    }
 
     >div {
         border-top: .5rem solid $black;
