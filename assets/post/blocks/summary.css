@@ -70,25 +70,25 @@
         }
 
         p {
-            font-size: .8rem;
+            font-size: .9rem;
             margin: $padding 0;
         }
 
         ul {
 
             li {
-                font-size: .8rem;
+                font-size: .9rem;
             }
 
         }
 
         .read-more {
             font-family: $font-pt;
-            font-size: .8rem;
+            font-size: .9rem;
             text-decoration: none;
 
             i {
-                font-size: .8rem;
+                font-size: .9rem;
                 transform: translate(0, 0);
                 transition: transform .3s ease;
             }
