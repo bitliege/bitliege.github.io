@@ -8,86 +8,125 @@
 
     dl {
         padding: $padding 0 $padding-double;
+        position: relative;
+
+        &:after {
+            background: $white;
+            content: ' ';
+            height: 2rem;
+            position: absolute;
+            bottom: $padding-double;
+            left: 0;
+            transition: height .3s ease;
+            width: 100%;
+            z-index: 5;
+        }
 
         dd {
-            background-position: center;
-            background-size: cover;
-            border-bottom: 1px solid $white;
-            position: relative;
 
             @media $(l-tablet) {
-                padding: $padding-double 0;
+                transform: translate(0, 0);
+                transition: transform .3s ease;
             }
 
-            &:before {
-                background: $type-headings;
-                content: ' ';
-                height: 100%;
-                position: absolute;
-                top: 0;
-                left: 0;
-                width: 100%;
-                z-index: 5;
+            &:first-child {
+
+                a {
+
+                    &:after {
+                        display: none;
+                    }
+
+                }
+
             }
 
-            .container {
-                padding: $padding-double $padding;
+            &:not(:first-child) {
+                margin-top: -3rem;
+            }
+
+            a {
+                background-position: center;
+                background-size: cover;
                 position: relative;
-                text-align: center;
-                z-index: 10;
+                display: block;
+                padding: $padding-double 0;
+                padding-bottom: 5rem;
+                position: relative;
+                text-decoration: none;
+                z-index: 5;
 
-                @media $(p-tablet) {
+                &:before {
+                    background: rgba(0, 0, 10, .65);
+                    content: ' ';
+                    height: 100%;
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    z-index: 5;
+                }
+
+                &:after {
+                    @mixin black-trans;
+                    content: ' ';
+                    height: 50%;
+                    pointer-events: none;
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    transform: translate(0, -100%);
+                    transition: height .3s ease;
+                    width: 100%;
+                    z-index: 10;
+                }
+
+                .container {
                     padding: $padding-double $padding;
-                }
+                    position: relative;
+                    text-align: center;
+                    z-index: 15;
 
-                .date {
-                    color: $grey;
-                    display: block;
-                    font-family: $font-roboto;
-                    font-size: .7rem;
-                    font-weight: 800;
-                    margin: $padding-double 0 $padding 0;
-                    text-transform: uppercase;
-
-                    a {
-                        color: $grey;
-                        text-decoration: none;
+                    @media $(p-tablet) {
+                        padding: $padding-double $padding;
                     }
 
-                }
+                    .date {
+                        color: $grey;
+                        display: block;
+                        font-family: $font-roboto;
+                        font-size: .7rem;
+                        font-weight: 800;
+                        margin: $padding-double 0 $padding 0;
+                        text-transform: uppercase;
+                    }
 
-                h2 {
-                    margin: $padding 0 $padding-double 0;
-
-                    a {
+                    h2 {
                         color: $white;
-                        text-decoration: none;
+                        margin: $padding 0 $padding-double 0;
                     }
 
                 }
 
-                .read-more {
-                    display: inline-block;
-                    font-family: $font-pt;
-                    margin: $padding 0 $padding-double 0;
-                    text-decoration: none;
+            }
 
-                    i {
-                        font-size: .8rem;
-                        transform: translate(0, 0);
-                        transition: transform .3s ease;
-                    }
+        }
 
-                    &:hover {
-                        color: $grey;
+    }
 
-                        i {
-                            transform: translate(50%, 0);
-                            transition: transform .3s ease;
-                        }
+}
 
-                    }
+html.no-touchevents {
 
+    .latest-posts {
+
+        dl {
+
+            dd {
+
+                &:hover {
+                    transform: translate(0, -2rem);
+                    transition: transform .3s ease;
                 }
 
             }
