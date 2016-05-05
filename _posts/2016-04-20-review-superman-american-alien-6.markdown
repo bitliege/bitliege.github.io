@@ -3,7 +3,6 @@ layout: post
 title:  "Review: Superman - American Alien #6"
 date:   2016-04-20 10:00:00 -0400
 categories: writing comics
-tags: featured
 images:
   - url: /assets/img/2016/04/american_alien_6_wide.jpg
     alt: Clark Who?
