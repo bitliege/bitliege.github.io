@@ -3,16 +3,17 @@ layout: default
 ---
 
 <!-- Archive =============================================================== -->
+<section class="hero sub" style="background-image: url('/assets/img/gw001.jpg');"></section>
+
 <section class="main archive">
 
     <dl class='container article-list flex-grid'>
         <dt></dt>
 
-        <dd class='box full intro'>
+        <div class="container hero-block">
 
-            <div>
-
-                <h1><span>//</span> Posts in
+            <div class="card">
+                <h1 class="center">Posts in
                     {% if page.url contains "design" %}
                         Design
                     {% endif %}
@@ -30,9 +31,8 @@ layout: default
                     <p>Video games have had such a tremendous impact on my generation, and I've grown to accept that they will forever be a part of my life. Gaming is a unique experience that has grown from humble beginnings into a powerful storytelling platform. When a game strikes my fancy, I like to share my thoughts in an attempt to help you find something extraordinary too.</p>
                     <ul>
                         <span>I'm currently playing:</span>
-                        <li>Borderlands 2</li>
                         <li>Dark Souls III</li>
-                        <li>Fire Emblem: Fates</li>
+                        <li>Guild Wars 2</li>
                         <li>Stardew Valley</li>
                     </ul>
                 {% endif %}
@@ -89,7 +89,8 @@ layout: default
                     {% endif %}
                 {% endif %}
             </div>
-        </dd>
+
+        </div>
 
         {% if page.url contains "design" %}
             {% if site.categories.design == null %}

@@ -6,7 +6,7 @@
 ============================================================================= */
 footer {
     background: $white;
-    border-top: 1px solid $grey-light;
+    border-top: 1px solid $grey-80;
     margin: $padding-double 0 0 0;
     padding: $padding-double 0 5rem 0;
 
@@ -42,7 +42,7 @@ footer {
         }
 
         span {
-            color: $grey;
+            color: $grey-50;
         }
 
         a {
@@ -52,7 +52,7 @@ footer {
     }
 
     .copy {
-        color: $grey;
+        color: $grey-50;
         font-family: $font-roboto;
         font-size: .7rem;
         font-weight: 700;

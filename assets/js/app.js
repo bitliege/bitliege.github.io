@@ -37,6 +37,42 @@
 
         });
 
+        // Homepage Calcs ======================================================
+        var d = new Date();
+        var n = d.getDay();
+
+        if(n == 0) {
+            $('.landing .hero-block .card h1').text("Take a break, It's Sunday!");
+        }
+        if(n == 1) {
+            $('.landing .hero-block .card h1').text("Whelp, it's Monday.");
+        }
+        if(n == 2) {
+            $('.landing .hero-block .card h1').text("Have a terrific Tuesday!");
+        }
+        if(n == 3) {
+            $('.landing .hero-block .card h1').text("Happy New Comic Book Day!");
+        }
+        if(n == 4) {
+            $('.landing .hero-block .card h1').text("Throwback Thursday, right?");
+        }
+        if(n == 5) {
+            $('.landing .hero-block .card h1').text("Gotta get down on Friday!");
+        }
+        if(n == 6) {
+            $('.landing .hero-block .card h1').text("Saturday = Quest Day");
+        }
+
+        var cardHeight = $('.hero-block .card').outerHeight();
+        $('.hero').css('padding-bottom', (cardHeight/2) + 'px');
+        $('.main').css('padding-top', (cardHeight/2) + "px");
+
+        $(window).resize(function() {
+            var cardHeight = $('.hero-block .card').outerHeight();
+            $('.hero').css('padding-bottom', (cardHeight/2) + 'px');
+            $('.main').css('padding-top', (cardHeight/2) + "px");
+        });
+
         // Mobile Navigation Handler ===========================================
         $('nav.mobile .open').on('click', function(e) {
             var navListHeight = $('.nav-list').outerHeight();
@@ -76,25 +112,12 @@
 
         }
 
-        // Mailchimp Labels ====================================================
-        $(".mailchimp input").focus(function(e) {
-            $(this).parent().find("label").addClass("active");
-        });
-
-        $(".mailchimp input").blur(function(e) {
-
-            if(!$(this).val()) {
-                $(this).parent().find("label").removeClass('active');
-            }
-
-        });
-
         // Intro Labels ========================================================
-        $(".intro input").focus(function(e) {
+        $(".hero-block input").focus(function(e) {
             $(this).parent().find("label").addClass("active");
         });
 
-        $(".intro input").blur(function(e) {
+        $(".hero-block input").blur(function(e) {
 
             if(!$(this).val()) {
                 $(this).parent().find("label").removeClass('active');

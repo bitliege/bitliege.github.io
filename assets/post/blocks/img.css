@@ -15,7 +15,7 @@
     }
 
     >div {
-        background-position: center;
+        background-position: top center;
         background-size: cover;
         flex: 1;
         min-height: 15rem;

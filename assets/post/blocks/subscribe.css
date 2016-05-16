@@ -6,148 +6,34 @@
 ============================================================================= */
 .subscribe {
 
-    .summary {
+    .featured {
 
-        h3 {
-            margin-top: $padding-double;
-        }
+        .center {
 
-        p {
-
-            &:not(.center) {
-                margin-bottom: $padding-double;
+            @media $(p-tablet) {
+                text-align: left;
             }
 
-            &.center {
-
-                @media $(p-tablet) {
-                    text-align: left;
-                }
-
+            .button {
+                font-size: 1rem;
             }
 
         }
 
     }
 
-    .mailchimp {
-        padding: 0;
+    .social {
+        padding: $padding-double 0;
 
         @media $(p-tablet) {
-            padding: 0 $padding;
+            padding: $padding-double $padding;
         }
 
-        #mc_embed_signup_scroll {
-            border-top: .5rem solid $black;
-            margin: $padding-double 0 0 0;
-            padding: $padding-double 0 0 0;
-            position: relative;
-            text-align: center;
-
-            @media $(p-tablet) {
-                text-align: left;
-            }
-
-            >h3 {
-                /*color: $black;*/
-                color: $red;
-                display: block;
-                font-family: $font-roboto;
-                font-size: .7rem;
-                font-weight: 800;
-                line-height: 1;
-                margin: 0;
-                position: absolute;
-                top: -1.4rem;
-                right: 0;
-                text-decoration: none;
-                text-transform: uppercase;
-            }
-
-        }
-
-        .indicates-required {
-            color: $grey;
+        .button {
             display: block;
-            font-family: $font-roboto;
-            font-size: .6rem;
-            font-weight: 800;
-            margin: 0;
-            position: absolute;
-            right: 0;
-            text-transform: uppercase;
-        }
-
-        .mc-field-group {
-            position: relative;
-
-            label {
-                color: $grey;
-                display: block;
-                font-family: $font-roboto;
-                font-size: 1rem;
-                font-weight: 300;
-                line-height: 1.2;
-                margin: 0;
-                position: absolute;
-                top: $padding;
-                left: 0;
-                text-transform: uppercase;
-                transition: all .3s ease;
-                z-index: 5;
-
-                &.active {
-                    top: 0;
-                    font-size: .6rem;
-                    transition: all .3s ease;
-                }
-
-            }
-
-            input {
-                border: none;
-                border-bottom: 1px solid $black;
-                color: $black;
-                font-family: $font-roboto;
-                margin: 0 0 $padding-double 0;
-                padding: $padding 0 $padding-half 0;
-                position: relative;
-                z-index: 10;
-
-                &:focus {
-                    border-bottom: 1px solid $red;
-                }
-
-            }
-
-        }
-
-        .clear {
-
-            input {
-                background: white;
-                border: 1px solid $black;
-                color: $type;
-                cursor: pointer;
-                font-family: $font-roboto;
-                font-size: .8rem;
-                text-transform: uppercase;
-                transition: border .3s linear;
-                width: auto;
-
-                &:hover {
-                    border: 1px solid $red;
-                    transition: border .3s linear;
-
-                    @media $(desktop) {
-                        color: rgba(0, 0, 0, .5);
-                        transition: color .1s ease, border .3s linear;
-                    }
-
-                }
-
-            }
-
+            font-size: 1rem;
+            margin: 0 0 1rem 0;
+            text-align: center;
         }
 
     }

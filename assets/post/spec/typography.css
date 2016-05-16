@@ -16,7 +16,12 @@ $font-pt: 'PT Serif', serif;
 /* Font Standard ============================================================ */
 html,
 body {
-    font-size: 100%;
+    font-size: 90%;
+
+    @media $(p-tablet) {
+        font-size: 100%;
+    }
+
 }
 
 /* Selection ================================================================ */
@@ -69,7 +74,7 @@ h1, h2, h3, h4, h5, h6 {
     }
 
     &.section {
-        border-bottom: 1px solid $grey-light;
+        border-bottom: 1px solid $grey-80;
         padding: 0 0 $padding-double 0;
 
         &+h1,
@@ -121,7 +126,7 @@ span {
 
 hr {
     border: none;
-    border-top: 1px solid $grey-light;
+    border-top: 1px solid $grey-80;
     height: 0;
     margin: 1.5rem 0;
     padding: 0;
@@ -184,7 +189,7 @@ a:link {
 }
 
 .post-date {
-    color: $grey;
+    color: $grey-50;
     font-family: $font-roboto;
     font-size: .8rem;
     font-weight: 700;
@@ -243,7 +248,7 @@ a:link {
 .button:visited,
 input[type='submit'] {
     background: #fff;
-    border: 1px solid #282828;
+    border: 1px solid $grey-80;
     color: $type;
     cursor: pointer;
     display: inline-block;
@@ -259,6 +264,10 @@ input[type='submit'] {
         transition: border .3s linear;
     }
 
+    i {
+        margin: 0 .5rem 0 0;
+    }
+
 }
 
 button {
@@ -268,7 +277,7 @@ button {
 }
 
 pre {
-    background: $grey;
+    background: $grey-50;
     border-radius: .2rem;
     margin: 1.5rem 0;
     overflow-x: scroll;
@@ -282,7 +291,7 @@ pre {
 }
 
 code {
-    background: $grey;
+    background: $grey-50;
     border-radius: .2rem;
     font-size: .8rem;
     padding: .2rem .4rem .1rem .4rem;

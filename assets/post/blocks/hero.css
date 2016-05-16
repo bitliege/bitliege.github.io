@@ -1,0 +1,204 @@
+/* =============================================================================
+
+    HERO CSS
+    Authored by Josh Beveridge
+
+============================================================================= */
+.hero {
+    background-position: center;
+    background-size: cover;
+    padding: 7rem 0 0 0;
+    position: relative;
+
+    @media $(l-tablet) {
+        padding: 10rem 0 0 0;
+    }
+
+    &:before {
+        background: rgba(0, 0, 10, .65);
+        content: ' ';
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        z-index: 5;
+    }
+
+    >img {
+        display: block;
+        margin: 0 auto;
+        padding: 0 0 7rem 0;
+        position: relative;
+        width: 10rem;
+        z-index: 10;
+    }
+
+    &.sub {
+        padding: 2rem 0 0 0;
+
+        @media $(p-tablet) {
+            padding: 5rem 0 0 0;
+        }
+
+        @media $(l-tablet) {
+            padding: 10rem 0 0 0;
+        }
+
+    }
+
+}
+
+.hero-block {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 10;
+
+    @media $(p-tablet) {
+        padding: $padding;
+    }
+
+    .card {
+        background: $white;
+        border: 1px solid $grey-80;
+        padding: 2rem;
+
+        @media $(p-tablet) {
+            padding: 4rem;
+        }
+
+        >*:first-child {
+            margin-top: 0;
+            margin-bottom: 2rem;
+
+            @media $(p-tablet) {
+                margin-bottom: 3rem;
+            }
+
+        }
+
+        >.flex-grid {
+
+            ul:first-of-type {
+                margin: 0;
+
+                @media $(p-tablet) {
+                    margin: 0 0 2rem 0;
+                }
+
+            }
+
+            ul:last-of-type {
+
+                span {
+                    display: none;
+
+                    @media $(p-tablet) {
+                        display: block;
+                    }
+
+                }
+
+            }
+
+        }
+
+        ul {
+            margin: 0 0 2rem 0;
+            padding: 0 0 0 1.5rem;
+
+            span {
+                margin: 0 0 0 -1.5rem;
+            }
+
+        }
+
+        dl {
+            margin: $padding-double 0;
+            /*text-align: center;*/
+
+            @media $(p-tablet) {
+                position: absolute;
+                top: .2rem;
+                right: 3rem;
+                /*text-align: left;*/
+            }
+
+            @media $(l-tablet) {
+                /*margin: $padding-double 0;*/
+            }
+
+            dd {
+                display: inline-block;
+                margin: 0 $padding-double 0 0;
+
+                @media $(p-tablet) {
+                    margin: 0 0 0 $padding-double;
+                }
+
+                a {
+                    color: $type;
+                    font-size: .8rem;
+                }
+
+            }
+
+        }
+
+        >div {
+            position: relative;
+
+            label {
+                color: $grey-50;
+                display: block;
+                font-family: $font-roboto;
+                font-size: 1rem;
+                font-weight: 300;
+                line-height: 1.2;
+                margin: 0;
+                position: absolute;
+                top: $padding;
+                left: 0;
+                text-transform: uppercase;
+                transition: all .3s ease;
+                z-index: 5;
+
+                i {
+                    margin: 0 .5rem 0 0 ;
+                }
+
+                &.active {
+                    top: 0;
+                    font-size: .6rem;
+                    transition: all .3s ease;
+                }
+
+            }
+
+            input {
+                border: none;
+                border-bottom: 1px solid $black;
+                color: $black;
+                font-family: $font-roboto;
+                margin: 0;
+                padding: $padding 0 $padding-half 0;
+                position: relative;
+                z-index: 10;
+
+                &:focus {
+                    border-bottom: 1px solid $red;
+                }
+
+            }
+
+        }
+
+        >*:last-child {
+            margin-bottom: 0;
+        }
+
+    }
+
+}

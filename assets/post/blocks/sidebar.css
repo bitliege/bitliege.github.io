@@ -47,7 +47,7 @@
             margin: $padding-double 0;
 
             .date {
-                color: $grey;
+                color: $grey-50;
                 display: block;
                 font-family: $font-roboto;
                 font-size: .6rem;
@@ -57,7 +57,7 @@
 
                 a {
                     /*color: $red;*/
-                    color: $grey;
+                    color: $grey-50;
                     text-decoration: none;
                 }
 
@@ -133,7 +133,7 @@
                 margin: $padding-double 0;
 
                 h5 {
-                    color: $grey;
+                    color: $grey-50;
                     font-size: .8rem;
                     font-weight: 700;
                     margin: 0;

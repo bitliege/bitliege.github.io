@@ -18,8 +18,8 @@
     }
 
     >div {
-        /*background: $grey-light;*/
-        border: 1px solid $grey;
+        /*background: $grey-80;*/
+        border: 1px solid $grey-50;
         padding: $padding-double;
         position: relative;
 
@@ -129,7 +129,7 @@
             position: relative;
 
             label {
-                color: $grey;
+                color: $grey-50;
                 display: block;
                 font-family: $font-roboto;
                 font-size: 1rem;

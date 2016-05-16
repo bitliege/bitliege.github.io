@@ -42,27 +42,16 @@ body {
     margin: 0;
 }
 
-.main {
-
-    @media $(p-tablet) {
-        margin-top: 1rem;
-    }
-
-    @media $(l-tablet) {
-        margin-top: 5rem;
-    }
-
-    &.post {
-        margin-top: 0;
-    }
-
-}
-
 section {
     display: block;
     margin: 0;
     position: relative;
     width: 100%;
+
+    &.main >.container {
+        padding: $padding-double 0 0 0;
+    }
+
 }
 
 .container {

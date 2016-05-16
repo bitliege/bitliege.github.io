@@ -6,9 +6,9 @@
 ============================================================================= */
 header {
     /*background: $red-transparent;*/
-    /*background: rgba(255, 255, 255, .99);*/
-    background: rgba(250, 250, 250, .99);
-    border-top: 1px solid $grey-light;
+    background: rgba(255, 255, 255, .99);
+    /*background: rgba(250, 250, 250, .99);*/
+    border-top: 1px solid $grey-80;
     /*box-shadow: 0 -1px 3px rgba(0, 0, 0, .1);*/
     position: fixed;
     bottom: 0;
@@ -19,11 +19,11 @@ header {
     z-index: 50;
 
     @media $(l-tablet) {
-        /*background: rgba(255, 255, 255, .95);*/
-        background: rgba(250, 250, 250, .95);
+        background: rgba(255, 255, 255, .95);
+        /*background: rgba(250, 250, 250, .95);*/
         border-top: none;
         /*box-shadow: 0 2px 3px rgba(0, 0, 0, .1);*/
-        border-bottom: 1px solid $grey-light;
+        border-bottom: 1px solid $grey-80;
         /*box-shadow: 0 2px 3px rgba(0, 0, 0, .3);*/
         top: 0;
         bottom: auto;
@@ -32,7 +32,7 @@ header {
     nav {
 
         .nav-item {
-            color: $grey;
+            color: $grey-50;
             font-family: $font-roboto;
             font-size: 1rem;
             font-weight: 300;
@@ -62,7 +62,7 @@ header {
         }
 
         .open {
-            border-bottom: 1px solid $grey-light;
+            border-bottom: 1px solid $grey-80;
             padding: 1rem 0;
 
             >h1 {
@@ -75,7 +75,7 @@ header {
             }
 
             >p {
-                color: $grey;
+                color: $grey-50;
                 font-family: $font-roboto;
                 font-weight: 700;
                 font-size: .6rem;
@@ -100,7 +100,7 @@ header {
             }
 
             .close {
-                border-top: 1px solid $grey-light;
+                border-top: 1px solid $grey-80;
                 color: $type;
                 margin: 1rem 0 0 0;
                 padding: 1.5rem 0;

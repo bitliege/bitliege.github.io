@@ -31,7 +31,7 @@
         }
 
         .date {
-            color: $grey;
+            color: $grey-50;
             display: block;
             font-family: $font-roboto;
             font-size: .7rem;
@@ -120,7 +120,7 @@
             }
 
             p {
-                font-size: 1rem;
+                font-size: 1.2rem;
             }
 
             ul {
