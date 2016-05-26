@@ -10,7 +10,7 @@ categories: writing design
 
 Design has become a muddled word. Among its many, varied, definitions one can quite easily find a niche in which to exist. Graphic design, interior design, brand design, web design, the list goes on. Each is different and corresponds to a distinct skill set. There is however, a core to these systems; one that has been stretched and manipulated in order to cut costs and create efficient processes that allow design to exist within ever-shrinking budgets. The core of design has eroded as a result of these efforts, and it’s time that those calling themselves as designers start fighting for the ability to really do their job, or start looking for a better, more definitive term for the role they occupy.
 
-### Exploration and Discovery
+#### Exploration and Discovery
 
 My entire premise stems from my definition of the term “design” that has evolved over the course of my education and employment. While I believe that this definition holds true today, I am absolutely sure that it will change over time. The Oxford English Dictionary defines a “design” as “A plan or drawing produced to show the look and function or workings of a building, garment, or other object before it is made.” I agree whole-heartedly with this definition. My qualm begins with the definition they provide for “design” as a verb, that is: “To do or plan (something) with a specific purpose in mind.” This definition isn’t wrong, though I feel it lacks emphasis and specificity. “[…] with a specific purpose” leaves this definition open to interpretation, something that employers manipulate freely in order to sell products that are considered “designed”. At this point, I was forced to ask myself how the term “design”, alongside its counterparts “designed” and “designer” should be defined in order to address its most fundamental objectives.
 
@@ -26,7 +26,7 @@ As someone who claims the title of “designer”, shaping my own concrete defin
 
 No assumptions. No budgets. No limitations on the questions that need be asked. As a designer, I seek to generate a product that functions as simply and fluently as possible for its users.
 
-### Why This Seems Impossible
+#### Why This Seems Impossible
 
 Unfortunately my ideal has been smothered by the current state of affairs in the world of “designer-friendly” development. It seems that every company wants a designer because they abstractly understand the value of a well-designed product. The issue at hand is that despite deeming it necessary to hire designers, very few of these companies understand the time and investment required to actually produce quality design. This involves thorough research, prototyping, testing, iterating and testing some more. It means providing the opportunity to work in the field with target users in order to learn their behaviours and allowing the fluidity required to shift the product’s direction when these user goals evolve.
 

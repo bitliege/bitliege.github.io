@@ -18,8 +18,11 @@ order: 1
 
         <div class="container hero-block">
 
-            <div class="card">
-                <h1 class="center">Look Odd? Try Enabling JavaScript.</h1>
+            <div class="block-card">
+                <div class="title ta-center">
+                    <h2 id="dateChanger">Look Odd? Try Enabling JavaScript.</h2>
+                    <div class="flourish"></div>
+                </div>
                 <p><strong>Hey there, I'm Josh, a systems designer and front-end developer working out of Halifax, Canada.</strong></p>
                 <p>I currently work with the <a href="//sitebynorex.com" target="_blank">Norex</a> team creating delightful experiences for the web. In my spare time, I capture Pok&eacute;mon, slay Dragons, and love to get lost in my favourite comic books. If you'd like to get in touch, I'm always available to chat through <a href="//twitter.com/joshdrink" target="_blank">Twitter</a>!</p>
             </div>
@@ -31,13 +34,15 @@ order: 1
                 <div style="background-image: url('{{ post.images[0].url }}')"></div>
             </div>
 
-            <div class="box med-2of3 summary featured">
+            <div class="box med-2of3 block-summary">
                 <div>
-                    <span class="label">Featured</span>
-                    <span class="date">{{ post.date | date: '%A, %B %d, %Y' }}</span>
-                    <h1>
+                    <span class="meta">
+                        <span class="tag">Featured</span>
+                        <span class="date">{{ post.date | date: '%A, %B %d, %Y' }}</span>
+                    </span>
+                    <h3>
                         <a href='{{post.url}}'>{{ post.title }}</a>
-                    </h1>
+                    </h3>
                     <div class="featured">{{ post.excerpt }}</div>
                     <a href="{{post.url}}" class="read-more">Read More <i class="fa fa-angle-double-right"></i></a>
                 </div>
@@ -47,13 +52,15 @@ order: 1
         {% for post in site.categories.design limit:1 %}
             {% if post.tags contains "featured" %}
                 {% for post in site.categories.design offset:1 limit:1 %}
-                    <div class="box med-1of3 summary">
+                    <div class="box med-1of3 block-summary">
                         <div>
-                            <a href="/writing/design/" class="label">In Design</a>
-                            <span class="date">{{ post.date | date: '%A, %B %d, %Y' }}</span>
-                            <h3>
+                            <span class="meta">
+                                <span class="tag"><a href="/writing/design/" title="See Posts in Design">Design</a></span>
+                                <span class="date">{{ post.date | date: '%A, %B %d, %Y' }}</span>
+                            </span>
+                            <h4>
                                 <a href='{{post.url}}'>{{ post.title }}</a>
-                            </h3>
+                            </h4>
                             {{ post.excerpt }}
                             <a href="{{post.url}}" class="read-more">Read More <i class="fa fa-angle-double-right"></i></a>
                         </div>
@@ -61,13 +68,15 @@ order: 1
                 {% endfor %}
             {% else %}
                 {% for post in site.categories.design limit:1 %}
-                    <div class="box med-1of3 summary">
+                    <div class="box med-1of3 block-summary">
                         <div>
-                            <a href="/writing/design/" class="label">In Design</a>
-                            <span class="date">{{ post.date | date: '%A, %B %d, %Y' }}</span>
-                            <h3>
+                            <span class="meta">
+                                <span class="tag"><a href="/writing/design/" title="See Posts in Design">Design</a></span>
+                                <span class="date">{{ post.date | date: '%A, %B %d, %Y' }}</span>
+                            </span>
+                            <h4>
                                 <a href='{{post.url}}'>{{ post.title }}</a>
-                            </h3>
+                            </h4>
                             {{ post.excerpt }}
                             <a href="{{post.url}}" class="read-more">Read More <i class="fa fa-angle-double-right"></i></a>
                         </div>
@@ -79,13 +88,15 @@ order: 1
         {% for post in site.categories.gaming limit:1 %}
             {% if post.tags contains "featured" %}
                 {% for post in site.categories.gaming offset:1 limit:1 %}
-                    <div class="box med-1of3 summary">
+                    <div class="box med-1of3 block-summary">
                         <div>
-                            <a href="/writing/gaming/" class="label">In Gaming</a>
-                            <span class="date">{{ post.date | date: '%A, %B %d, %Y' }}</span>
-                            <h3>
+                            <span class="meta">
+                                <span class="tag"><a href="/writing/gaming/" title="See Posts in Gaming">Gaming</a></span>
+                                <span class="date">{{ post.date | date: '%A, %B %d, %Y' }}</span>
+                            </span>
+                            <h4>
                                 <a href='{{post.url}}'>{{ post.title }}</a>
-                            </h3>
+                            </h4>
                             {{ post.excerpt }}
                             <a href="{{post.url}}" class="read-more">Read More <i class="fa fa-angle-double-right"></i></a>
                         </div>
@@ -93,13 +104,15 @@ order: 1
                 {% endfor %}
             {% else %}
                 {% for post in site.categories.gaming limit:1 %}
-                    <div class="box med-1of3 summary">
+                    <div class="box med-1of3 block-summary">
                         <div>
-                            <a href="/writing/gaming/" class="label">In Gaming</a>
-                            <span class="date">{{ post.date | date: '%A, %B %d, %Y' }}</span>
-                            <h3>
+                            <span class="meta">
+                                <span class="tag"><a href="/writing/gaming/" title="See Posts in Gaming">Gaming</a></span>
+                                <span class="date">{{ post.date | date: '%A, %B %d, %Y' }}</span>
+                            </span>
+                            <h4>
                                 <a href='{{post.url}}'>{{ post.title }}</a>
-                            </h3>
+                            </h4>
                             {{ post.excerpt }}
                             <a href="{{post.url}}" class="read-more">Read More <i class="fa fa-angle-double-right"></i></a>
                         </div>
@@ -111,13 +124,15 @@ order: 1
         {% for post in site.categories.comics limit:1 %}
             {% if post.tags contains "featured" %}
                 {% for post in site.categories.comics offset:1 limit:1 %}
-                    <div class="box med-1of3 summary">
+                    <div class="box med-1of3 block-summary">
                         <div>
-                            <a href="/writing/comics/" class="label">In Comics</a>
-                            <span class="date">{{ post.date | date: '%A, %B %d, %Y' }}</span>
-                            <h3>
+                            <span class="meta">
+                                <span class="tag"><a href="/writing/comics/" title="See Posts in Comics">Comics</a></span>
+                                <span class="date">{{ post.date | date: '%A, %B %d, %Y' }}</span>
+                            </span>
+                            <h4>
                                 <a href='{{post.url}}'>{{ post.title }}</a>
-                            </h3>
+                            </h4>
                             {{ post.excerpt }}
                             <a href="{{post.url}}" class="read-more">Read More <i class="fa fa-angle-double-right"></i></a>
                         </div>
@@ -125,13 +140,15 @@ order: 1
                 {% endfor %}
             {% else %}
                 {% for post in site.categories.comics limit:1 %}
-                    <div class="box med-1of3 summary">
+                    <div class="box med-1of3 block-summary">
                         <div>
-                            <a href="/writing/comics/" class="label">In Comics</a>
-                            <span class="date">{{ post.date | date: '%A, %B %d, %Y' }}</span>
-                            <h3>
+                            <span class="meta">
+                                <span class="tag"><a href="/writing/comics/" title="See Posts in Comics">Comics</a></span>
+                                <span class="date">{{ post.date | date: '%A, %B %d, %Y' }}</span>
+                            </span>
+                            <h4>
                                 <a href='{{post.url}}'>{{ post.title }}</a>
-                            </h3>
+                            </h4>
                             {{ post.excerpt }}
                             <a href="{{post.url}}" class="read-more">Read More <i class="fa fa-angle-double-right"></i></a>
                         </div>

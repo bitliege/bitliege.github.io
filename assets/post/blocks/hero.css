@@ -55,29 +55,13 @@
     left: 50%;
     transform: translate(-50%, -50%);
     z-index: 10;
+    padding: $line-height 0;
 
     @media $(p-tablet) {
-        padding: $padding;
+        padding: 0 calc($line-height/2);
     }
 
     .card {
-        background: $white;
-        border: 1px solid $grey-80;
-        padding: 2rem;
-
-        @media $(p-tablet) {
-            padding: 4rem;
-        }
-
-        >*:first-child {
-            margin-top: 0;
-            margin-bottom: 2rem;
-
-            @media $(p-tablet) {
-                margin-bottom: 3rem;
-            }
-
-        }
 
         >.flex-grid {
 
@@ -193,10 +177,6 @@
 
             }
 
-        }
-
-        >*:last-child {
-            margin-bottom: 0;
         }
 
     }

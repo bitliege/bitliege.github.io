@@ -1,0 +1,155 @@
+/* =============================================================================
+
+    BLOCK: ARTICLE CSS
+    Authored by Josh Beveridge
+
+============================================================================= */
+.block-article {
+    margin: 0 auto;
+    max-width: 85%;
+    width: 75rem;
+
+    .lg-1of4 {
+        display: none;
+
+        @media $(l-tablet) {
+            display: block;
+        }
+
+    }
+
+    article {
+        max-width: 100%;
+        width: 100%; /* The Flex Grid class on this was messing with the width if I set it to rems. Not sure why. */
+
+        @media $(p-tablet) {
+            width: 33.333rem;
+        }
+
+        @media $(l-tablet) {
+            padding: 0 0 calc($line-height*2) 0;
+        }
+
+        .post-meta {
+            color: $grey-70;
+            font-family: $font-roboto;
+            font-size: calc($font-size/$ratio);
+            font-weight: 800;
+            line-height: $line-height;
+            margin: 0;
+            padding: $line-height 0;
+            text-align: center;
+            text-transform: uppercase;
+
+            @media $(l-tablet) {
+                padding: calc($line-height*2) 0;
+            }
+
+            a {
+                text-decoration: none;
+            }
+
+            &+* {
+                margin-top: 0;
+            }
+
+        }
+
+        h1, h2, h3, h4, h5 {
+            color: $fc-heading;
+            font-family: $font-roboto;
+            font-weight: 800;
+            letter-spacing: normal;
+            margin: calc($line-height*1.5) 0 calc($line-height/2) 0;
+            text-transform: uppercase;
+
+            &.section {
+                border-bottom: 1px solid $grey-80;
+                padding: 0 0 $line-height 0;
+            }
+
+        }
+
+        hr {
+            border: none;
+            border-top: 1px solid $grey-80;
+            height: 0;
+            margin: $line-height 0;
+            padding: 0;
+            width: 100%;
+        }
+
+        p {
+            color: $fc-copy;
+            font-family: $font-pt;
+            font-size: $font-size;
+            line-height: $line-height;
+            margin: calc($line-height/2) 0;
+        }
+
+        a {
+            color: $red;
+        }
+
+        blockquote {
+            border-left: calc($line-height/4) solid $red;
+            margin: $line-height 0;
+            padding: 0 0 0 $line-height;
+
+            p {
+                font-style: italic;
+
+                &:first-child {
+                    margin-top: 0;
+                }
+
+                &:last-child {
+                    margin-bottom: 0;
+                }
+
+            }
+
+        }
+
+        figure {
+            margin: $line-height 0;
+            padding: 0;
+            width: 100%;
+
+            p {
+                margin: 0;
+            }
+
+        }
+
+        img {
+            margin: 0;
+        }
+
+        div >*:last-child {
+            margin-bottom: 0;
+        }
+
+    }
+
+}
+
+html.no-touchevents {
+
+    .block-article {
+
+        article {
+
+            a {
+
+                &:hover {
+                    color: $grey-80;
+                }
+
+            }
+
+        }
+
+    }
+
+}

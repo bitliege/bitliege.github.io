@@ -9,7 +9,8 @@
     padding: $padding-double;
     width: 100%;
 
-    h3 {
+    h4 {
+        font-family: $font-roboto;
         margin: 0 0 $padding 0;
     }
 

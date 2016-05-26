@@ -10,11 +10,13 @@ images:
 ---
 Doctor Fate #11 misses the mark by attempting to address an audience younger than its plot deserves. A combination of missed opportunity and flat artistic comedy creates an atmosphere that detracts from the overall series' goal of exploring cultural and political expression in a younger generation.
 
-<p class="center">Score: <strong>6.5</strong></p>
+<h5 class="ta-center">Score: 6.5</h5>
 
 <hr>
 
+<figure markdown="1">
 ![{{ page.images[0].alt }}]({{ page.images[0].url }} "{{ page.images[0].title }}")
+</figure>
 
 Doctor Fate #11 continues a somewhat piecemeal story that places Khalid at the mercy of Julius Caesar's ghost. Given the advanced political subject matter that Doctor Fate often tries to address, I found that this issue detracted from the series' overall polish by relying heavily on exaggerated expression and misguided farce. The art, while unique and eye-catching, often peels away from the subject matter and leaves the reader disengaged from an otherwise serious conversation.
 

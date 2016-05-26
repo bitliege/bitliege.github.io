@@ -1,0 +1,234 @@
+/* =============================================================================
+
+    CARD CSS
+    Authored by Josh Beveridge
+
+============================================================================= */
+.block-card {
+    background: $white;
+    border: 1px solid $grey-80;
+    overflow: hidden;
+    padding: calc($line-height*1.2);
+
+    @media $(p-tablet) {
+        padding: calc($line-height*3);
+    }
+
+    .title {
+        margin: 0 0 calc($line-height + ($line-height/2)) 0;
+        position: relative;
+        width: 100%;
+
+        h2 {
+            color: $fc-heading;
+            display: inline-block;
+            font-family: $font-roboto;
+            font-size: calc(($font-size*$ratio)*$ratio);
+            line-height: calc($line-height*2);
+            margin: 0;
+            position: relative;
+            z-index: 5;
+
+            &:after {
+                background: $white;
+                content: " ";
+                display: block;
+                height: calc(100% + ($line-height*2));
+                position: absolute;
+                top: calc($line-height*(-1));
+                left: calc($line-height*(-1));
+                width: calc(100% + ($line-height*2));
+                z-index: -1;
+            }
+
+        }
+
+        .flourish {
+            background: $red;
+            height: 1px;
+            position: absolute;
+            top: 50%;
+            transform: translate(0, -50%);
+            width: 100%;
+        }
+
+    }
+
+    p {
+        color: $fc-copy;
+        font-family: $font-pt;
+
+        a {
+            color: $red;
+        }
+
+    }
+
+    >*:first-child {
+        margin-top: 0;
+    }
+
+    >*:last-child {
+        margin-bottom: 0;
+    }
+
+    >.flex-grid {
+
+        ul:last-of-type {
+
+            span {
+                display: none;
+
+                @media $(p-tablet) {
+                    display: block;
+                }
+
+            }
+
+        }
+
+    }
+
+    ul {
+        color: $fc-copy;
+        padding: 0 0 0 $line-height;
+
+        span {
+            margin: 0 0 0 calc($line-height*(-1));
+        }
+
+        li {
+            color: $fc-copy;
+            font-family: $font-pt;
+
+            a {
+                color: $red;
+            }
+
+        }
+
+    }
+
+    dl {
+        margin: $padding-double 0;
+        /*text-align: center;*/
+
+        @media $(p-tablet) {
+            position: absolute;
+            top: .2rem;
+            right: 3rem;
+            /*text-align: left;*/
+        }
+
+        @media $(l-tablet) {
+            /*margin: $padding-double 0;*/
+        }
+
+        dd {
+            display: inline-block;
+            margin: 0 $padding-double 0 0;
+
+            @media $(p-tablet) {
+                margin: 0 0 0 $padding-double;
+            }
+
+            a {
+                color: $type;
+                font-size: .8rem;
+            }
+
+        }
+
+    }
+
+    >div {
+        position: relative;
+
+        label {
+            color: $fc-copy;
+            display: block;
+            font-family: $font-roboto;
+            font-size: $font-size;
+            font-weight: 300;
+            line-height: $line-height;
+            margin: 0;
+            position: absolute;
+            top: calc($line-height*1.5);
+            left: 0;
+            text-transform: uppercase;
+            transition: all .3s ease;
+            z-index: 5;
+
+            i {
+                margin: 0 .5rem 0 0 ;
+            }
+
+            &.active {
+                top: 0;
+                font-size: calc($font-size/$ratio);
+                transition: all .3s ease;
+            }
+
+        }
+
+        input {
+            background: none;
+            border: none;
+            border-bottom: 1px solid $black;
+            box-shadow: none;
+            color: $black;
+            font-family: $font-roboto;
+            font-size: $font-size;
+            line-height: $line-height;
+            margin: 0;
+            outline: none;
+            padding: calc($line-height*1.5) 0 calc($line-height/2) 0;
+            position: relative;
+            z-index: 10;
+            width: 100%;
+
+            &:focus {
+                border-bottom: 1px solid $red;
+            }
+
+        }
+
+    }
+
+}
+
+html.no-touchevents {
+
+    .block-card {
+
+        p {
+
+            a {
+
+                &:hover {
+                    color: $grey-70;
+                }
+
+            }
+
+        }
+
+        ul {
+
+            li {
+
+                a {
+
+                    &:hover {
+                        color: $grey-70;
+                    }
+
+                }
+
+            }
+
+        }
+
+    }
+
+}

@@ -8,7 +8,7 @@ categories: writing design
 
 <hr>
 
-### How it Started
+#### How it Started
 
 >“Read anything interesting today?”
 
@@ -16,7 +16,7 @@ It was an innocent question I asked my Senior Front-End mid-day today. My brain 
 
 It’s an engaging read, if not a little biased. What I really took away was an astounding realization of why I disagreed with some of Schiff’s points. This eventually lead to a discussion about our own goals for our understanding of web design and why they suit our view of the web.
 
-### The Website as a Document
+#### The Website as a Document
 
 First and foremost, a website for a “youngin’” like myself has one primary purpose: to allow me to consume information. When I visit a site, it’s because I’ve landed there via a Google search, an IM, or a Tweet. Once I’ve decided to click that link, I expect the content to be fed to me in an immediate and efficient manner. Flat design allows for this primarily because it declutters the minimal area my iPhone 5 provides. That entire screen space needs to be easily readable content so that I can consume it hassle free. Distractions to my eye and engaging an emotional response are not key priorities at this point and this is where Humanistic design would fail.
 
@@ -26,17 +26,17 @@ First and foremost, a website for a “youngin’” like myself has one primary
 
 The above statement is incredibly correct. However, maintaining the paradigm that a website primarily functions as a means of conveying information, adding realism to buttons, backgrounds and flourishes seems to counter the pressing need for information to be consistent and accessible on ever smaller devices. The more information I consume on my handheld device (even on massive phablets) the fewer humanistic assets are required.
 
-### The Medium of the Screen
+#### The Medium of the Screen
 
 We use screens for nearly all of our digital interaction. The introduction of the [Microsoft Hololens](//www.microsoft.com/microsoft-hololens/en-us) really made me think hard about why flat design seems to fit the web so well. It also made me stop and think about why Humanistic design seemed so jarring in a world of flat sheets of glass.
 
-#### The Screen
+##### The Screen
 
 First and foremost: the screen is a flat object. Regardless of how we style our interfaces, this fact remains true. Whether I’m tapping a button on my phone or clicking that same button on my laptop, the interaction remains relatively consistent no matter where I go. The hard surface of the screen, trackpad or mouse stops my fingers from experiencing any tactile response simulated by the visual aesthetic. This is because our interactions with screens are very dissociated.
 
 I feel flat design prevails in this type of interaction. The goal of the design is to encourage a click or tap. More importantly however, is the response that occurs from that button once clicked. Google’s [Material Design](//design.google.com) handles this in a very efficient manner. The response, while subtle, is incredibly satisfying. When compared to a Humanistic button, the expected response from clicking said button falls short. I believe that this is directly related to what our brain is expecting when we click on such a life-like object. We want to feel it happen. We want to feel the resistance of pushing it down and the satisfaction of the tactile click that happens when it’s pressed all the way. Unfortunately, due to the nature of our interface, this is nearly impossible to replicate efficiently.
 
-#### The Hololens
+##### The Hololens
 
 This is where the Hololens comes in. After reading Schiff’s article, I began to think about where this design trend of the past might actually be most useful. Something where we might not be able to simulate tactility, but one in which we could emulate it far more efficiently than on a screen. The Hololens seems to be the perfect candidate. If the experience Microsoft is promising is anything like their commercials, realism is going to find a new home in holograms very quickly.
 
@@ -44,7 +44,7 @@ This is directly tied to the fact that the interface will be merging with our ow
 
 **I can’t wait to experience this.**
 
-### What Did I Take Away?
+#### What Did I Take Away?
 
 It was an awesome discussion to have and of course, my Senior being my Senior, had a great statement to wrap it up:
 

@@ -1,0 +1,63 @@
+/* =============================================================================
+
+    BLOCK: SIDEBAR CSS
+    Authored by Josh Beveridge
+
+============================================================================= */
+.block-sidebar {
+    display: none;
+
+    @media $(l-tablet) {
+        display: block;
+        opacity: 0;
+        padding: 0 calc($line-height*2) 0 0;
+        position: absolute;
+        top: 35rem;
+        width: 21.25%;
+    }
+
+    /* Keep in mind that the following media query requires the calculation to occur at 100% or 16px. */
+
+    @media screen and (min-width: 105.8823529411765em) {
+        width: 18.75rem; /* This is 25% of 75rem */
+    }
+
+    .block-summary {
+        padding: 0;
+
+        h5 {
+            color: $fc-heading;
+            font-family: $font-roboto;
+            font-size: $font-size;
+            letter-spacing: normal;
+            margin: calc($line-height/2) 0 0 0;
+        }
+
+        p {
+            color: $grey-70;
+            font-family: $font-roboto;
+            font-size: calc($font-size/$ratio);
+            font-weight: 800;
+            line-height: $line-height;
+            margin: 0;
+            text-transform: uppercase;
+        }
+
+        .social {
+            /*margin: calc($line-height/2) 0 0 0;*/
+
+            a {
+
+                i {
+                    color: $red;
+                    font-size: calc($font-size/$ratio);
+                    margin: 0 $line-height 0 0;
+                }
+
+            }
+
+        }
+
+    }
+
+}

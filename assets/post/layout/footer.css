@@ -7,11 +7,70 @@
 footer {
     background: $white;
     border-top: 1px solid $grey-80;
-    margin: $padding-double 0 0 0;
-    padding: $padding-double 0 5rem 0;
+    margin: $padding-double 0 5rem 0;
+    padding: $padding-double 0;
 
     @media $(l-tablet) {
+        margin: $padding-double 0 0 0;
         padding: $padding-double 0;
+    }
+
+    .box {
+        text-align: center;
+
+        &:first-child {
+
+            @media $(p-tablet) {
+                text-align: left;
+            }
+
+        }
+
+        &:last-child {
+
+            @media $(p-tablet) {
+                text-align: right;
+            }
+
+        }
+
+    }
+
+    p {
+        color: $grey-70;
+        font-family: $font-roboto;
+        font-size: calc($font-size/$ratio);
+        font-weight: 800;
+        line-height: $line-height;
+        margin: 0;
+        padding: $line-height 0;
+        text-transform: uppercase;
+
+        @media $(p-tablet) {
+            padding: 0 calc($line-height/2);
+        }
+
+        a {
+            color: $red;
+            text-decoration: none;
+        }
+
+        &.love {
+
+            @media $(p-tablet) {
+                text-align: left;
+            }
+
+        }
+
+        &.copy {
+
+            @media $(p-tablet) {
+                text-align: right;
+            }
+
+        }
+
     }
 
     img {
@@ -27,43 +86,22 @@ footer {
 
     }
 
-    .love {
-        font-family: $font-roboto;
-        font-size: .7rem;
-        font-weight: 700;
-        line-height: 1.25;
-        margin: 0;
-        padding: $padding-double $padding;
-        text-align: center;
-        text-transform: uppercase;
+}
 
-        @media $(p-tablet) {
-            text-align: left;
-        }
+html.no-touchevents {
 
-        span {
-            color: $grey-50;
-        }
+    footer {
 
-        a {
-            text-decoration: none;
-        }
+        p {
 
-    }
+            a {
 
-    .copy {
-        color: $grey-50;
-        font-family: $font-roboto;
-        font-size: .7rem;
-        font-weight: 700;
-        line-height: 1.25;
-        margin: 0;
-        padding: $padding-double $padding;
-        text-align: center;
-        text-transform: uppercase;
+                &:hover {
+                    color: $grey-70;
+                }
 
-        @media $(p-tablet) {
-            text-align: right;
+            }
+
         }
 
     }

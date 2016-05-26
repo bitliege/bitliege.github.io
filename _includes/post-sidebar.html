@@ -1,26 +1,29 @@
-<div class="sidebar post">
+<div class="block-sidebar" id="postSidebar">
 
     {% assign postLength = page.content | number_of_words | divided_by: 228.0 | ceil %}
 
     {% assign siteRoot = "http://joshbeveridge.com" | url_encode %}
 
-    <dl>
-        <dt class="label">This Post</dt>
-        <dd class="date">
-            <h5>Published on</h5>
+    <div class="block-summary">
+
+        <div>
+
+            <span class="meta">
+                <span class="tag">About This Post</span>
+            </span>
+            <h5>Published On:</h5>
             <p>{{ page.date | date: '%A, %B %d, %Y' }}</p>
-        </dd>
-        <dd class="length">
-            <h5>Time Remaining</h5>
-            <p><span>{{ postLength }}</span> Minute{% if postLength > 1 %}s{% endif %} Left</p>
-        </dd>
-        <dd class="share">
-            <h5>Share This</h5>
-            <p>
+            <h5>Time Remaining:</h5>
+            <p class="length"><span>{{ postLength }}</span> Minute{% if postLength > 1 %}s{% endif %} Left</p>
+            <h5>Share This:</h5>
+            <p class="social">
                 <a href="https://twitter.com/intent/tweet?text={{ page.title | url_encode }}&amp;via=joshdrink&amp;url={{ siteRoot }}{{ page.url | url_encode }}" data-counturl="{{ siteRoot }}{{ page.url}}" target="_blank"><i class="fa fa-twitter"></i></a>
                 <a href="http://www.facebook.com/sharer.php?u={{ siteRoot }}{{ page.url | url_encode }}" target="_blank"><i class="fa fa-facebook"></i></a>
                 <a href="https://www.linkedin.com/shareArticle?mini=true&amp;title={{ page.title | url_encode }}&amp;url={{ siteRoot }}{{ page.url | url_encode }}" target="_blank"><i class="fa fa-linkedin"></i></a>
             </p>
-        </dd>
-    </dl>
+
+        </div>
+
+    </div>
+
 </div>

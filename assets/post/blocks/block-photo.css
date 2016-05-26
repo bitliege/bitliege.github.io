@@ -1,0 +1,31 @@
+/* =============================================================================
+
+    BLOCK: PHOTO CSS
+    Authored by Josh Beveridge
+
+============================================================================= */
+.img {
+    align-items: stretch;
+    display: flex;
+    overflow: hidden;
+    padding: $line-height 0;
+
+    @media $(p-tablet) {
+        padding: calc($line-height*2) calc($line-height/2) $line-height;
+    }
+
+    >div {
+        background-position: top center;
+        background-size: cover;
+        flex: 1;
+        min-height: 15rem;
+        position: relative;
+        z-index: 0;
+
+        @media $(p-tablet) {
+            min-height: 10rem;
+        }
+
+    }
+
+}

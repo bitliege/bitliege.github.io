@@ -10,11 +10,13 @@ images:
 ---
 Action Comics #51 follows Clark and Kara as they explore what it means to be super, and how Clark expects his cousin to meet the needs of Earth when he is gone. Despite the issue's pacing feeling rushed, the sincerity of the relationship between the two characters helps overpower the eagerness Clark expresses towards his own death.
 
-<p class="center">Score: <strong>7.5</strong></p>
+<h5 class="ta-center">Score: 7.5</h5>
 
 <hr>
 
+<figure markdown="1">
 ![{{ page.images[0].alt }}]({{ page.images[0].url }} "{{ page.images[0].title }}")
+</figure>
 
 Action Comics #51 continues the story of Clark trying to locate Kara before his untimely end. With the intention of passing on his legacy to his cousin, Clark finally succeeds in reaching Kara as she's being tested on (willingly) by a few friendly scientists. The issue, when compared to its predecessor, suffers from poor pacing and jarring cuts from scene to scene. The issue is redeemed however, by the detailed art that brings a special charm to Clark and Kara's interactions.
 

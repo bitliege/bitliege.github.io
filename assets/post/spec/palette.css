@@ -32,6 +32,10 @@ $gray-90: hsla(0, 0%, 90%, 1);
 /* White */
 $white: rgba(255, 255, 255, 1);
 
+/* Typography */
+$fc-heading: rgba(0, 0, 10, .75);
+$fc-copy: rgba(0, 0, 10, .65);
+
 /* Font Specific Colours */
 $type: rgba(0, 0, 10, .65);
 $type-headings: rgba(0, 0, 10, .75);

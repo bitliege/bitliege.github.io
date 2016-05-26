@@ -14,7 +14,7 @@
 
                     <div class="container">
 
-                        <span class="date">
+                        <span class="meta">
                             {% if post.categories contains "design" %}
                                 In Design
                             {% endif %}
@@ -25,7 +25,7 @@
                                 In Comics
                             {% endif %}
                             &nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;{{ post.date | date: '%A, %B %d, %Y' }}</span>
-                        <h2>{{ post.title }}</h2>
+                        <h3>{{ post.title }}</h3>
 
                     </div>
 

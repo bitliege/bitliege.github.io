@@ -13,11 +13,13 @@ images:
 ---
 The American Alien series achieves a mighty goal of reaching into the depths of Superman's history and pulling out some of the best events that establish him as a believable character. Issue #6 takes this a step further, placing Clark amongst his friends and creating a relatable context for the reader that provides the opportunity to establish a proper connection with the Man of Steel.
 
-<p class="center">Score: <strong>9.0</strong></p>
+<h5 class="ta-center">Score: 9.0</h5>
 
 <hr>
 
+<figure markdown="1">
 ![{{ page.images[0].alt }}]({{ page.images[0].url }} "{{ page.images[0].title }}")
+</figure>
 
 American Alien achieves its primary goal splendidly in issue #6: show the world that Clark Kent is a person. Issue #6 explores the complex layers to this otherwise all-powerful being that makes him relatable and real. It is precisely for this reason that this series succeeds in reinventing DC's most iconic character.
 

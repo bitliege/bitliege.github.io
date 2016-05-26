@@ -14,11 +14,13 @@ images:
 ---
 In a final farewell, Midnighter explores the conclusion to the Suicide Squad conflict while highlighting some of the best aspects of the series' run. Violence, passion and wittiness abound as Midnighter and Apollo shake free of the confines of their 12 issue run and establish themselves as fully-fledged LGBT DCU characters.
 
-<p class="center">Score: <strong>9.5</strong></p>
+<h5 class="ta-center">Score: 9.5</h5>
 
 <hr>
 
+<figure markdown="1">
 ![{{ page.images[0].alt }}]({{ page.images[0].url }} "{{ page.images[0].title }}")
+</figure>
 
 The final installment in the Midnighter series does an absolutely incredible job of providing fans with a meaty, satisfying exploration of what makes Midnighter so unbelievably unique. This issue is packed with every single piece of Orlando's vision for this character: power, arrogance, passion, violence, acceptance and love. It excels at tying off the series on the highest note possible without sacrificing its quality or integrity.
 

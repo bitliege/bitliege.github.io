@@ -24,6 +24,19 @@ $desktop: screen and (min-width: 64.01em);
 $cinema: screen and (min-width: 100em);
 /*$(cinema) {}*/
 
+/* Helpers ================================================================== */
+.ta-center {
+    text-align: center;
+}
+
+.ta-left {
+    text-align: left;
+}
+
+.ta-right {
+    text-align: right;
+}
+
 /* Padding Variables ======================================================== */
 $padding: 1rem;
 $padding-half: calc($padding/2);
@@ -47,25 +60,20 @@ section {
     margin: 0;
     position: relative;
     width: 100%;
-
-    &.main >.container {
-        padding: $padding-double 0 0 0;
-    }
-
 }
 
 .container {
     display: block;
     margin: 0 auto;
     max-width: 85%;
-    width: 60em;
+    width: 60rem;
 }
 
 .post-container {
     display: block;
     margin: 0 auto;
     max-width: 85%;
-    width: 75em;
+    width: 75rem;
 }
 
 .copy-container {
@@ -85,9 +93,9 @@ section {
         padding: 0 0 5rem 0;
     }
 
-    *:last-child {
+    /**:last-child {
         margin-bottom: 0;
-    }
+    }*/
 
 }
 

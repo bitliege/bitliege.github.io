@@ -10,11 +10,13 @@ images:
 ---
 Action Comics issue #52 is packed full of beautiful art, and the continued presence of the Trinity helps establish a strong sense of honour and history that the New 52 books often lack. As Clark's symptoms are getting worse, this issue continues to deliver more questions than it does answers.
 
-<p class="center">Score: <strong>7.0</strong></p>
+<h5 class="ta-center">Score: 7.0</h5>
 
 <hr>
 
+<figure markdown="1">
 ![{{ page.images[0].alt }}]({{ page.images[0].url }} "{{ page.images[0].title }}")
+</figure>
 
 A continuation of the Final Days of Superman plot, Clark finds himself increasingly weaker and accompanied by the rest of the trinity. This grouping itself is a fantastic driving force during these last few issues, and it is very fitting for Clark's last adventure to be alongside Wonder Woman and Batman. Wonder Woman's presence in particular really helps ground Clark's struggle, and their romantic connection, while subtle, highlights a more human aspect that is often lost in all the action.
 

@@ -16,10 +16,90 @@ $font-pt: 'PT Serif', serif;
 /* Font Standard ============================================================ */
 html,
 body {
-    font-size: 90%;
+    font-size: 100%;
 
-    @media $(p-tablet) {
-        font-size: 100%;
+    @media $(l-tablet) {
+        font-size: 120%;
+    }
+
+}
+
+$ratio: 1.618;
+$font-size: 1rem;
+$line-height: 1.6rem;
+
+* {
+    line-height: $line-height;
+}
+
+/* NOTE:MOVE THIS */
+section.main >.container {
+    padding: $line-height 0 0 0;
+}
+
+/* Typography Resets ======================================================== */
+h1, h2, h3, h4, h5 {
+    letter-spacing: -.1rem;
+    margin: $line-height 0 calc($line-height/2) 0;
+}
+
+h1 {
+    font-size: calc(((($font-size*$ratio)*$ratio)*$ratio)*$ratio);
+    line-height: calc($line-height*4);
+}
+
+h2 {
+    font-size: calc((($font-size*$ratio)*$ratio)*$ratio);
+    line-height: calc($line-height*3);
+}
+
+h3 {
+    font-size: calc(($font-size*$ratio)*$ratio);
+    line-height: calc($line-height*2);
+}
+
+h4 {
+    font-size: calc($font-size*$ratio);
+    line-height: $line-height;
+}
+
+h5 {
+    font-size: $font-size;
+    line-height: $line-height;
+}
+
+p {
+    font-size: $font-size;
+    line-height: $line-height;
+    margin: calc($line-height/2) 0;
+}
+
+a,
+a:visited,
+a:link,
+span,
+strong,
+em {
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
+    transition: all .3s ease;
+}
+
+strong {
+    font-weight: 800;
+}
+
+em {
+    font-style: italic;
+}
+
+ul {
+    margin: calc($line-height/2) 0;
+
+    li {
+        font-size: $font-size;
+        line-height: $line-height;
     }
 
 }
@@ -31,7 +111,7 @@ body {
 }
 
 /* Headings ================================================================= */
-h1 {
+/*h1 {
     font-size: 2.25rem;
 
     @media $(p-tablet) {
@@ -49,9 +129,9 @@ h1, h2, h3, h4, h5, h6 {
     color: $type-headings;
     font-family: $font-roboto;
     font-weight: 700;
-    line-height: 1.2;
+    line-height: 1.2;*/
     /*letter-spacing: .2rem;*/
-    margin: 3.5rem 0 1rem 0;
+    /*margin: 3.5rem 0 1rem 0;
     text-transform: uppercase;
 
     &+p {
@@ -92,12 +172,12 @@ h1, h2, h3, h4, h5, h6 {
         margin: 2.5rem 0 1rem 0;
     }
 
-}
+}*/
 
 /* Copy ===================================================================== */
 
 /* Body Font */
-p,
+/*p,
 blockquote {
     color: $type;
     line-height: 1.6;
@@ -166,10 +246,10 @@ blockquote {
 
 .center {
     text-align: center;
-}
+}*/
 
 /* Anchors */
-a,
+/*a,
 a:visited,
 a:link {
     color: $red;
@@ -238,10 +318,10 @@ a:link {
         display: block;
     }
 
-}
+}*/
 
 /* Buttons ================================================================== */
-.button,
+/*.button,
 .button:focus,
 .button:active,
 .button:link,
@@ -295,10 +375,10 @@ code {
     border-radius: .2rem;
     font-size: .8rem;
     padding: .2rem .4rem .1rem .4rem;
-}
+}*/
 
 /* Inputs =================================================================== */
-input:focus,
+/*input:focus,
 select:focus,
 textarea:focus,
 button:focus {
@@ -314,10 +394,10 @@ input {
     margin: .5rem 0 1.5rem 0;
     padding: 1rem;
     width: 100%;
-}
+}*/
 
 /* Lists ==================================================================== */
-ul {
+/*ul {
     color: $type;
     font-family: $font-pt;
     font-size: 1rem;
@@ -346,9 +426,9 @@ dl {
         padding: 0;
     }
 
-}
+}*/
 
 /* Tables =================================================================== */
-table {
+/*table {
     width: 100%;
-}
+}*/

@@ -13,11 +13,13 @@ images:
 ---
 Midnighter #11 highlights some of the best writing and comic art DC has in print. While the pacing of Midnighter has suffered in past issues, #11 immediately redeems any past mistakes by establishing a great character into an already great universe.
 
-<p class="center">Score: <strong>9.0</strong></p>
+<h5 class="ta-center">Score: 9.0</h5>
 
 <hr>
 
+<figure markdown="1">
 ![{{ page.images[0].alt }}]({{ page.images[0].url }} "{{ page.images[0].title }}")
+</figure>
 
 Issue #11 is a fantastic reintroduction to Apollo's character that accomplishes the impressive goal of establishing his past relationship with Midnighter while simultaneously presenting his powers and motivation as a hero. The idea behind his reintroduction made me hesitant about this issue due to the quick pace of Midnighter's plot thus far, however Orlando has written this character in flawlessly, without a single moment feeling forced or out of place.
 

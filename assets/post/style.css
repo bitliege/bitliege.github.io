@@ -22,11 +22,33 @@
 
 @import "blocks/hero.css";
 
-/* IMG ====================================================================== */
-@import "blocks/img.css";
+/* Blocks =================================================================== */
 
-/* Summary ================================================================== */
-@import "blocks/summary.css";
+/* Cards */
+@import "blocks/block-card.css";
+
+/* Summaries */
+@import "blocks/block-summary.css";
+
+/* Photos */
+@import "blocks/block-photo.css";
+
+/* Articles */
+@import "blocks/block-article.css";
+
+/* Sidebars */
+@import "blocks/block-sidebar.css";
+
+/* Latest Posts */
+@import "blocks/block-photo-summary.css";
+
+/* Footer =================================================================== */
+
+/* Follow */
+@import "blocks/block-social.css";
+
+/* Footer */
+@import "layout/footer.css";
 
 /* Profile ================================================================== */
 @import "blocks/profile.css";
@@ -42,17 +64,6 @@
 
 /* Post Hero ================================================================ */
 @import "blocks/post-hero.css";
-
-/* Sidebar ================================================================== */
-@import "blocks/sidebar.css";
-
-/* Footer =================================================================== */
-
-/* Latest Posts */
-@import "blocks/latest-posts.css";
-
-/* Subscribe */
-@import "blocks/subscribe.css";
 
 /* Footer */
 @import "layout/footer.css";

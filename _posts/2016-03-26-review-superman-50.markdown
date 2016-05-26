@@ -6,17 +6,15 @@ categories: writing comics
 ---
 Superman #50 is a beautiful issue packed with conflict that rushes what could otherwise be an interesting trip through a variety of what ifs. Vandal Savage falls flat as a villain and Clark's inability to keep his cool creates dissonance between the character and the reader's expectations of him.
 
-Score: <strong>6.0</strong>
+<h5 class="ta-center">Score: 6.0</h5>
 
 <hr>
 
-## Plot Summary
-
-<strong>Spoilers Ahead!</strong>
+#### [Spoiler Warning] Plot Summary
 
 At the conclusion of the Savage Dawn arc, Clark finds himself chasing Vandal Savage outside the Earth's atmosphere, where Savage has pulled the comet fueling his power towards the Earth in a final attempt to achieve his ultimate strength. After reaching the comet, Savage sends Clark through a tirade of visions that place him back on Krypton and at the helm of an army of super-powered soldiers. Clark's will is tested when Savage demands that he accept that strength is the ultimate form of success and that "weakness inevitably leads to failure and pain...". In a final moment of conflict, Clark remembers his father's words, reminding him that he has a responsibility to use his strength for the greater good. While Clark attempts to destroy the comet, Savage sends his robotic son Puzzler to stop the attack. After a brief discussion about having the will to choose, Puzzler decides to help Clark finish the job and the comet explodes.
 
-## I Enjoyed...
+#### I Enjoyed...
 
 Issue #50 has some pretty incredible panels. The collection of artists they've brought together to illustrate the final scenes of this arc helped captivate me through the issue and I highly recommend taking a look for the art alone. In particular, the first few panels of the issue showcasing Vandal's transformation as he neared the comet brought some incredible detail and colour to the atmosphere.
 
@@ -28,7 +26,7 @@ The issue also played around with some very key themes during Clark's battle ins
 
 ... really echoed some of my favourite concepts that shape Superman's character. Despite all the chaos and confusion that abounds in this issue, this flashback scene grounds the story in the reality of Clark's personality, and brings the reader back to Earth. This helps establish the final scenes of the arc in a more believable place.
 
-## I Disliked...
+#### I Disliked...
 
 Superman #50 was an interesting change in pace. I really enjoyed the direction issue #49 took, and thought that despite John's immediate willingness to sacrifice himself, the gesture, and his last few words, really embodied what I want to see from Clark in the future.
 

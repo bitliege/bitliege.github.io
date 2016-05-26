@@ -5,9 +5,19 @@
 
 ============================================================================= */
 .post-hero {
-    background-position: center;
+    background-position: top center;
     background-size: cover;
+    padding: calc($line-height*2) $line-height;
     position: relative;
+    text-align: center;
+
+    @media $(p-tablet) {
+        padding: calc($line-height*7) calc($line-height*2) calc($line-height*4);
+    }
+
+    @media $(desktop) {
+        padding: calc($line-height*8) calc($line-height*2) calc($line-height*5);
+    }
 
     &:before {
         background: $type-headings;
@@ -20,19 +30,21 @@
         z-index: 5;
     }
 
-    h1 {
+    h2 {
         color: $white;
+        font-family: $font-roboto;
+        font-size: calc(($font-size*$ratio)*$ratio);
+        line-height: calc($line-height*2);
         margin: 0 auto;
         max-width: 85%;
-        padding: 5rem 0 5rem;
         position: relative;
-        text-align: center;
-        width: 15em;
+        text-transform: uppercase;
+        width: 45rem;
         z-index: 10;
 
-        @media $l-tablet {
-            font-size: 4rem;
-            padding: 15rem 0 12rem;
+        @media $(p-tablet) {
+            font-size: calc((($font-size*$ratio)*$ratio)*$ratio);
+            line-height: calc($line-height*3);
         }
 
     }

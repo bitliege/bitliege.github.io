@@ -12,29 +12,37 @@ layout: default
 
         <div class="container hero-block">
 
-            <div class="card">
-                <h1 class="center">Posts in
-                    {% if page.url contains "design" %}
-                        Design
-                    {% endif %}
-                    {% if page.url contains "gaming" %}
-                        Gaming
-                    {% endif %}
-                    {% if page.url contains "comics" %}
-                        Comics
-                    {% endif %}
-                </h1>
+            <div class="block-card">
+                <div class="title ta-center">
+                    <h2>Posts in
+                        {% if page.url contains "design" %}
+                            Design
+                        {% endif %}
+                        {% if page.url contains "gaming" %}
+                            Gaming
+                        {% endif %}
+                        {% if page.url contains "comics" %}
+                            Comics
+                        {% endif %}
+                    </h2>
+                    <div class="flourish"></div>
+                </div>
                 {% if page.url contains "design" %}
                     <p>As a designer by profession, I use writing to elaborate on ideas or concepts that peak my interest. This archive doesn't follow any particular schedule, but aims to help explain and propagate ideas about design that I come across in my day-to-day work. If you have particular topics that you'd like to discuss, I invite you to get in touch through <a href="//twitter.com/joshdrink" target='_blank'>Twitter</a>, as I'm always looking to learn something new.</p>
                 {% endif %}
                 {% if page.url contains "gaming" %}
                     <p>Video games have had such a tremendous impact on my generation, and I've grown to accept that they will forever be a part of my life. Gaming is a unique experience that has grown from humble beginnings into a powerful storytelling platform. When a game strikes my fancy, I like to share my thoughts in an attempt to help you find something extraordinary too.</p>
-                    <ul>
-                        <span>I'm currently playing:</span>
-                        <li>Dark Souls III</li>
-                        <li>Guild Wars 2</li>
-                        <li>Stardew Valley</li>
-                    </ul>
+                    <div class="flex-grid">
+                        <ul class="box med-1of2">
+                            <span>I'm currently playing:</span>
+                            <li>Dark Souls III</li>
+                            <li>Guild Wars 2</li>
+                        </ul>
+                        <ul class="box med-1of2">
+                            <span>&nbsp;</span>
+                            <li>Stardew Valley</li>
+                        </ul>
+                    </div>
                 {% endif %}
                 {% if page.url contains "comics" %}
                     <p>You can find reviews and commentary on some of my favourite series here. I do my best to publish reviews the week of the book's release, so check back soon if you don't see the review you're looking for. If there is a series you think I'd enjoy, I'd love to hear from you! <a href="//twitter.com/joshdrink" target='_blank'>Send me a tweet with your suggestions!</a></p>
@@ -94,18 +102,20 @@ layout: default
 
         {% if page.url contains "design" %}
             {% if site.categories.design == null %}
-                <h3 class='tbd'>Check back soon!</h3>
+                <h4 class='tbd'>Check back soon!</h4>
             {% else %}
                 {% for post in site.categories.design %}
-                    <dd class='box med-1of2 lg-1of3 summary'>
+                    <dd class='box med-1of2 lg-1of3 block-summary'>
                         <div>
-                            <a href="/writing/design/" class="label">In Design</a>
-                            <span class="date">{{ post.date | date: '%A, %B %d, %Y' }}</span>
-                            <h3>
+                            <span class="meta">
+                                <span class="tag"><a href="/writing/design/" title="See Posts in Design">Design</a></span>
+                                <span class="date">{{ post.date | date: '%A, %B %d, %Y' }}</span>
+                            </span>
+                            <h4>
                                 <a href='{{post.url}}'>{{ post.title }}</a>
-                            </h3>
+                            </h4>
                             <p>{{ post.excerpt }}</p>
-                            <a href="{{post.url}}" class="read-more">Read More <i class="fa fa-angle-double-right"></i></a>
+                            <a href="{{post.url}}" class="read-more" title="Read this Post!">Read More <i class="fa fa-angle-double-right"></i></a>
                         </div>
                     </dd>
                 {% endfor %}
@@ -114,18 +124,20 @@ layout: default
 
         {% if page.url contains "gaming" %}
             {% if site.categories.gaming == null %}
-                <h3 class='tbd'>Check back soon!</h3>
+                <h4 class='tbd'>Check back soon!</h4>
             {% else %}
                 {% for post in site.categories.gaming %}
-                    <dd class='box med-1of2 lg-1of3 summary'>
+                    <dd class='box med-1of2 lg-1of3 block-summary'>
                         <div>
-                            <a href="/writing/gaming/" class="label">In Gaming</a>
-                            <span class="date">{{ post.date | date: '%A, %B %d, %Y' }}</span>
-                            <h3>
+                            <span class="meta">
+                                <span class="tag"><a href="/writing/gaming/" title="See Posts in Gaming">Gaming</a></span>
+                                <span class="date">{{ post.date | date: '%A, %B %d, %Y' }}</span>
+                            </span>
+                            <h4>
                                 <a href='{{post.url}}'>{{ post.title }}</a>
-                            </h3>
+                            </h4>
                             <p>{{ post.excerpt }}</p>
-                            <a href="{{post.url}}" class="read-more">Read More <i class="fa fa-angle-double-right"></i></a>
+                            <a href="{{post.url}}" class="read-more" title="Read this Post!">Read More <i class="fa fa-angle-double-right"></i></a>
                         </div>
                     </dd>
                 {% endfor %}
@@ -134,18 +146,20 @@ layout: default
 
         {% if page.url contains "comics" %}
             {% if site.categories.comics == null %}
-                <h3 class='tbd'>Check back soon!</h3>
+                <h4 class='tbd'>Check back soon!</h4>
             {% else %}
                 {% for post in site.categories.comics %}
-                    <dd class='box med-1of2 lg-1of3 summary'>
+                    <dd class='box med-1of2 lg-1of3 block-summary'>
                         <div>
-                            <a href="/writing/comics/" class="label">In Comics</a>
-                            <span class="date">{{ post.date | date: '%A, %B %d, %Y' }}</span>
-                            <h3>
+                            <span class="meta">
+                                <span class="tag"><a href="/writing/comics/" title="See Posts in Comics">Comics</a></span>
+                                <span class="date">{{ post.date | date: '%A, %B %d, %Y' }}</span>
+                            </span>
+                            <h4>
                                 <a href='{{post.url}}'>{{ post.title }}</a>
-                            </h3>
+                            </h4>
                             <p>{{ post.excerpt }}</p>
-                            <a href="{{post.url}}" class="read-more">Read More <i class="fa fa-angle-double-right"></i></a>
+                            <a href="{{post.url}}" class="read-more" title="Read this Post!">Read More <i class="fa fa-angle-double-right"></i></a>
                         </div>
                     </dd>
                 {% endfor %}
@@ -153,7 +167,7 @@ layout: default
         {% endif %}
 
         <dd class='no-result box full'>
-            <h3>Sorry, try a different term.</h3>
+            <h4>Sorry, try a different term.</h4>
             <p>Oops! It seems that you're searching for an article that doesn't exist! Give it another go, or check out the latest posts column for something new!</p>
         </dd>
 

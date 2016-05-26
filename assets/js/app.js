@@ -42,33 +42,33 @@
         var n = d.getDay();
 
         if(n == 0) {
-            $('.landing .hero-block .card h1').text("Take a break, It's Sunday!");
+            $('#dateChanger').text("Take a Break, it's Sunday!");
         }
         if(n == 1) {
-            $('.landing .hero-block .card h1').text("Whelp, it's Monday.");
+            $('#dateChanger').text("Whelp, it's Monday.");
         }
         if(n == 2) {
-            $('.landing .hero-block .card h1').text("Have a terrific Tuesday!");
+            $('#dateChanger').text("Have a Terrific Tuesday!");
         }
         if(n == 3) {
-            $('.landing .hero-block .card h1').text("Happy New Comic Book Day!");
+            $('#dateChanger').text("Happy New Comic Book Day!");
         }
         if(n == 4) {
-            $('.landing .hero-block .card h1').text("Throwback Thursday, right?");
+            $('#dateChanger').text("Throwback Thursday, Right?");
         }
         if(n == 5) {
-            $('.landing .hero-block .card h1').text("Gotta get down on Friday!");
+            $('#dateChanger').text("Gotta Get Down on Friday!");
         }
         if(n == 6) {
-            $('.landing .hero-block .card h1').text("Saturday = Quest Day");
+            $('#dateChanger').text("Saturday = Quest Day");
         }
 
-        var cardHeight = $('.hero-block .card').outerHeight();
+        var cardHeight = $('.hero-block .block-card').outerHeight();
         $('.hero').css('padding-bottom', (cardHeight/2) + 'px');
         $('.main').css('padding-top', (cardHeight/2) + "px");
 
         $(window).resize(function() {
-            var cardHeight = $('.hero-block .card').outerHeight();
+            var cardHeight = $('.hero-block .block-card').outerHeight();
             $('.hero').css('padding-bottom', (cardHeight/2) + 'px');
             $('.main').css('padding-top', (cardHeight/2) + "px");
         });
@@ -113,11 +113,11 @@
         }
 
         // Intro Labels ========================================================
-        $(".hero-block input").focus(function(e) {
+        $(".block-card input").focus(function(e) {
             $(this).parent().find("label").addClass("active");
         });
 
-        $(".hero-block input").blur(function(e) {
+        $(".block-card input").blur(function(e) {
 
             if(!$(this).val()) {
                 $(this).parent().find("label").removeClass('active');
@@ -130,7 +130,7 @@
 
             var input = this.value.toLowerCase()
 
-            $('.main.archive .article-list dd h3').each(function () {
+            $('.main.archive .article-list dd h4').each(function () {
                 var text  = $(this).text().toLowerCase();
 
                 if(text.indexOf(input) >= 0) {
@@ -143,7 +143,7 @@
 
             });
 
-            if($('.article-list dd.summary:visible').length) {
+            if($('.article-list dd.block-summary:visible').length) {
                 $('.no-result').hide();
             }
             else {
@@ -162,35 +162,36 @@
         if (matchMedia('screen and (min-width: 64em)').matches) {
 
             var heroHeight = $(".post-hero").outerHeight();
-            var articleHeight = $('.post-container').outerHeight() + heroHeight;
+            var articleHeight = $('.block-article').outerHeight() + heroHeight;
             var articlePadding =  parseInt($(".copy-container").css("padding-bottom"));
+            var metaHeight = $(".post-meta").outerHeight();
 
-            $(".sidebar.post").css("top", heroHeight + 50 + "px");
-            $(".sidebar.post").css("opacity", 1);
+            $("#postSidebar").css("top", heroHeight + metaHeight + "px");
+            $("#postSidebar").css("opacity", 1);
 
-            var sidebarPosition = parseInt($(".sidebar.post").css("top"));
-            var sidebarHeight = $(".sidebar.post").outerHeight();
+            var sidebarPosition = parseInt($("#postSidebar").css("top"));
+            var sidebarHeight = $("#postSidebar").outerHeight();
             var sidebarDiff = sidebarPosition - heroHeight;
-            var sidebarStopHeight = articleHeight - articlePadding - 50 - sidebarHeight;
+            var sidebarStopHeight = articleHeight - articlePadding - metaHeight - sidebarHeight;
 
             $(window).scroll(function() {
 
                 var scrollPosition = $(document).scrollTop();
 
                 if(scrollPosition > heroHeight && scrollPosition < sidebarStopHeight) {
-                    $('.sidebar.post').css('position', "fixed");
-                    $('.sidebar.post').css('top', sidebarDiff + "px");
-                    $('.sidebar.post').css('bottom', "auto");
+                    $('#postSidebar').css('position', "fixed");
+                    $('#postSidebar').css('top', sidebarDiff + "px");
+                    $('#postSidebar').css('bottom', "auto");
                 }
                 else if(scrollPosition > sidebarStopHeight) {
-                    $('.sidebar.post').css('position', "absolute");
-                    $('.sidebar.post').css('top', "auto");
-                    $('.sidebar.post').css('bottom', articlePadding + "px");
+                    $('#postSidebar').css('position', "absolute");
+                    $('#postSidebar').css('top', "auto");
+                    $('#postSidebar').css('bottom', articlePadding + "px");
                 }
                 else {
-                    $('.sidebar.post').css('position', "absolute");
-                    $('.sidebar.post').css('top', sidebarPosition + "px");
-                    $('.sidebar.post').css('bottom', "auto");
+                    $('#postSidebar').css('position', "absolute");
+                    $('#postSidebar').css('top', sidebarPosition + "px");
+                    $('#postSidebar').css('bottom', "auto");
                 }
 
             });
@@ -202,8 +203,8 @@
 
             if (matchMedia("screen and (min-width: 64em)").matches) {
 
-                var postTime = $(".sidebar .length p span").text();
-                var postLength = $(".post-container").outerHeight() + $(".post-hero").outerHeight();
+                var postTime = $("#postSidebar .length span").text();
+                var postLength = $(".block-article").outerHeight() + $(".post-hero").outerHeight();
                 var windowHeight = $(window).height();
 
                 $(window).resize(function() {
@@ -215,15 +216,15 @@
                     var remainingPost = (userPosition/(postLength - windowHeight/2));
                     var timeLeft = Math.ceil((postTime - (postTime*remainingPost)));
 
-                    $(".sidebar .length p span").text(timeLeft);
+                    $("#postSidebar .length span").text(timeLeft);
                     if(timeLeft == 1) {
-                        $(".sidebar .length p").text(timeLeft + " Minute Left");
+                        $("#postSidebar .length").text(timeLeft + " Minute Left");
                     }
                     if(timeLeft == 0) {
-                        $(".sidebar .length p").text("All Done!");
+                        $("#postSidebar .length").text("All Done!");
                     }
                     if(timeLeft > 1) {
-                        $(".sidebar .length p").text(timeLeft + " Minutes Left");
+                        $("#postSidebar .length").text(timeLeft + " Minutes Left");
                     }
 
                 });

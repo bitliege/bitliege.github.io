@@ -1,0 +1,51 @@
+/* =============================================================================
+
+    BLOCK: SOCIAL CSS
+    Authored by Josh Beveridge
+
+============================================================================= */
+.block-social {
+    padding: $line-height 0;
+
+    @media $(p-tablet) {
+        padding: $line-height calc($line-height/2);
+    }
+
+    .button {
+        background: $white;
+        border: 1px solid $grey-80;
+        color: $fc-heading;
+        display: block;
+        font-family: $font-roboto;
+        font-size: $font-size;
+        /*font-weight: 300;*/
+        line-height: $line-height;
+        margin: $line-height 0;
+        padding: calc($line-height/2);
+        text-align: center;
+        text-decoration: none;
+        /*text-transform: uppercase;*/
+
+        i {
+            margin: 0 calc($line-height/2) 0 0;
+        }
+
+    }
+
+}
+
+html.no-touchevents {
+
+    .block-social {
+
+        .button {
+
+            &:hover {
+                border: 1px solid $red;
+            }
+
+        }
+
+    }
+
+}

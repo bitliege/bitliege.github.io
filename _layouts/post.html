@@ -8,10 +8,10 @@ layout: default
     {% else %}
         <div class="post-hero" style="background-image: url('{{ page.images[0].url }}')">
     {% endif %}
-        <h1 class='title'>{{ page.title }}</h1>
+        <h2 class='title'>{{ page.title }}</h2>
     </div>
 
-    <div class="post-container flex-grid top">
+    <div class="block-article flex-grid top">
 
         {% include post-sidebar.html %}
 
@@ -25,17 +25,17 @@ layout: default
 
                 <div temprop="articleBody">
                     <!-- <h1 class='title'>{{ page.title }}</h1> -->
-                    <p class='post-date'>
+                    <p class='post-meta'>
                         <a href='//en.wikipedia.org/wiki/Words_per_minute#Reading_and_comprehension' target="_blank">{{ page.content | number_of_words | divided_by: 228.0 | ceil }} Minute Read</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
                         {{ page.date | date: '%A, %B %d, %Y' }}&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
                         {% if page.categories contains "design" %}
-                            <a href='/writing/design/' class='tag'>In Design</a>
+                            <a href='/writing/design/' class='tag'>Design</a>
                         {% endif %}
                         {% if page.categories contains "gaming" %}
-                            <a href='/writing/gaming/' class='tag'>In Gaming</a>
+                            <a href='/writing/gaming/' class='tag'>Gaming</a>
                         {% endif %}
                         {% if page.categories contains "comics" %}
-                            <a href='/writing/comics/' class='tag'>In Comics</a>
+                            <a href='/writing/comics/' class='tag'>Comics</a>
                         {% endif %}
                     </p>
                     {{ content }}

@@ -13,11 +13,13 @@ images:
 ---
 Poe Dameron #2 continues the exciting string of events surrounding Black Squadron's visit to a mysterious cult in search of Lor San Tekka. This issue introduces the series' first antagonist and establishes the framework for a proper exploration of the First Order's history. Captain Terex sheds important light on how this new organization stands apart from the Galactic Empire.
 
-<p class="center">Score: <strong>8.0</strong></p>
+<h5 class="ta-center">Score: 8.0</h5>
 
 <hr>
 
+<figure markdown="1">
 ![{{ page.images[0].alt }}]({{ page.images[0].url }} "{{ page.images[0].title }}")
+</figure>
 
 This series continues on a very strong note, highlighting quality writing with some absolutely fantastic art. The First Order's arrival signals the first real animosity of the series, and it establishes a strong connection with the atmosphere and lore the Force Awakens film put forward. The pacing in this issue is particularly well done, without any instance feeling rushed or mangled. It is clear that the issue succeeds at reassuring the reader that this is in fact a StarWars series, and that it will take its time to tell the story right.
 

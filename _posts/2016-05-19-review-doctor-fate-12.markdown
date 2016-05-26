@@ -10,11 +10,13 @@ images:
 ---
 Issue #12 brings an expected level of development to the series, redeeming the last few issues' haphazard scenes and misguided political gravity. The introduction of a new, important character helps establish a foundation that will allow this book to explore a more historic perspective on the Doctor Fate mythology.
 
-<p class="center">Score: <strong>8.0</strong></p>
+<h5 class="ta-center">Score: 8.0</h5>
 
 <hr>
 
+<figure markdown="1">
 ![{{ page.images[0].alt }}]({{ page.images[0].url }} "{{ page.images[0].title }}")
+</figure>
 
 The previous issue of Doctor Fate left something to be desired in terms of its tone and coherence. What that issue lacked, #12 made up for in excess. A sharp reduction in humour and a much more cohesive experience helps the reader fly through this book, and while there are moments that feel a little unnecessary, the story progresses in an extremely meaningful way.
 

@@ -10,11 +10,13 @@ images:
 ---
 Superman American Alien #7 continues this series' strong take on Clark's personality, showcasing facets of the character that are rarely explored in a meaningful way. The introduction of Lobo presents itself as a great opportunity to further the foundation of the world in which these stories take place, allowing this version of Superman to feel incredibly real.
 
-<p class="center">Score: <strong>8.0</strong></p>
+<h5 class="ta-center">Score: 8.0</h5>
 
 <hr>
 
+<figure markdown="1">
 ![{{ page.images[0].alt }}]({{ page.images[0].url }} "{{ page.images[0].title }}")
+</figure>
 
 The compartmentalized stories that this series addresses really shines a light on the sheer amount of skill required to write such small impactful moments within the limited number of pages an issue provides. Issue #7 addresses a few very important moments in Clark's life without actually ever feeling rushed or awkward. The beginning of the issue brings the reader into the moment Clark admits to Jimmy that he has told Lois that he loves her. Paired with the final scene in this issue, the reader is led to believe that this version of Clark is indeed similar to that of Clark White.
 
