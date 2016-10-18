@@ -1,8 +1,8 @@
-_site
-.jekyll-metadata
+.DS_Store
+.sass-cache
+wp-config.local.php
+wp-local.php
 npm-debug.log
 
-.DS_Store
-
 assets/node_modules
-assets/bower_components/
+assets/bower_components

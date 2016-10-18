@@ -1,165 +1,99 @@
----
-layout: default
-title: Home
-permalink: /
-order: 1
----
+<!DOCTYPE html>
+<!--[if IE 8]>         <html class="no-js lt-ie10 lt-ie9"> <![endif]-->
+<!--[if IE 9]>         <html class="no-js lt-ie10"> <![endif]-->
+<!--[if gt IE 9]><!--> <html class="no-js"> <!--<![endif]-->
 
-<!-- Landing =============================================================== -->
-<section class="main landing">
+    <head>
 
-    <div class="container flex-grid top">
+        <!-- Meta Data ===================================================== -->
+        <meta charset="utf-8">
+        <!-- The following line may have to be removed -->
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Josh Beveridge - UX Designer</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <div class="box lg-7of10">
+        <!-- Google Fonts ================================================== -->
 
-            <div class="flex-grid">
+        <link href='https://fonts.googleapis.com/css?family=Roboto:400,100,300,500,900,700|PT+Serif:400,400italic,700,700italic' rel='stylesheet' type='text/css'>
 
-                <div class="box full intro">
+        <!-- TypeKit ======================================================= -->
 
-                    <div>
+        <!-- Paste your Typekit script here. -->
 
-                        <h1><span>//</span> Welcome, Friend</h1>
+        <!-- Favicons ====================================================== -->
+        <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+        <link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32">
+        <link rel="icon" type="image/png" href="/favicon-16x16.png" sizes="16x16">
+        <link rel="manifest" href="/manifest.json">
+        <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#ff0855">
+        <meta name="theme-color" content="#ff0855">
 
-                        <dl>
-                            <dt></dt>
-                            <dd>
-                                <a href="//twitter.com/joshdrink" target='_blank'><i class="fa fa-twitter"></i></a>
-                            </dd>
-                            <dd>
-                                <a href="//github.com/joshdrink" target='_blank'><i class="fa fa-github-alt"></i></a>
-                            </dd>
-                            <dd>
-                                <a href="//ca.linkedin.com/in/joshdrink" target='_blank'><i class="fa fa-linkedin"></i></a>
-                            </dd>
-                        </dl>
+        <!-- Vendor Dependencies =========================================== -->
 
-                        <p><strong>I'm Josh, a systems designer and front-end developer working out of Halifax, Canada.</strong></p>
-                        <p>I currently work with the <a href="//sitebynorex.com" target="_blank">Norex</a> team creating delightful experiences for the web. In my spare time, I capture Pok&eacute;mon, slay Dragons, and love to get lost in my favourite comic books. If you'd like to get in touch, I'm always available to chat through <a href="//twitter.com/joshdrink" target="_blank">Twitter</a>!</p>
+        <!-- jQuery -->
+        <script type="text/javascript" src="assets/vendor/jquery.min.js"></script>
 
-                    </div>
+        <!-- Modernizr -->
+        <script type="text/javascript" src="assets/vendor/modernizr.js"></script>
 
-                </div>
+        <!-- Font Awesome -->
+        <link rel="stylesheet" href="assets/vendor/font-awesome.min.css" type="text/css" media="all" />
 
-                <div class="box med-1of3 img">
-                    <div style="background-image: url('/assets/img/2016/04/midnighter_11.jpg')"></div>
-                </div>
+        <!-- Ionicons -->
+        <link rel="stylesheet" href="assets/vendor/ionicons.min.css" type="text/css" media="all" />
 
-                {% for post in site.tags.featured limit:1 %}
-                    <div class="box med-2of3 summary featured">
-                        <div>
-                            <span class="label">Featured</span>
-                            <span class="date">{{ post.date | date: '%A, %B %d, %Y' }}</span>
-                            <h1>
-                                <a href='{{post.url}}'>{{ post.title }}</a>
-                            </h1>
-                            <div class="featured">{{ post.excerpt }}</div>
-                            <a href="{{post.url}}" class="read-more">Read More <i class="fa fa-angle-double-right"></i></a>
-                        </div>
-                    </div>
-                {% endfor %}
+        <!-- Normalize -->
+        <link rel="stylesheet" href="assets/vendor/normalize.css" type="text/css" media="all" />
 
-                {% for post in site.categories.design limit:1 %}
-                    {% if post.tags contains "featured" %}
-                        {% for post in site.categories.design offset:1 limit:1 %}
-                            <div class="box med-1of3 summary">
-                                <div>
-                                    <a href="/writing/design/" class="label">In Design</a>
-                                    <span class="date">{{ post.date | date: '%A, %B %d, %Y' }}</span>
-                                    <h3>
-                                        <a href='{{post.url}}'>{{ post.title }}</a>
-                                    </h3>
-                                    {{ post.excerpt }}
-                                    <a href="{{post.url}}" class="read-more">Read More <i class="fa fa-angle-double-right"></i></a>
-                                </div>
-                            </div>
-                        {% endfor %}
-                    {% else %}
-                        {% for post in site.categories.design limit:1 %}
-                            <div class="box med-1of3 summary">
-                                <div>
-                                    <a href="/writing/design/" class="label">In Design</a>
-                                    <span class="date">{{ post.date | date: '%A, %B %d, %Y' }}</span>
-                                    <h3>
-                                        <a href='{{post.url}}'>{{ post.title }}</a>
-                                    </h3>
-                                    {{ post.excerpt }}
-                                    <a href="{{post.url}}" class="read-more">Read More <i class="fa fa-angle-double-right"></i></a>
-                                </div>
-                            </div>
-                        {% endfor %}
-                    {% endif %}
-                {% endfor %}
+        <!-- Primary Stylesheet ============================================ -->
+        <link rel="stylesheet" href="assets/css/style.css" type="text/css" media="all" />
 
-                {% for post in site.categories.gaming limit:1 %}
-                    {% if post.tags contains "featured" %}
-                        {% for post in site.categories.gaming offset:1 limit:1 %}
-                            <div class="box med-1of3 summary">
-                                <div>
-                                    <a href="/writing/gaming/" class="label">In Gaming</a>
-                                    <span class="date">{{ post.date | date: '%A, %B %d, %Y' }}</span>
-                                    <h3>
-                                        <a href='{{post.url}}'>{{ post.title }}</a>
-                                    </h3>
-                                    {{ post.excerpt }}
-                                    <a href="{{post.url}}" class="read-more">Read More <i class="fa fa-angle-double-right"></i></a>
-                                </div>
-                            </div>
-                        {% endfor %}
-                    {% else %}
-                        {% for post in site.categories.gaming limit:1 %}
-                            <div class="box med-1of3 summary">
-                                <div>
-                                    <a href="/writing/gaming/" class="label">In Gaming</a>
-                                    <span class="date">{{ post.date | date: '%A, %B %d, %Y' }}</span>
-                                    <h3>
-                                        <a href='{{post.url}}'>{{ post.title }}</a>
-                                    </h3>
-                                    {{ post.excerpt }}
-                                    <a href="{{post.url}}" class="read-more">Read More <i class="fa fa-angle-double-right"></i></a>
-                                </div>
-                            </div>
-                        {% endfor %}
-                    {% endif %}
-                {% endfor %}
+        <!-- Google Analytics -->
+        <script type="text/javascript">
+            if (document.location.hostname.search("joshbeveridge.com") !== -1) {
+                (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+                    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+                    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+                })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+                ga('create', 'UA-66136335-1', 'auto');
+                ga('send', 'pageview');
+            }
+        </script>
 
-                {% for post in site.categories.comics limit:1 %}
-                    {% if post.tags contains "featured" %}
-                        {% for post in site.categories.comics offset:1 limit:1 %}
-                            <div class="box med-1of3 summary">
-                                <div>
-                                    <a href="/writing/comics/" class="label">In Comics</a>
-                                    <span class="date">{{ post.date | date: '%A, %B %d, %Y' }}</span>
-                                    <h3>
-                                        <a href='{{post.url}}'>{{ post.title }}</a>
-                                    </h3>
-                                    {{ post.excerpt }}
-                                    <a href="{{post.url}}" class="read-more">Read More <i class="fa fa-angle-double-right"></i></a>
-                                </div>
-                            </div>
-                        {% endfor %}
-                    {% else %}
-                        {% for post in site.categories.comics limit:1 %}
-                            <div class="box med-1of3 summary">
-                                <div>
-                                    <a href="/writing/comics/" class="label">In Comics</a>
-                                    <span class="date">{{ post.date | date: '%A, %B %d, %Y' }}</span>
-                                    <h3>
-                                        <a href='{{post.url}}'>{{ post.title }}</a>
-                                    </h3>
-                                    {{ post.excerpt }}
-                                    <a href="{{post.url}}" class="read-more">Read More <i class="fa fa-angle-double-right"></i></a>
-                                </div>
-                            </div>
-                        {% endfor %}
-                    {% endif %}
-                {% endfor %}
+    </head>
 
+    <body>
+        <!--[if lt IE 9]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+
+        <!-- Main Content ================================================== -->
+        <section class="main-content" style="background-image: url('assets/img/backdrop.jpg');">
+
+            <div class="content-wrapper">
+                <h1>Hi there.</h1>
+                <h3>My name's Josh.<br> I design <a href="http://www.designkit.org/human-centered-design" title="Human Centred Design" target="_blank">human</a> experiences.</h3>
+                <dl class="social-accounts">
+                    <dt></dt>
+                    <dd class="social-accounts__item">
+                        <a href="http://twitter.com/joshdrink" title="Let's chat on Twitter." target="_blank"><i class="fa fa-twitter"></i></a>
+                    </dd>
+                    <dd class="social-accounts__item">
+                        <a href="http://github.com/joshdrink" title="Check out my code on Github." target="_blank"><i class="fa fa-github-alt"></i></a>
+                    </dd>
+                    <dd class="social-accounts__item">
+                        <a href="http://ca.linkedin.com/in/joshdrink" title="Connect with me on Linkedin." target="_blank"><i class="fa fa-linkedin"></i></a>
+                    </dd>
+                </dl>
             </div>
 
-        </div>
+        </section>
 
-        {% include sidebar.html %}
+        <!-- Primary Scripts =============================================== -->
+        <script type="text/javascript" src="assets/vendor/matchMedia.js"></script>
+        <script type="text/javascript" src="assets/js/app.js"></script>
 
-    </div>
+    </body>
 
-</section>
+</html>

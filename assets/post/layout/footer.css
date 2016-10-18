@@ -1,71 +1,9 @@
 /* =============================================================================
 
     FOOTER CSS
-    Authored by Josh Beveridge
+    Authored by Josh Beveridge and Justin Bellefontaine
 
 ============================================================================= */
 footer {
-    background: $white;
-    border-top: 1px solid $grey-light;
-    margin: $padding-double 0 0 0;
-    padding: $padding-double 0 5rem 0;
-
-    @media $(l-tablet) {
-        padding: $padding-double 0;
-    }
-
-    img {
-        display: block;
-        margin: 0 auto;
-        padding: $padding-double 0;
-        width: 25%;
-
-        @media $(p-tablet) {
-            padding: 0;
-            width: 35%;
-        }
-
-    }
-
-    .love {
-        font-family: $font-roboto;
-        font-size: .7rem;
-        font-weight: 700;
-        line-height: 1.25;
-        margin: 0;
-        padding: $padding-double $padding;
-        text-align: center;
-        text-transform: uppercase;
-
-        @media $(p-tablet) {
-            text-align: left;
-        }
-
-        span {
-            color: $grey;
-        }
-
-        a {
-            text-decoration: none;
-        }
-
-    }
-
-    .copy {
-        color: $grey;
-        font-family: $font-roboto;
-        font-size: .7rem;
-        font-weight: 700;
-        line-height: 1.25;
-        margin: 0;
-        padding: $padding-double $padding;
-        text-align: center;
-        text-transform: uppercase;
-
-        @media $(p-tablet) {
-            text-align: right;
-        }
-
-    }
 
 }

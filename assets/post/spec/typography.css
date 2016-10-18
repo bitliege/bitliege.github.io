@@ -1,13 +1,12 @@
 /* =============================================================================
 
     TYPOGRAPHY CSS
-    Authored by Josh Beveridge
+    Authored by Josh Beveridge and Justin Bellefontaine
 
 ============================================================================= */
 
 /* Google Fonts ============================================================= */
 $font-roboto: 'Roboto', sans-serif;
-$font-pt: 'PT Serif', serif;
 
 /* Typekit Fonts ============================================================ */
 
@@ -19,211 +18,13 @@ body {
     font-size: 100%;
 }
 
-/* Selection ================================================================ */
+/* Sitewide Typography ====================================================== */
 ::selection {
     background: $black;
     color: $white;
 }
 
-/* Headings ================================================================= */
-h1 {font-size: 3rem;}
-h2 {font-size: 2rem;}
-h3 {font-size: 1.5rem;}
-h4 {font-size: 1.35rem;}
-h5 {font-size: 1.175rem;}
-h6 {font-size: 1rem;}
-
-h1, h2, h3, h4, h5, h6 {
-    color: $type-headings;
-    font-family: $font-roboto;
-    font-weight: 700;
-    line-height: 1.2;
-    /*letter-spacing: .2rem;*/
-    margin: 3.5rem 0 1rem 0;
-    text-transform: uppercase;
-
-    &+p {
-        margin: 1rem 0 2rem 0;
-    }
-
-    &+.img-wrapper {
-        margin-top: 1rem;
-    }
-
-    &.title {
-        margin: 1rem 0 2rem;
-        text-align: center;
-
-        @media $(l-tablet) {
-            margin: 1.45rem 0 2rem 0;
-            text-align: left;
-        }
-
-    }
-
-    &.section {
-        border-bottom: 1px solid $type;
-        padding: 0 0 $padding-double 0;
-
-        &+h1,
-        &+h2,
-        &+h3,
-        &+h4,
-        &+h5,
-        &+h6 {
-            margin-top: $padding-double;
-        }
-
-    }
-
-    &.reset {
-        margin: 2.5rem 0 1rem 0;
-    }
-
-}
-
-/* Copy ===================================================================== */
-
-/* Body Font */
-p,
-blockquote {
-    color: $type;
-    line-height: 1.5;
-    font-family: $font-pt;
-    font-size: 1.1rem;
-    margin: 2rem 0;
-}
-
-p {
-
-}
-
-strong {
-
-}
-
-em {
-
-}
-
-span {
-    font-family: inherit;
-    font-size: inherit;
-    font-weight: inherit;
-}
-
-hr {
-    border: none;
-    border-top: 1px solid $type;
-    height: 0;
-    margin: 1.5rem 0;
-    padding: 0;
-    width: 100%;
-
-    @media $(l-tablet) {
-        margin: 2.5rem 0;
-    }
-
-}
-
-blockquote {
-    border-left: .5rem solid $red;
-    margin: 0;
-    padding: 0 0 0 2rem;
-
-    @media $(l-tablet) {
-        /*margin: 0 0 0 -2.5rem;*/
-    }
-
-    p {
-        font-style: italic;
-        margin: 1.5rem 0;
-
-        &:first-child {
-            margin-top: 0;
-        }
-
-        &:last-child {
-            margin-bottom: 0;
-        }
-
-    }
-
-}
-
-/* Anchors */
-a,
-a:visited,
-a:link {
-    color: $red;
-    font-family: inherit;
-    font-size: inherit;
-    transition: color .1s ease;
-
-    &:hover {
-
-        @media $(desktop) {
-            color: rgba(0, 0, 0, .5);
-            transition: color .1s ease;
-        }
-
-    }
-
-}
-
-.post-date {
-    color: $grey;
-    font-family: $font-roboto;
-    font-size: .8rem;
-    font-weight: 700;
-    margin: 2.5rem auto 2rem auto;
-    text-align: center;
-    text-transform: uppercase;
-    width: 75%;
-
-    @media $(p-tablet) {
-        width: 100%;
-    }
-
-    @media $(l-tablet) {
-        text-align: left;
-    }
-
-    a {
-        color: $red;
-        text-decoration: none;
-
-        &.tag {
-
-        }
-
-    }
-
-}
-
-.img-wrapper {
-    margin: 3rem 0;
-    position: relative;
-    z-index: 0;
-
-    &:before {
-        @mixin red-purple-trans;
-        content: ' ';
-        height: 100%;
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        z-index: 5;
-    }
-
-    img {
-        display: block;
-    }
-
-}
-
-/* Buttons ================================================================== */
+/* Buttons */
 .button,
 .button:focus,
 .button:active,
@@ -239,28 +40,7 @@ button {
     outline: none;
 }
 
-pre {
-    background: $grey;
-    border-radius: .2rem;
-    margin: 1.5rem 0;
-    overflow-x: scroll;
-    padding: .5rem .8rem;
-    width: 100%;
-
-    code {
-        padding: 0;
-    }
-
-}
-
-code {
-    background: $grey;
-    border-radius: .2rem;
-    font-size: .8rem;
-    padding: .2rem .4rem .1rem .4rem;
-}
-
-/* Inputs =================================================================== */
+/* Inputs */
 input:focus,
 select:focus,
 textarea:focus,
@@ -270,30 +50,8 @@ button:focus {
 
 input {
     background: none;
-    border: 1px solid $black;
+    border: none;
     box-shadow: none;
-    font-family: $font-roboto;
-    font-size: 1rem;
-    margin: .5rem 0 1.5rem 0;
-    padding: 1rem;
-    width: 100%;
-}
-
-/* Lists ==================================================================== */
-ul {
-    color: $type;
-    font-family: $font-pt;
-    font-size: 1rem;
-    margin: 2rem 0 2rem 1.5rem;
-    padding: 0;
-
-    li {
-        color: $type;
-        font-family: $font-pt;
-        font-size: 1rem;
-        line-height: 1.5;
-    }
-
 }
 
 dl {
@@ -311,7 +69,279 @@ dl {
 
 }
 
-/* Tables =================================================================== */
+/* Tables */
 table {
     width: 100%;
+}
+
+/* Content Typography ======================================================= */
+.content-container {
+
+    /* Headings */
+    h1 {font-size: 2rem;}
+    h2 {font-size: 1.8rem;}
+    h3 {font-size: 1.6rem;}
+    h4 {font-size: 1.4rem;}
+    h5 {font-size: 1.3rem;}
+    h6 {font-size: 1.2rem;}
+
+    h1, h2, h3, h4, h5, h6 {
+        color: $black;
+        margin: 2.5rem 0 1rem 0;
+    }
+
+    /* Body Font */
+    p,
+    blockquote, {
+        /*color: $black;*/
+        /*margin: 1rem 0;*/
+    }
+
+    p {
+
+    }
+
+    span {
+        font-family: inherit;
+        font-size: inherit;
+        font-weight: inherit;
+    }
+
+    hr {
+        border: none;
+        border-top: 1px solid $black;
+        height: 0;
+        margin: 0;
+        padding: 0;
+        width: 100%;
+    }
+
+    blockquote {
+
+    }
+
+    /* Anchors */
+    a,
+    a:visited,
+    a:link {
+
+        &:not(.button) {
+
+        }
+
+    }
+
+    /* Lists */
+    ul {
+        margin: 1rem 0 1rem 1rem;
+        padding: 0;
+    }
+
+}
+
+/* Forms ==================================================================== */
+textarea {
+    width: 100%;
+    min-height: 250px;
+}
+
+.checkbox-radio-list > dd {
+    width: 100%;
+    margin-bottom: 0.5rem;
+}
+
+@media screen and (min-width: 70em) {
+
+    .checkbox-radio-list > dd {
+        width: auto;
+        margin: 0;
+        padding-right: 1rem;
+    }
+
+}
+
+/* Social Icons ============================================================= */
+
+/*
+
+    <!-- SAMPLE LAYOUT -->
+
+    <dl class="inline-layout social-icons medium">
+        <dd><a href class="ion-social-facebook"></a></dd>
+        <dd><a href class="ion-social-twitter"></a></dd>
+        <dd><a href class="ion-social-linkedin"></a></dd>
+    </dl>
+
+*/
+
+/* Social Icon Variables */
+
+$social-icons-small-size: 40px;
+$social-icons-medium-size: 50px;
+$social-icons-large-size: 60px;
+
+$social-icons-small-font-size: 21px;
+$social-icons-medium-font-size: 24px;
+$social-icons-large-font-size: 30px;
+
+.social-icons {
+
+    > dd {
+        padding: 0 0.25rem;
+    }
+
+    a {
+        border-radius: 100%;
+        text-align: center;
+        position: relative;
+        padding: 50% 0;
+
+        &:before {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate3d(-50%,-50%,0);
+            margin: 0;
+        }
+
+        /* Facebook */
+        &[class*="facebook"] {
+            background: $facebook-brand;
+        }
+
+        /* LinkedIn */
+        &[class*="linkedin"] {
+            background: $linkedin-brand;
+        }
+
+        /* Twitter */
+        &[class*="twitter"] {
+            background: $twitter-brand;
+        }
+
+        /* LinkedIn */
+        &[class*="googleplus"] {
+            background: $gplus-brand;
+        }
+
+    }
+
+    /* Small Size */
+    &.small {
+
+        a {
+            font-size: $social-icons-small-font-size;
+            width: $social-icons-small-size;
+        }
+
+    }
+
+    /* Medium Size */
+    &.medium {
+
+        a {
+            font-size: $social-icons-medium-font-size;
+            width: $social-icons-medium-size;
+        }
+
+    }
+
+    /* Large Size */
+    &.large {
+
+        a {
+            font-size: $social-icons-large-font-size;
+            width: $social-icons-large-size;
+        }
+
+    }
+
+}
+
+/* Gravity Forms ============================================================ */
+.gform_fields {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+
+    ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }
+
+    > li {
+        margin: 1.5rem 0;
+
+        > label {
+            font-weight: 700;
+            margin-bottom: 0.5rem;
+            text-transform: uppercase;
+            font-size: 0.5rem;
+            letter-spacing: 5px;
+        }
+
+    }
+
+}
+
+/* Double input layout */
+.ginput_complex > span {
+    display: inline-block;
+    width: 100%;
+    margin: 0.5rem 0;
+
+    @media $(l-tablet) {
+        width: 48%;
+
+        &:nth-child(2n) {
+            margin-left: 2%;
+        }
+
+    }
+
+}
+
+/* Gravity Form Errors */
+.gfield_error {
+
+    input[type="text"],
+    input[type="password"],
+    input[type="date"],
+    input[type="datetime"],
+    input[type="datetime-local"],
+    input[type="month"],
+    input[type="week"],
+    input[type="email"],
+    input[type="number"],
+    input[type="search"],
+    input[type="tel"],
+    input[type="time"],
+    input[type="url"],
+    textarea,
+    select {
+        border-color: $red;
+    }
+
+    .validation_message {
+        background: $red;
+        padding: 0.5rem 0.75rem;
+        color: #fff;
+        font-size: .6rem;
+        font-weight: 700;
+        display: inline-block;
+    }
+
+}
+
+.validation_error {
+    color: $red;
+    font-weight: 700;
+    margin-top: 1rem;
+}
+
+/* Spacing for checkboxes and radios */
+.gfield_checkbox > li,
+.gfield_radio > li {
+    margin: 0.25rem 0;
 }

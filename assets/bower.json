@@ -1,7 +1,7 @@
 {
-  "name": "DatBlogDoh",
+  "name": "CloneFramework",
   "version": "0.1.0",
-  "homepage": "https://gitlab.com/joshdrink/joshdrink.github.io",
+  "homepage": "https://gitlab.com/norex/app_clone",
   "authors": [
     "Josh Beveridge <me@joshbeveridge.com>"
   ],
@@ -21,8 +21,11 @@
   ],
   "dependencies": {
     "fontawesome": "latest",
-    "jQuery": "latest",
+    "normalize.css": "latest",
     "matchMedia": "latest",
-    "modernizr": "latest"
+    "modernizr": "latest",
+    "jquery": "latest",
+    "ionicons": "latest",
+    "slick-carousel": "latest"
   }
 }

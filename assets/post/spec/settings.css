@@ -1,7 +1,7 @@
 /* =============================================================================
 
     SETTINGS CSS
-    Authored by Josh Beveridge
+    Authored by Josh Beveridge and Justin Bellefontaine
 
 ============================================================================= */
 
@@ -11,6 +11,12 @@ $portrait: screen and (orientation: portrait);
 
 $landscape: screen and (orientation: landscape);
 /*$(landscape) {}*/
+
+$p-phone: screen and (min-width: 320px);
+/*$(p-phone) {}*/
+
+$l-phone: screen and (min-width: 480px);
+/*$(l-phone) {}*/
 
 $p-tablet: screen and (min-width: 48em);
 /*$(p-tablet) {}*/
@@ -24,11 +30,6 @@ $desktop: screen and (min-width: 64.01em);
 $cinema: screen and (min-width: 100em);
 /*$(cinema) {}*/
 
-/* Padding Variables ======================================================== */
-$padding-half: .5rem;
-$padding: 1rem;
-$padding-double: 2rem;
-
 /* Sections ================================================================= */
 * {
     box-sizing: border-box;
@@ -38,20 +39,7 @@ $padding-double: 2rem;
 
 html,
 body {
-    background: rgba(250, 250, 250, 1);
     margin: 0;
-}
-
-.main {
-
-    @media $(p-tablet) {
-        margin-top: 2rem;
-    }
-
-    @media $(l-tablet) {
-        margin-top: 6rem;
-    }
-
 }
 
 section {
@@ -61,31 +49,100 @@ section {
     width: 100%;
 }
 
-.container {
-    display: block;
+.page-container {
     margin: 0 auto;
-    max-width: 95%;
-    width: 75em;
-}
+    max-width: 50rem;
+    width: 95%;
 
-.copy-container {
-    display: block;
-    margin: 0 auto;
-    max-width: 95%;
-    width: 95%; /* The Flex Grid class on this was messing with the width if I set it to rems. Not sure why. */
-
-    @media $(p-tablet) {
-        margin: 0 auto;
-        width: 35em;
+    @media $(desktop) {
+        max-width: 60rem;
     }
 
-    @media $(l-tablet) {
-        margin: 0;
+    @media #(cinema) {
+        max-width: 70rem;
     }
 
 }
 
+.content-container {
+    margin: 0 auto;
+    max-width: 40rem;
+    width: 95%;
+
+    @media #(cinema) {
+        max-width: 50rem;
+    }
+
+}
+
+/* Elements ================================================================= */
 img,
 iframe {
     max-width: 100%;
+}
+
+/* Icon Spacing ============================================================= */
+[class*="ion-"]:before,
+[class*="fa-"]:before {
+    margin-right: 0.3rem;
+}
+
+/* Error Page =============================================================== */
+.error-type {
+    color: $red !important;
+    font-size: 6rem !important;
+    font-weight: 100 !important;
+    margin: 0 !important;
+}
+
+.error-desc {
+    margin: 0 0 2rem !important;
+}
+
+/* Helper Classes =========================================================== */
+.full-wide {
+    width: 100% !important;
+}
+
+.alignleft,
+.alignright {
+    padding: 0.5rem;
+    background: #fff;
+    box-shadow: 0 0 5px 0 rgba(0,0,0,.2);
+}
+
+.alignleft {
+    margin: 0 0 1rem 0;
+
+    @media $(p-tablet) {
+        float: left;
+        margin: 0 2rem 1rem 0;
+    }
+
+}
+
+.alignright {
+    margin: 0 0 1rem 0;
+
+    @media $(p-tablet) {
+        float: right;
+        margin: 0 0 1rem 2rem;
+    }
+
+}
+
+.hide-overflow {
+    overflow: hidden;
+}
+
+.text-left {
+    text-align: left;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.text-right {
+    text-align: right;
 }

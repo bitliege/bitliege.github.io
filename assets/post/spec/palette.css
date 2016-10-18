@@ -1,67 +1,44 @@
 /* =============================================================================
 
     PALETTE CSS
-    Authored by Josh Beveridge
+    Authored by Josh Beveridge and Justin Bellefontaine
 
 ============================================================================= */
 
-/* Greyscale ================================================================ */
-$black: rgba(40, 40, 40, 1);
-$grey-light: rgba(235, 235, 235, 1);
-$grey: rgba(180, 180, 180, 1);
-$white: rgba(250, 250, 250, 1);
+/* Gr(e/a)yscale ============================================================ */
 
-/* Font Specific Colours */
-$type: rgba(0, 0, 0, .65);
-$type-headings: rgba(0, 0, 0, .75);
+/* Black */
+$black: rgba(0, 0, 0, 1);
 
-/* Custom Colours =========================================================== */
+/* Gr(e/a)yscale */
+$grey-10: hsla(0, 0%, 10%, 1);
+$grey-20: hsla(0, 0%, 20%, 1);
+$grey-30: hsla(0, 0%, 30%, 1);
+$grey-40: hsla(0, 0%, 40%, 1);
+$grey-50: hsla(0, 0%, 50%, 1);
+$grey-60: hsla(0, 0%, 60%, 1);
+$grey-70: hsla(0, 0%, 70%, 1);
+$grey-80: hsla(0, 0%, 80%, 1);
+$grey-90: hsla(0, 0%, 90%, 1);
+
+$gray-10: hsla(0, 0%, 10%, 1);
+$gray-20: hsla(0, 0%, 20%, 1);
+$gray-30: hsla(0, 0%, 30%, 1);
+$gray-40: hsla(0, 0%, 40%, 1);
+$gray-50: hsla(0, 0%, 50%, 1);
+$gray-60: hsla(0, 0%, 60%, 1);
+$gray-70: hsla(0, 0%, 70%, 1);
+$gray-80: hsla(0, 0%, 80%, 1);
+$gray-90: hsla(0, 0%, 90%, 1);
 
 /* White */
-$white-transparent: rgba(250, 250, 250, .05);
+$white: rgba(255, 255, 255, 1);
 
-/* Red */
-$red: rgba(229, 12, 58, 1);
-$red-transparent: rgba(229, 12, 58, .9);
+/* Custom Colours =========================================================== */
+$red: rgba(255, 0, 0, 1);
 
-$red: #FF0000;
-
-p,
-span,
-a,
-i,
-strong,
-em {
-
-    &.red {
-        color: $red;
-    }
-
-}
-
-/* Blue */
-$blue: rgba(19, 208, 234, 1);
-$purple: rgba(128, 0, 238, 1);
-$blue: rgba(0, 225, 255, 1);
-
-/* Gradients ================================================================ */
-
-/* Red to Purple, Opaque, Diagonal */
-@define-mixin red-purple-trans {
-    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ff0000+0,8000ee+100 */
-background: rgb(255,0,0); /* Old browsers */
-background: -moz-linear-gradient(-45deg,  rgba(255,0,0,1) 0%, rgba(128,0,238,1) 100%); /* FF3.6-15 */
-background: -webkit-linear-gradient(-45deg,  rgba(255,0,0,1) 0%,rgba(128,0,238,1) 100%); /* Chrome10-25,Safari5.1-6 */
-background: linear-gradient(135deg,  rgba(255,0,0,1) 0%,rgba(128,0,238,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff0000', endColorstr='#8000ee',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
-}
-
-/* Red to Purple, Transparent, Diagonal */
-@define-mixin red-purple-trans {
-    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ff0000+0,00e1ff+100&0.5+0,0.5+100 */
-background: -moz-linear-gradient(-45deg,  rgba(255,0,0,0.5) 0%, rgba(0,225,255,0.5) 100%); /* FF3.6-15 */
-background: -webkit-linear-gradient(-45deg,  rgba(255,0,0,0.5) 0%,rgba(0,225,255,0.5) 100%); /* Chrome10-25,Safari5.1-6 */
-background: linear-gradient(135deg,  rgba(255,0,0,0.5) 0%,rgba(0,225,255,0.5) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#80ff0000', endColorstr='#8000e1ff',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
-
-}
+/* Social Colours =========================================================== */
+$gplus-brand: hsl(7, 71%, 55%);
+$twitter-brand: hsl(206, 82%, 63%);
+$linkedin-brand: hsl(202, 90%, 37%);
+$facebook-brand: hsl(221, 44%, 41%);
