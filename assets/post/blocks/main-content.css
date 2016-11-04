@@ -80,7 +80,7 @@
         h3 {
 
             >a:hover {
-                color: #FF0855;
+                color: #FF585F;
                 transition: all .2s ease;
             }
 
@@ -131,7 +131,7 @@
     .social-accounts__item {
 
         a:hover {
-            border: 1px solid #FF0855;
+            border: 1px solid #FF585F;
             transition: all .2s ease;
         }
 
