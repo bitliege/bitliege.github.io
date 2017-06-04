@@ -1,6 +1,6 @@
 {
   "name": "Clone",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "homepage": "https://github.com/joshdrink/clone",
   "authors": [
     "Josh Beveridge <imjoshdrink@gmail.com>",
@@ -21,10 +21,12 @@
     "tests"
   ],
   "dependencies": {
+    "fontawesome": "latest",
     "normalize.css": "latest",
     "matchMedia": "latest",
     "modernizr": "latest",
     "jquery": "latest",
-    "ionicons": "latest"
+    "ionicons": "latest",
+    "slick-carousel": "latest"
   }
 }

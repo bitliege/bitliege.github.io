@@ -1,8 +1,7 @@
 /* =============================================================================
 
     PRIMARY CSS
-    Property of Norex
-    Authored by Josh Beveridge and Justin Bellefontaine
+    Authored by Josh Beveridge
 
 ============================================================================= */
 
@@ -25,25 +24,27 @@
     /* Layout: Grid (IE11) ================================================== */
     @import 'layout/grid-ie11.css';
 
-    /* Layout: Copy ========================================================= */
-    @import 'layout/copy.css';
-
 /* BLOCKS =================================================================== */
 
-    /* Blocks: Logo Section ================================================= */
-    @import 'blocks/logo-section.css';
+    /* Landing Splash ======================================================= */
+    @import "blocks/splash.css";
 
-    /* Blocks: Content Section ============================================== */
-    @import 'blocks/content-section.css';
+    /* FFXIV ================================================================ */
 
-    /* Blocks: Title Content */
-    @import 'blocks/title-content.css';
+        /* Guide Index Hero */
+        @import "blocks/ffxiv/guide-index-hero.css";
 
-    /* Blocks: Practice Accordion */
-    @import 'blocks/practice-accordion.css';
+        /* Guide Index List */
+        @import "blocks/ffxiv/guide-index-list.css";
 
-    /* Blocks: Social Listing */
-    @import 'blocks/social-listing.css';
+        /* Guide Return Link */
+        @import "blocks/ffxiv/guide-return.css";
 
-    /* Blocks: Theme Section ================================================ */
-    @import 'blocks/theme-section.css';
+        /* Guide Hero */
+        @import "blocks/ffxiv/guide-hero.css";
+
+        /* Guide Content */
+        @import "blocks/ffxiv/guide-content.css";
+
+        /* Attribution */
+        @import "blocks/ffxiv/attribution.css";

@@ -31,8 +31,14 @@ github_username:  joshdrink
 markdown: kramdown
 gems:
   - jekyll-feed
+include:
+  - _pages
 exclude:
   - Gemfile
   - Gemfile.lock
   - assets/node_modules
   - assets/bower_components
+collections:
+    ffxiv_guides:
+        output: true
+        permalink: /ffxiv/:title
