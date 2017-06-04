@@ -292,7 +292,7 @@ bosses:
             - alert: "The boss now has attacks from the previous boss, Scathach."
             - alert: "Black and Red Markers drop consecutive orbs as you move. Kite them around the edge."
             - alert: "Hollow Night requires the raid to stack on a player, however, all players should face <strong>AWAY</strong> from this player once stack to avoid the gaze."
-            - alert: "Diabolic Gate requires raid-wide organization. Assigned players need to enter the Diabolic Gate and gill the add as fast as possible."
+            - alert: "Diabolic Gate requires raid-wide organization. Assigned players need to enter the Diabolic Gate and kill the add as fast as possible."
             - alert: "Healers should dispel Doom and bleed debuffs."
             - alert: "When the boss casts Hollow Omen, the raid should stack, shield, and mass heal."
             - alert: "Blindside requires the raid to stack and will place a stack marker on the <strong>MAIN TANK</strong>."
