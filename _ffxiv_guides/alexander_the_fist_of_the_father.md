@@ -3,7 +3,7 @@ layout: ffxiv_guide
 title:  "[A1] Alexander: The Fist of the Father"
 date:   2017-04-09 18:00:14 -0300
 image:
-    - url: "/assets/img/ffxiv/alex_fist.png"
+    - url: "/assets/img/ffxiv/alex_fist.jpg"
     - alt: "Alexander: The Fist of the Father"
 patch: "3.0 - Heavensward"
 ilvl: "170"
