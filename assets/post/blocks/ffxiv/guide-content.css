@@ -82,6 +82,16 @@
 
 }
 
+.guide__mechanic-image-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.guide__mechanic-image {
+    width: 100%;
+}
+
 /* Alerts =================================================================== */
 .guide__alerts {
     background: $red;

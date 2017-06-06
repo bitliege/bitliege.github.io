@@ -31,7 +31,7 @@ bosses:
               notes:
                 - note: "Places a large puddle in the middle of the ship."
                 - note: "Pulls all players in - run towards edge of ship to avoid."
-                - note: "Will pull twice before insta killing anyone inside."
+                - note: "Will pull twice before instantly killing anyone inside."
             - title: "Void Aero II"
               tags:
                 - tag: "Markers"
@@ -187,8 +187,8 @@ bosses:
               tags:
                 - tag: "Mechanic"
               notes:
-                - note: "When the floor goes dark, stop moving and attacking."
-                - note: "Moving or attacking spawns hands from the floor that will do damage over time."
+                - note: "When the floor goes dark, stop moving."
+                - note: "Moving or using attacks that move you spawn hands from the floor that will do damage over time."
                 - note: "It is safe to move when the floor clears."
             - title: "Thirty Souls"
               tags:

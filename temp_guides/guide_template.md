@@ -3,7 +3,7 @@ layout: ffxiv_guide
 title:  ""
 date:   2017-04-09 18:00:14 -0300
 image:
-    - url: "/assets/img/ffxiv/.png"
+    - url: "/assets/img/ffxiv/.jpg"
     - alt: ""
 patch: " - "
 ilvl: ""

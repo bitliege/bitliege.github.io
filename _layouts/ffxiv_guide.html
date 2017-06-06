@@ -112,6 +112,20 @@
 
                                     {% endfor %}
 
+                                    {% if mechanic.images %}
+
+                                        <div class="flex-grid">
+
+                                            {% for image in mechanic.images %}
+                                                <div class="box med-1of3 guide__mechanic-image-wrapper">
+                                                    <img src="{{ image.url }}" alt="{{ image.alt }}" class="guide__mechanic-image">
+                                                </div>
+                                            {% endfor %}
+
+                                        </div>
+
+                                    {% endif %}
+
                                 {% endfor %}
 
                             </div>
