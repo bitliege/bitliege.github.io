@@ -7,16 +7,16 @@
 .guide-index__hero {
     background-position: center;
     background-size: cover;
-    padding: $small-padding 0;
+    padding: $small-padding 0 0 0;
     position: relative;
     text-align: center;
 
     @media $(p-tablet) {
-        padding: $medium-padding 0;
+        padding: $medium-padding 0 0 0;
     }
 
     @media $(l-tablet) {
-        padding: $large-padding 0;
+        padding: $large-padding 0 0 0;
     }
 
 }
@@ -32,6 +32,12 @@
 
 .guide-index__title {
     color: $white;
+    margin: 0 0 calc($small-padding/2) 0;
+    position: relative;
+}
+
+.guide-index__subtitle {
+    color: $red;
     margin: 0 0 calc($small-padding/2) 0;
     position: relative;
 }
@@ -56,4 +62,36 @@
 
 .guide-index__hero-button {
     position: relative;
+}
+
+.guide-index__hero-category-wrapper {
+    padding-top: $small-padding;
+    position: relative;
+
+    @media $(p-tablet) {
+        padding-top: $medium-padding;
+        text-align: left;
+    }
+
+    @media $(l-tablet) {
+        padding-top: $large-padding;
+    }
+
+}
+
+.guide-index__hero-category {
+    color: $white;
+    display: inline-block;
+    font-family: $font-aktiv;
+    font-weight: 300;
+    line-height: 1;
+    margin: -.8rem .5rem 0 .5rem;
+    padding-bottom: .5rem;
+    text-decoration: none;
+
+    &.active {
+        border-bottom: .3rem solid $red;
+        color: $red;
+    }
+
 }

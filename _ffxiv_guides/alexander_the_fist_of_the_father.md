@@ -7,6 +7,7 @@ image:
     - alt: "Alexander: The Fist of the Father"
 patch: "3.0 - Heavensward"
 ilvl: "170"
+instanceType: "raid"
 mtqvid: "https://youtu.be/JR2anBXKVes"
 bosses:
     - boss:

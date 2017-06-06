@@ -7,6 +7,7 @@ image:
     - alt: ""
 patch: " - "
 ilvl: ""
+instanceType: ""
 mtqvid: ""
 bosses:
     - boss:

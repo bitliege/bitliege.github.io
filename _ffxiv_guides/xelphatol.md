@@ -7,6 +7,7 @@ image:
     - alt: "Xelphatol"
 patch: "3.4 - Soul Surrender"
 ilvl: "210"
+instanceType: "dungeon"
 mtqvid: "https://youtu.be/5WXk2BWz-gQ"
 bosses:
     - boss:

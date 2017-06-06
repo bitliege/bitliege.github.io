@@ -7,6 +7,7 @@ image:
     - alt: "Dun Scaith"
 patch: "3.5 - The Far Edge of Fate"
 ilvl: "235"
+instanceType: "raid"
 mtqvid: "https://youtu.be/uNrzJdfTNLs"
 bosses:
     - boss:

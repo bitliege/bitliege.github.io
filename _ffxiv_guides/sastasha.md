@@ -7,6 +7,7 @@ image:
     - alt: "Sastasha"
 patch: "2.0 - A Realm Reborn"
 ilvl: "15 - 18"
+instanceType: "dungeon"
 mtqvid: "https://youtu.be/tT3-1Yb787w"
 bosses:
     - boss:

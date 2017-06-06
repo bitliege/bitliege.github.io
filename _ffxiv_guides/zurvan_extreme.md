@@ -7,6 +7,7 @@ image:
     - alt: "[Zurvan] Containment Bay Z1T9 (Extreme)"
 patch: "3.5 - The Far Edge of Fate"
 ilvl: "250"
+instanceType: "trial"
 mtqvid: "https://youtu.be/WdtOPon2eQk"
 bosses:
     - boss:
@@ -35,6 +36,7 @@ bosses:
           phase: "02"
           alerts:
             - alert: "The soar phase of the fight can be skipped provided that the raid team executes proper openers and has sufficient DPS."
+            - alert: "Soar's orientation is determined by the direction Zurvan is facing - the images assume you are tanking him facing the <strong>North</strong>."
             - alert: "Safe zones for each player should be determined before the raid begins."
           mechanics:
             - title: "Soar & Flaming Halberd"
@@ -44,11 +46,11 @@ bosses:
                 - title: "Soar"
                   notes:
                     - note: "This attack combines a linear AoE (indicated by the orange rectangles) and a divebomb that sweeps across the length of the arena (indicated by the red arrows)."
-                    - note: "Zurvan will begin by telegraphing 1 of 2 patterns (see images) that will tell players how they should arrange themselves."
+                    - note: "Zurvan will begin by telegraphing 1 of 2 patterns (see images) that will tell players how they should arrange themselves - please note the images below assume you are tanking Zurvan in the <strong>North</strong>."
                     - note: "The boss will split into 3 and follow the orange AoE telegraphs. He will then divebomb back through the original telegraphs, following through across the entire arena."
                 - title: "Flaming Halberd"
                   notes:
-                    - note: "6 players will be marked (red circles) for this attack and it is crucial that they do not overlap - this is difficult as there are few safe area during Soar."
+                    - note: "6 players will be marked (red circles) for this attack and it is crucial that they do not overlap - this is difficult as there are few safe areas during Soar."
                     - note: "Players (blue dots) should arrange themselves according to the pattern Zurvan attacks with (see images for player locations)."
               images:
                 - url: "/assets/img/ffxiv/zurvan/zurvan_ex_soar_01.png"
@@ -82,7 +84,7 @@ bosses:
               tags:
                 - tag: "AoE"
               notes:
-                - note: "Places an ice AoE puddle on all players - stay stacked to ensure these all drop in the same spot and then move to one side."
+                - note: "Places an ice AoE puddle on all players - stack together to drop the AoEs in the same location and then move out to one side to avoid being hit."
                 - note: "The main tank should move to the <strong>OPPOSITE</strong> side of the raid."
             - title: "Ciclicle"
               tags:
@@ -132,6 +134,7 @@ bosses:
             - alert: "Organization and communication is key in this phase - tethered players must stick together."
             - alert: "Designate a side for players targeted with a blue marker - everyone else avoid them."
             - alert: "The pattern of meteors during Broken Seal will determine the follow up AoE attack."
+            - alert: "Soar's orientation is determined by the direction Zurvan is facing - the images assume you are tanking him facing the <strong>North</strong>."
             - alert: "Soar safe zones for each player should be determined before the raid begins."
           mechanics:
             - title: "Infinite Fire/Ice"
@@ -155,7 +158,7 @@ bosses:
               tags:
                 - tag: "AoE"
               notes:
-                - note: "Places an ice AoE puddle on all players - stay stacked to ensure these all drop in the same spot."
+                - note: "Places an ice AoE puddle on all players - stack together to drop the AoEs in the same location and then move out to avoid being hit."
                 - note: "After this attack, tethered players should split up evenly to prepare for Broken Seal."
             - title: "Broken Seal"
               tags:
@@ -197,11 +200,11 @@ bosses:
                 - title: "Soar"
                   notes:
                     - note: "This attack combines a linear AoE (indicated by the orange rectangles) and a divebomb that sweeps across the length of the arena (indicated by the red arrows)."
-                    - note: "Zurvan will begin by telegraphing 1 of 2 patterns (see images) that will tell players how they should arrange themselves."
+                    - note: "Zurvan will begin by telegraphing 1 of 2 patterns (see images) that will tell players how they should arrange themselves - please note the images below assume you are tanking Zurvan in the <strong>North</strong>."
                     - note: "The boss will split into 3 and follow the orange AoE telegraphs. He will then divebomb back through the original telegraphs, following through across the entire arena."
                 - title: "Flaming Halberd"
                   notes:
-                    - note: "6 players will be marked (red circles) for this attack and it is crucial that they do not overlap - this is difficult as there are few safe area during Soar."
+                    - note: "6 players will be marked (red circles) for this attack and it is crucial that they do not overlap - this is difficult as there are few safe areas during Soar."
                     - note: "Players (blue dots) should arrange themselves according to the pattern Zurvan attacks with (see images for player locations)."
               images:
                 - url: "/assets/img/ffxiv/zurvan/zurvan_ex_soar_01.png"

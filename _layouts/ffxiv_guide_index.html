@@ -30,10 +30,39 @@
 
                 <h1 class="heading--01 guide-index__title">FFXIV Pocket Guide</h1>
 
-                <p class="guide-index__intro">A collection of mobile friendly guides to help players navigate raid content in Final Fantasy XIV. All guide content has been transcribed from the extremely helpful video guides produced by MTQCapture.</p>
+                {% if page.url contains "dungeons" %}
+                    <h3 class="heading--03 guide-index__subtitle">- Dungeons -</h3>
+                {% endif %}
+                {% if page.url contains "trials" %}
+                    <h3 class="heading--03 guide-index__subtitle">- Trials -</h3>
+                {% endif %}
+                {% if page.url contains "raids" %}
+                    <h3 class="heading--03 guide-index__subtitle">- Raids -</h3>
+                {% endif %}
+
+                <p class="guide-index__intro">A collection of mobile friendly guides to help players navigate group content in Final Fantasy XIV. All guide content has been transcribed from the extremely helpful video guides produced by MTQCapture.</p>
 
                 <a href="https://www.youtube.com/channel/UC5BtIO_vMNvds5sgE-JI6KA" title="Visit MTQCapture's YouTube channel." target="_blank" class="button--small--white guide-index__hero-button">Go to MTQCapture's Channel</a>
 
+            </div>
+
+            <div class="page-container guide-index__hero-category-wrapper">
+                <a href="/ffxiv/" title="View a list of all instances." class="guide-index__hero-category
+                {% if page.permalink == '/ffxiv/' %}
+                    active
+                {% endif %}">All</a>
+                <a href="/ffxiv/dungeons" title="View a list of dungeon specific instances." class="guide-index__hero-category
+                {% if page.url contains 'dungeons' %}
+                    active
+                {% endif %}">Dungeons</a>
+                <a href="/ffxiv/trials" title="View a list of trial specific instances." class="guide-index__hero-category
+                {% if page.url contains 'trials' %}
+                    active
+                {% endif %}">Trials</a>
+                <a href="/ffxiv/raids" title="View a list of raid specific instances." class="guide-index__hero-category
+                {% if page.url contains 'raids' %}
+                    active
+                {% endif %}">Raids</a>
             </div>
 
         </section>
@@ -45,25 +74,89 @@
                 <div class="flex-grid">
 
                     <form class="guide-index__search-form">
-                        <label for="guideFilter">Search for a raid guide...</label>
+                        <label for="guideFilter">Search for a guide...</label>
                         <input id="guideFilter" type="text" placeholder="Ifrit Ex...">
                     </form>
 
                     {% for guide in site.ffxiv_guides %}
 
-                        <div class="box med-1of2 lg-1of3 guide-index__list-item">
+                        {% if page.permalink == "/ffxiv/" %}
 
-                            <a href="{{ guide.url }}" title="Go to the {{ guide.title}} Guide" class="guide-index__list-item-link" style="background-image: url('{% for image in guide.image %}{{ image.url }}{% endfor %}')">
+                            <div class="box med-1of2 lg-1of3 guide-index__list-item">
 
-                                <div class="guide-index__list-item-overlay"></div>
+                                <a href="{{ guide.url }}" title="Go to the {{ guide.title}} Guide" class="guide-index__list-item-link" style="background-image: url('{% for image in guide.image %}{{ image.url }}{% endfor %}')">
 
-                                <h3 class="heading--03 guide-index__list-item-title">{{ guide.title }}</h3>
+                                    <div class="guide-index__list-item-overlay"></div>
 
-                                <h5 class="heading--05 guide-index__ilvl">Item Level: {{ guide.ilvl }}</h5>
+                                    <h3 class="heading--03 guide-index__list-item-title">{{ guide.title }}</h3>
 
-                            </a>
+                                    <h5 class="heading--05 guide-index__ilvl">Item Level: {{ guide.ilvl }}</h5>
 
-                        </div>
+                                </a>
+
+                            </div>
+
+                        {% elsif page.url contains "dungeons" %}
+
+                            {% if guide.instanceType == "dungeon" %}
+
+                                <div class="box med-1of2 lg-1of3 guide-index__list-item">
+
+                                    <a href="{{ guide.url }}" title="Go to the {{ guide.title}} Guide" class="guide-index__list-item-link" style="background-image: url('{% for image in guide.image %}{{ image.url }}{% endfor %}')">
+
+                                        <div class="guide-index__list-item-overlay"></div>
+
+                                        <h3 class="heading--03 guide-index__list-item-title">{{ guide.title }}</h3>
+
+                                        <h5 class="heading--05 guide-index__ilvl">Item Level: {{ guide.ilvl }}</h5>
+
+                                    </a>
+
+                                </div>
+
+                            {% endif %}
+
+                        {% elsif page.url contains "trials" %}
+
+                            {% if guide.instanceType == "trial" %}
+
+                                <div class="box med-1of2 lg-1of3 guide-index__list-item">
+
+                                    <a href="{{ guide.url }}" title="Go to the {{ guide.title}} Guide" class="guide-index__list-item-link" style="background-image: url('{% for image in guide.image %}{{ image.url }}{% endfor %}')">
+
+                                        <div class="guide-index__list-item-overlay"></div>
+
+                                        <h3 class="heading--03 guide-index__list-item-title">{{ guide.title }}</h3>
+
+                                        <h5 class="heading--05 guide-index__ilvl">Item Level: {{ guide.ilvl }}</h5>
+
+                                    </a>
+
+                                </div>
+
+                            {% endif %}
+
+                        {% elsif page.url contains "raids" %}
+
+                            {% if guide.instanceType == "raid" %}
+
+                                <div class="box med-1of2 lg-1of3 guide-index__list-item">
+
+                                    <a href="{{ guide.url }}" title="Go to the {{ guide.title}} Guide" class="guide-index__list-item-link" style="background-image: url('{% for image in guide.image %}{{ image.url }}{% endfor %}')">
+
+                                        <div class="guide-index__list-item-overlay"></div>
+
+                                        <h3 class="heading--03 guide-index__list-item-title">{{ guide.title }}</h3>
+
+                                        <h5 class="heading--05 guide-index__ilvl">Item Level: {{ guide.ilvl }}</h5>
+
+                                    </a>
+
+                                </div>
+
+                            {% endif %}
+
+                        {% endif %}
 
                     {% endfor %}
 
