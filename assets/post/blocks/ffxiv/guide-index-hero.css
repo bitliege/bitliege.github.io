@@ -51,7 +51,7 @@
 .guide-index__intro {
     color: $white;
     font-family: $font-pt;
-    font-size: .8rem;
+    font-size: 1rem;
     line-height: 1.5;
     margin: 0 0 calc($small-padding/2) 0;
     position: relative;
@@ -69,7 +69,7 @@
 .guide-index__roadmap {
     color: $white;
     font-family: $font-pt;
-    font-size: .8rem;
+    font-size: 1rem;
     line-height: 1.5;
     margin: 0 0 $small-padding 0;
     position: relative;
