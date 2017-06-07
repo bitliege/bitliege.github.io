@@ -94,7 +94,7 @@
 
 /* Alerts =================================================================== */
 .guide__alerts {
-    background: $red;
+    background: $blue;
     border-radius: 3px;
     margin: calc($small-padding/2) 0;
     padding: calc($small-padding/2);
