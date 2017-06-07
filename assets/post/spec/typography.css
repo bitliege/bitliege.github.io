@@ -91,6 +91,7 @@ $font-scale-regular: 1rem;
 }
 
 [class*="button--"][class*="small"] {
+    font-size: .8rem;
     padding: 1rem 1.5rem;
 }
 

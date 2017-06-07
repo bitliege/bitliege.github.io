@@ -12,7 +12,7 @@
     }
 
     @media $(l-tablet) {
-        padding: $large-padding 0;
+        padding: 3.5rem 0 $large-padding 0;
     }
 
     .flex-grid {
