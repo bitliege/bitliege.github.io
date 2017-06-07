@@ -76,4 +76,58 @@
 
     });
 
+    // Google Analytics Conversion Tracker (MTQ Conversion Home) ===============
+
+    // Adds a listener for the "submit" event.
+    $(".mtqLinkHome").on("click", function(e) {
+
+        var clickedLink = $(this);
+
+        // Prevents the browser from submitting the form
+        // and thus unloading the current page.
+        event.preventDefault();
+
+        // Creates a timeout to call `submitForm` after one second.
+        setTimeout(submitClick, 1000);
+
+        function submitClick() {
+          var thisLink = clickedLink.attr("href");
+          location.href = thisLink;
+        }
+
+        // Sends the event to Google Analytics and
+        // resubmits the form once the hit is done.
+        ga('send', 'event', 'mtqLinkHome', 'click', {
+          hitCallback: submitClick
+        });
+
+    });
+
+    // Google Analytics Conversion Tracker (MTQ Conversion Guide) ==============
+
+    // Adds a listener for the "submit" event.
+    $(".mtqLinkGuide").on("click", function(e) {
+
+        var clickedLink = $(this);
+
+        // Prevents the browser from submitting the form
+        // and thus unloading the current page.
+        event.preventDefault();
+
+        // Creates a timeout to call `submitForm` after one second.
+        setTimeout(submitClick, 1000);
+
+        function submitClick() {
+          var thisLink = clickedLink.attr("href");
+          location.href = thisLink;
+        }
+
+        // Sends the event to Google Analytics and
+        // resubmits the form once the hit is done.
+        ga('send', 'event', 'mtqLinkGuide', 'click', {
+          hitCallback: submitClick
+        });
+
+    });
+
 })(jQuery);
