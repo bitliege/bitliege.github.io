@@ -83,33 +83,37 @@
                     </form>
 
                     <!-- Coming Soon -->
-                    <div class="box med-1of2 lg-1of3 guide-index__list-item">
+                    {% if page.permalink == "/ffxiv/" %}
 
-                        <div class="guide-index__list-item-link" style="background-image: url('{{ "/assets/img/ffxiv/alex_soul_savage.jpg" | prepend: site.baseurl }}')">
+                        <div class="box med-1of2 lg-1of3 guide-index__list-item">
 
-                            <div class="guide-index__list-item-overlay"></div>
+                            <div class="guide-index__list-item-link" style="background-image: url('{{ "/assets/img/ffxiv/alex_soul_savage.jpg" | prepend: site.baseurl }}')">
 
-                            <h3 class="heading--04 guide-index__list-item-title">[A12S] Alexander: The Soul of the Creator (Savage)</h3>
+                                <div class="guide-index__list-item-overlay"></div>
 
-                            <h5 class="heading--05 guide-index__ilvl">Coming Soon!</h5>
+                                <h3 class="heading--04 guide-index__list-item-title">[A12S] Alexander: The Soul of the Creator (Savage)</h3>
 
-                        </div>
+                                <h5 class="heading--05 guide-index__ilvl">Coming Soon!</h5>
 
-                    </div>
-
-                    <div class="box med-1of2 lg-1of3 guide-index__list-item">
-
-                        <div class="guide-index__list-item-link" style="background-image: url('{{ "/assets/img/ffxiv/tam_tara.jpg" | prepend: site.baseurl }}')">
-
-                            <div class="guide-index__list-item-overlay"></div>
-
-                            <h3 class="heading--03 guide-index__list-item-title">Tam Tara Deepcroft</h3>
-
-                            <h5 class="heading--05 guide-index__ilvl">Coming Soon!</h5>
+                            </div>
 
                         </div>
 
-                    </div>
+                        <div class="box med-1of2 lg-1of3 guide-index__list-item">
+
+                            <div class="guide-index__list-item-link" style="background-image: url('{{ "/assets/img/ffxiv/tam_tara.jpg" | prepend: site.baseurl }}')">
+
+                                <div class="guide-index__list-item-overlay"></div>
+
+                                <h3 class="heading--03 guide-index__list-item-title">Tam Tara Deepcroft</h3>
+
+                                <h5 class="heading--05 guide-index__ilvl">Coming Soon!</h5>
+
+                            </div>
+
+                        </div>
+
+                    {% endif %}
 
                     {% for guide in site.ffxiv_guides %}
 
