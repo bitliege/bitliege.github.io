@@ -46,22 +46,24 @@
 
                 <a href="https://www.youtube.com/channel/UC5BtIO_vMNvds5sgE-JI6KA" title="Visit MTQCapture's YouTube channel." target="_blank" class="mtqLinkHome button--small--white guide-index__hero-button">Go to MTQCapture's Channel</a>
 
+                <a id="list" title="Anchor's the Page to the Duty List."></a>
+
             </div>
 
             <div class="page-container guide-index__hero-category-wrapper">
-                <a href="/ffxiv/" title="View a list of all instances." class="guide-index__hero-category
+                <a href="/ffxiv/#list" title="View a list of all instances." class="guide-index__hero-category
                 {% if page.permalink == '/ffxiv/' %}
                     active
                 {% endif %}">All</a>
-                <a href="/ffxiv/dungeons" title="View a list of dungeon specific instances." class="guide-index__hero-category
+                <a href="/ffxiv/dungeons/#list" title="View a list of dungeon specific instances." class="guide-index__hero-category
                 {% if page.url contains 'dungeons' %}
                     active
                 {% endif %}">Dungeons</a>
-                <a href="/ffxiv/trials" title="View a list of trial specific instances." class="guide-index__hero-category
+                <a href="/ffxiv/trials/#list" title="View a list of trial specific instances." class="guide-index__hero-category
                 {% if page.url contains 'trials' %}
                     active
                 {% endif %}">Trials</a>
-                <a href="/ffxiv/raids" title="View a list of raid specific instances." class="guide-index__hero-category
+                <a href="/ffxiv/raids/#list" title="View a list of raid specific instances." class="guide-index__hero-category
                 {% if page.url contains 'raids' %}
                     active
                 {% endif %}">Raids</a>

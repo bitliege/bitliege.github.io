@@ -94,19 +94,20 @@
 
 /* Alerts =================================================================== */
 .guide__alerts {
-    background: $blue;
+    background: $red-faded;
+    border: .3rem solid $red;
     border-radius: 3px;
     margin: calc($small-padding/2) 0;
     padding: calc($small-padding/2);
 }
 
 .guide__alerts-label {
-    color: $font-white;
+    color: $font-black;
     margin: 0 0 calc($small-padding/4) 0;
 }
 
 .guide__alerts-list {
-    color: $font-white;
+    color: $font-black;
 }
 
 .guide__alerts-item {

@@ -39,7 +39,7 @@
 .guide__patch {
     color: $white;
     font-size: $font-scale-small;
-    font-weight: 300;
+    font-weight: 500;
     margin: 0 0 calc($small-padding/4) 0;
     position: relative;
 }
@@ -47,7 +47,7 @@
 .guide__ilvl {
     color: $red;
     font-size: $font-scale-small;
-    font-weight: 300;
+    font-weight: 500;
     margin: 0 0 calc($small-padding/4) 0;
     position: relative;
 }
