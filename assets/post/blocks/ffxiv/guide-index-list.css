@@ -116,7 +116,7 @@
 .guide-index__ilvl {
     color: $red;
     font-size: $font-scale-small;
-    font-weight: 300;
+    font-weight: 500;
     line-height: 1;
     position: relative;
 }
