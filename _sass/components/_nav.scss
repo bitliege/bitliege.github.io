@@ -1,0 +1,109 @@
+/* =============================================================================
+
+    JOSHDRINK: HOME
+    COMPONENTS - NAV
+
+============================================================================= */
+nav {
+    padding: 1rem 0;
+    position: fixed;
+    top: 0;
+    text-align: center;
+    width: 100%;
+    z-index: 15;
+}
+
+.nav__item {
+    color: rgba(180, 180, 195, 1);
+    display: inline-block;
+    font-family: $font--pt-sans;
+    font-size: $font-scale--small;
+    font-weight: 500;
+    line-height: 1;
+    margin: 0;
+    padding: 1rem .5rem;
+    position: relative;
+    text-decoration: none;
+    transition: all .2s ease;
+    vertical-align: middle;
+
+    svg {
+        width: 13px;
+
+        path {
+            fill: rgba(180, 180, 195, 1);
+            transition: all .2s ease;
+        }
+
+    }
+
+}
+
+.no-touchevents {
+
+    .nav__item:hover {
+        color: $palette--pink;
+        font-weight: 700;
+        transition: all .2s ease;
+
+        svg {
+
+            path {
+                fill: $palette--pink;
+                transition: all .2s ease;
+            }
+
+        }
+
+    }
+
+}
+
+.nav__divider {
+    color: rgba(180, 180, 195, 1);
+    display: inline-block;
+    font-family: $font--pt-sans;
+    font-size: $font-scale--small;
+    font-weight: 500;
+    line-height: 1;
+    margin: 0;
+    padding: 1rem 1rem;
+    vertical-align: middle;
+}
+
+.nav__item-tag {
+    background: rgba(63, 63, 74, 1);
+    border-radius: 3px;
+    color: white;
+    font-family: $font--pt-sans;
+    font-size: $font-scale--small;
+    font-weight: 700;
+    line-height: 1rem;
+    min-width: 6rem;
+    opacity: 0;
+    padding: .6rem .5rem .5rem .5rem;
+    pointer-events: none;
+    position: absolute;
+    top: 90%;
+    left: 50%;
+    transform: translate(-50%, 0);
+    transition: opacity .2s ease;
+
+    &:before {
+        background: rgba(63, 63, 74, 1);
+        content: " ";
+        display: block;
+        height: .5rem;
+        position: absolute;
+        top: 0;
+        left: 50%;
+        transform: translate(-50%, -50%) rotate(45deg);
+        width: .5rem;
+    }
+
+    &.active {
+        opacity: 1;
+        transition: opacity .2s ease;
+    }
+
+}

@@ -7,15 +7,23 @@
     <title>{% if page.title %}Josh Beveridge | {{ page.title | escape }}{% else %}{{ site.title | escape }}{% endif %}</title>
     <meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
 
+    <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-TH79PC5');</script>
+    <!-- End Google Tag Manager -->
+
     <!-- Google Fonts ====================================================== -->
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,400i,600,700,800|PT+Serif:400,400i,700,700i" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700|PT+Serif:400,400i,700,700i&amp;subset=latin-ext" rel="stylesheet">
 
     <!-- Favicons ========================================================== -->
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
     <link rel="manifest" href="/manifest.json">
-    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#ff575c">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#ff0077">
     <meta name="theme-color" content="#ffffff">
 
     <!-- Google Analytics ================================================== -->
@@ -29,3 +37,18 @@
         ga('send', 'pageview');
 
     </script>
+
+    <!-- jQuery -->
+    <script
+        src="https://code.jquery.com/jquery-3.2.1.min.js"
+        integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+        crossorigin="anonymous">
+    </script>
+
+    <!-- Modernizr -->
+    <script type="text/javascript" src="{{ "/scripts/vendor/modernizr.js" | prepend: site.baseurl }}"></script>
+
+    <!-- Custom Stylesheet -->
+    <link rel="stylesheet" href="{{ "/css/core.css" | prepend: site.baseurl }}">
+
+</head>

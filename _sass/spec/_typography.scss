@@ -1,0 +1,236 @@
+/* =============================================================================
+
+    JOSHDRINK: HOME
+    SPEC - TYPOGRAPHY
+
+============================================================================= */
+
+/* Google Fonts ============================================================= */
+$font--pt-serif: 'PT Serif', serif;
+$font--pt-sans: 'PT Sans', sans-serif;
+
+/* Font Standard ============================================================ */
+html,
+body {
+    font-size: 90%;
+    -webkit-font-smoothing: antialiased;
+
+    @media screen and (min-width: 768px) {
+        font-size: 100%;
+    }
+
+    @media screen and (min-width: 1025px) {
+        font-size: 112.5%;
+    }
+
+}
+
+$font-color: rgba(0, 0, 15, .75);
+
+/* 1.414 Scale */
+
+$font-scale: 1.414;
+
+$font-scale--h1: calc(1rem*(#{$font-scale}*(#{$font-scale}*(#{$font-scale}*(#{$font-scale})))));
+$font-scale--h2: calc(1rem*(#{$font-scale}*(#{$font-scale}*(#{$font-scale}))));
+$font-scale--h3: calc(1rem*(#{$font-scale}*(#{$font-scale})));
+$font-scale--h4: calc(1rem*(#{$font-scale}));
+$font-scale--h5: 1rem;
+$font-scale--regular: $font-scale--h5;
+$font-scale--small: calc(1rem*(#{$font-scale}/2));
+
+/* Core Typography ========================================================== */
+.core__content {
+
+    .tag {
+        color: $palette--pink;
+        display: block;
+        font-family: $font--pt-sans;
+        font-size: $font-scale--h5;
+        font-weight: 700;
+        letter-spacing: initial;
+        line-height: 1;
+        margin: 3rem 0;
+        text-align: center;
+    }
+
+    /* Headings */
+    h1, h2, h3, h4, h5 {
+        color: $font-color;
+        display: block;
+        font-family: $font--pt-sans;
+        font-weight: 700;
+        letter-spacing: -.1rem;
+        line-height: 1;
+        margin: 3rem 0 1.5rem 0;
+        text-align: center;
+    }
+
+    h1 {
+        font-size: $font-scale--h1;
+    }
+
+    h2 {
+        font-size: $font-scale--h2;
+    }
+
+    h3 {
+        font-size: $font-scale--h3;
+    }
+
+    h4 {
+        font-size: $font-scale--h4;
+        letter-spacing: initial;
+    }
+
+    h5 {
+        font-size: $font-scale--h5;
+        letter-spacing: initial;
+    }
+
+    /* Links */
+    a {
+        color: $palette--pink;
+        font-family: inherit;
+        font-size: inherit;
+        font-weight: inherit;
+        line-height: inherit;
+        transition: color .2s ease;
+    }
+
+    /* Paragraphs */
+    p {
+        color: $font-color;
+        font-family: $font--pt-serif;
+        font-size: $font-scale--regular;
+        line-height: 1.4;
+        margin: 1.5rem 0;
+
+        +ul,
+        +ol {
+            margin-top: -1rem;
+        }
+
+    }
+
+    /* Blockquote */
+    blockquote {
+        background: rgba(0, 0, 15, .75);
+        border-radius: 3px;
+        margin: 1.7rem 0;
+        padding: 1.5rem 1.8rem;
+
+        >*:first-child {
+            margin-top: 0;
+        }
+
+        >*:last-child {
+            margin-bottom: 0;
+        }
+
+        p {
+            color: white;
+            font-family: $font--pt-sans;
+            font-size: $font-scale--regular;
+            font-weight: 700;
+            line-height: 1;
+            margin: 1rem 0;
+
+            &:last-child {
+                font-size: $font-scale--small;
+                font-weight: 500;
+                text-align: right;
+            }
+
+        }
+
+    }
+
+    /* Lists */
+    ul {
+        color: $font-color;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        margin: 1.5rem 0;
+        padding: 0;
+
+        li {
+            color: $font-color;
+            font-family: $font--pt-serif;
+            font-size: $font-scale--regular;
+            line-height: 1.4;
+            margin: 0 0 0 1.75rem;
+
+            >*:first-child {
+                margin-top: 0;
+            }
+
+            >*:last-child {
+                margin-bottom: 0;
+            }
+
+            p {
+                margin: .5rem 0;
+            }
+
+        }
+
+    }
+
+    ol {
+        color: $font-color;
+        margin: 1.5rem 0;
+        padding: 0;
+
+        li {
+            color: $font-color;
+            font-family: $font--pt-serif;
+            font-size: $font-scale--regular;
+            line-height: 1.4;
+            margin: 0 0 0 1.75rem;
+
+            >*:first-child {
+                margin-top: 0;
+            }
+
+            >*:last-child {
+                margin-bottom: 0;
+            }
+
+            p {
+                margin: .5rem 0;
+            }
+
+        }
+
+    }
+
+    /* Horizontal Rule */
+    hr {
+        border-top: 1px solid $palette--pink;
+        margin: 3rem 0;
+    }
+
+    /* First & Last Margins */
+    >*:first-child {
+        margin-top: 0;
+    }
+
+    >*:last-child {
+        margin-bottom: 0;
+    }
+
+}
+
+.no-touchevents {
+
+    .core__content {
+
+        a:hover {
+            color: $font-color;
+            transition: color .2s ease;
+        }
+
+    }
+
+}

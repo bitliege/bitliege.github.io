@@ -3,77 +3,200 @@ layout: default
 title: Home
 permalink: /
 ---
-<div class="guide--left"></div>
+<nav>
 
-<div class="guide--right"></div>
+    <a href="#about" title="Learn more about Josh." class="nav__item">About</a>
 
-<section class="site-stage">
+    <a href="#practice" title="See Josh's work." class="nav__item">My Practice</a>
 
-    <a href="http://twitter.com/@joshdrink" title="Follow Josh on Twitter." class="site-stage__social-link">@joshdrink</a>
+    <script type="text/javascript">
+        $("nav").append("<a id='contactTrigger' href='#' title='Copy Josh&#39;s email.' class='nav__item tagNavContactJS'>Contact<div class='nav__item-tag'>Email copied!</div></a>");
+    </script>
 
-    <div class="site-stage__bartender">
-        <span>serve me:</span>
-        <div class="site-stage__select-wrapper">
-            <select>
-                <option>water</option>
-                <option>coffee</option>
-                <option>beer</option>
-                <option>matcha</option>
-                <option>wine</option>
-            </select>
-            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"> <g class="nc-icon-wrapper" fill="#444444"> <path d="M7.41 7.84L12 12.42l4.59-4.58L18 9.25l-6 6-6-6z"></path> </g> </svg>
-        </div>
+    <noscript>
+        <a href="mailto:imjoshdrink@gmail.com" title="Open your email client." class="nav__item tagNavContactNoJS">Contact</a>
+    </noscript>
+
+    <span class="nav__divider">|</span>
+
+    <a href="https://twitter.com/joshdrink" title="Follow Josh on Twitter." class="nav__item tagNavTwitter" target="_blank"><svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 16 16" xml:space="preserve" width="16" height="16"><g class="nc-icon-wrapper" fill="#444444"><path fill="#444444" d="M16,3c-0.6,0.3-1.2,0.4-1.9,0.5c0.7-0.4,1.2-1,1.4-1.8c-0.6,0.4-1.3,0.6-2.1,0.8c-0.6-0.6-1.5-1-2.4-1 C9.3,1.5,7.8,3,7.8,4.8c0,0.3,0,0.5,0.1,0.7C5.2,5.4,2.7,4.1,1.1,2.1c-0.3,0.5-0.4,1-0.4,1.7c0,1.1,0.6,2.1,1.5,2.7 c-0.5,0-1-0.2-1.5-0.4c0,0,0,0,0,0c0,1.6,1.1,2.9,2.6,3.2C3,9.4,2.7,9.4,2.4,9.4c-0.2,0-0.4,0-0.6-0.1c0.4,1.3,1.6,2.3,3.1,2.3 c-1.1,0.9-2.5,1.4-4.1,1.4c-0.3,0-0.5,0-0.8,0c1.5,0.9,3.2,1.5,5,1.5c6,0,9.3-5,9.3-9.3c0-0.1,0-0.3,0-0.4C15,4.3,15.6,3.7,16,3z"></path></g></svg></a>
+
+    <a href="https://github.com/joshdrink" title="Follow Josh on Github." class="nav__item tagNavGithub" target="_blank"><svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 16 16" xml:space="preserve" width="16" height="16"><g class="nc-icon-wrapper" fill="#444444"><path fill-rule="evenodd" clip-rule="evenodd" fill="#444444" d="M8,0.2c-4.4,0-8,3.6-8,8c0,3.5,2.3,6.5,5.5,7.6 C5.9,15.9,6,15.6,6,15.4c0-0.2,0-0.7,0-1.4C3.8,14.5,3.3,13,3.3,13c-0.4-0.9-0.9-1.2-0.9-1.2c-0.7-0.5,0.1-0.5,0.1-0.5 c0.8,0.1,1.2,0.8,1.2,0.8C4.4,13.4,5.6,13,6,12.8c0.1-0.5,0.3-0.9,0.5-1.1c-1.8-0.2-3.6-0.9-3.6-4c0-0.9,0.3-1.6,0.8-2.1 c-0.1-0.2-0.4-1,0.1-2.1c0,0,0.7-0.2,2.2,0.8c0.6-0.2,1.3-0.3,2-0.3c0.7,0,1.4,0.1,2,0.3c1.5-1,2.2-0.8,2.2-0.8 c0.4,1.1,0.2,1.9,0.1,2.1c0.5,0.6,0.8,1.3,0.8,2.1c0,3.1-1.9,3.7-3.7,3.9C9.7,12,10,12.5,10,13.2c0,1.1,0,1.9,0,2.2 c0,0.2,0.1,0.5,0.6,0.4c3.2-1.1,5.5-4.1,5.5-7.6C16,3.8,12.4,0.2,8,0.2z"></path></g></svg></a>
+
+</nav>
+
+<section class="hero">
+
+    <div class="core__container--content">
+
+        <h1 class="hero__title">Problems are fun.</h1>
+        <a href="#about" title="Learn more about Josh." class="hero__trigger">Don't think so?</a>
+
     </div>
 
-    <div class="site-stage__container">
+</section>
 
-        <article class="content-area">
+<a id="about"></a>
 
-            <h1>Perpetual Design</h1>
+<section class="about">
 
-            <p>tl;dr : at a time when I was feeling particularly tied down by client constraints, I decided to explore what makes the design process so difficult to master. This lead to a fantastic discussion with Sohrab Vossoughi of Ziba about the endlessly evolving nature of design.</p>
+    <div class="core__container--content core__content">
 
-            <h2>Design is Fluid</h2>
+        <h2>I'm here for you.</h2>
 
-            <p>The design process can be frustrating. I’m very early in my career and I’ve accepted that this is going to be the case for the rest of my life. Despite design’s more attractive qualities, I’ve had to come to terms with the idea that practicing design is going to forever be volatile at best. It is ever-changing, ever-challenging and always pushing you through the learning curve at breakneck speeds.</p>
+        <span class="tag">My passion is problems. Your problems, to be specific.</span>
 
-            <p>Unfortunately, the persosnal disposition of many designers is fairly incompatible with the nature of the design process. From my experience, designers enjoy discovering problems, exploring their natures and executing solutions. However, the design process itself is anything but straight-forward. There’s always a budget cut here, a lack of information there. Every project comes with its own unique host of challenges, and it’s virtually impossible to ancipate them, distill principles and devise solutions that will apply to every case. We might be able to identify the immediate cause, but there is never a guarantee that this problem will occur again, or in the same fashion.</p>
+        <p><strong>My name is Josh, and I think problems are pretty cool.</strong> Starting a business? Building a website? Having an existential crisis? Let's chat. What I do for a living is help you get to know your problem so well that you'll wonder why it felt so frustrating in the first place. Then we can chat solutions.</p>
 
-            <p>I’ve decided that in order to reconcile the conflicting natures of design and designer, I will have to sacrifice my innate obsession with solutions in order to embrace the transformative nature design presents.</p>
+        <blockquote>
+            <p>This problem is horrible and I'm mad at everything. Help!</p>
+            <p><em>&mdash; You (Right Now)</em></p>
+        </blockquote>
 
-            <h2>The Problems</h2>
+        <p>Problems are just a big puzzle, and the more you understand how the pieces of the puzzle fit together, the less ominous the problem gets. Toss some time and an extra brain or two in there and we can figure out just about anything! This applies to any field you can imagine, and that's why I love doing it.</p>
 
-            <p>Recently I’ve found myself feeling a little claustrophobic. On a day-to-day basis, I am content to work away at whatever is thrown in front of me; analyzing problems, asking questions, finding answers. Despite this stability, I recently began noticing problems with the process that were impacting our execution of the product. Small budgets. Last-minute client decisions. Fragmented information. Miscommunication. Often these issues were isolated — minor in and of themselves — but I found that they were rippling down the development chain with disproportionately destructive consequences. Naturally, my attention snapped to this chaos immediately. I began to look at these problems as I would any other design problem and eventually came to the realization that I was biting off more than I could chew.</p>
+        <span class="tag">My process is dynamic and designed to be adaptable because every problem is different.</span>
 
-            <p>The difficulty was that these issues with the design process were incredibly unique to the individual projects at hand. In this specific instance, I found myself being constrained by the project’s budget. I was being asked to execute the design process and being provided an allotment of time that I felt was nowhere near what was required to provide an appropriate solution. This frustrated me to no end and I felt the need to seek a better resolution than simply producing a subpar product. I asked questions and the answers I received enabled me to follow through with the execution. However, when the next project with budget constraints arose, I found myself lacking any valuable experience to deal with the new set of variables.</p>
+        <p>I help simplify problems by combining a little bit of the following:</p>
 
-            <p><strong>Why?</strong></p>
+        <ul>
+            <li>Perspective</li>
+            <li>Humanity</li>
+            <li>Respect</li>
+            <li>Design Thinking</li>
+            <li>Community</li>
+            <li>Research</li>
+        </ul>
 
-            <p>Unfortunately, this project had budget constraints for a whole new set of reasons. Not one of them overlapped with the prior project, and I found myself back at square one. This was defeating. I felt that all of my work and learning had been rendered useless. And, having gone over budget on the last project, I now saw an immediate danger of doing the same here. It was at this point that I approached a mentor for some advice. Surprisingly enough, she shared my feelings:</p>
-            <blockquote>“When I first started at Norex I felt most frustration with executing work that was ‘the best in the world’ while falling in line with client budgets. Finding the balance between the two is extremely difficult, but I believe that truly great designers/creators are able to use it to their advantage.”</blockquote>
+        <blockquote>
+            <p>Eureka!</p>
+            <p><em>&mdash; You (From the Future)</em></p>
+        </blockquote>
 
-            <p>She followed this up with a link to an article that she felt might help me wrap my head around the idea of constraints as a motivator. The article, written by Sohrab Vossoughi of Ziba, explores how his designers took advantage of pressures during the process to help them push their innovation further than it would have gone otherwise. Thinking about constraint as a tool as opposed to an inhibitor was challenging, but it changed my perception of design in a fundamental way.</p>
+        <p>Once you're comfortable being knee deep in your problem, I can help you choose an appropriate next step:</p>
 
-            <h2>A Discussion</h2>
+        <ul>
+            <li>Goal Setting</li>
+            <li>People</li>
+            <li>Design</li>
+            <li>Web/App Consulting</li>
+            <li>Business Ideation</li>
+            <li>Prototyping</li>
+        </ul>
 
-            <p>The article was a great way to jumpstart my thinking, but I found myself with more questions than answers. This is when I decided to reach out to Sohrab directly to see if could quell some of the newest problems buzzing around in my head. Despite having written the article in 2012, Mr. Vossoughi, and the Ziba team, were very receptive to my request. The discussion that followed centred around a single concept: embracing change. The questions I asked in our discussion were based on three of the key principles in Sohrab’s article:</p>
+        <p>I work on a platform built on honesty and transparency. If we're not a good fit, I'll point you in the right direction. If we hit a wall, we'll find the right person to get you through it. Have I piqued your interest? Curious about chatting with me about what I do? Do I sound totally crazy? <strong>Let's be friends.</strong></p>
 
-            <h5>[…] scarcity forces focus.</h5>
+        <div class="core__button-wrapper">
 
-            <p>I began with questions formed from recent experiences with my own team. Sohrab’s article directly correlated design creativity and innovation with constraint and limited resources, leading me to question how his designers coped with their ideals when they came into conflict with their execution. We discussed that design must exist within the specific parameters of the project. And, while those parameters might feel restrictive, it’s up to the designer to make clear what they can produce with those parameters in place. The client might have grand ideas and restrictive budget, so the designer must be willing to honestly communicate their limits and set the expectation of what the client will receive. Promising the impossible creates a toxic environment for both parties and should be avoided up front with open and honest communication.</p>
+            <script type="text/javascript">
+                $(".core__button-wrapper").append("<a id='ctaTrigger' href='#' title='Copy Josh&#39;s email.' class='core__button tagAboutContactJS'>Start a Conversation<div class='core__button-tag'>Email copied!</div></a>");
+            </script>
 
-            <h5>Scarcity also gives us an excuse to get on with it.</h5>
+            <noscript>
+                <a href="mailto:imjoshdrink@gmail.com" title="Get in touch with Josh." class="core__button tagAboutContactNoJS">Start a Conversation</a>
+            </noscript>
 
-            <p>This lead me to ask about making bold decisions during the design process, testing the resulting solutions and iterating until they achieved specific goals. My personal understanding of the process was that the design should be massaged for as long as possible until the product achieved the client’s goals. My discussion with Sohrab revealed that, contrary to the idealistic nature of the design process, a project’s design is never going to be perfect or complete. As a result, the designer shouldn’t hesitate to make bold decisions when the time is right. These decisions are the ones that spur innovation and creativity. These decisions are the ones that will take the product to new heights and result in unique offerings that surpass a designer’s competitors. The never-ending evolution of the design process is about refinement and understanding. No matter how hard we work the design process will always be a work in progress; something that needs to be effectively communicated at all times. Designing is about learning, and learning will never stop.</p>
+        </div>
 
-            <h5>[…] scarcity forces us to be genuinely creative.</h5>
+    </div>
 
-            <p>Finally, I brought up the idea of creating a process to accurately reflect this endless process of discovery and change. Sohrab’s advice here was what I took most to heart: there is no one process. Instead, he suggests, redesign the process with every new project you take on. I struggled with this concept at first, but having given it further thought, I’ve realized the genius that lies behind what he said. Design is an incessant endeavour. Its expectations, limitations and means of execution are equally relentless. This means that the designer must continue to refine their understanding of the design process indefinitely. There is no final goal, there is no perfect answer. Designers must become as fluid and adaptable as the design process itself, and it is only once you’ve reached this understanding that you’ll be able to design effectively every single time.
-            Resolution
-            I’ll admit, it’s an odd way to think about my career. As a designer, I’m never going to have all the answers. As a designer, I’m never going to have a single process. As a designer, I will eventually learn to adapt with the speed and skill I need to react to design’s most challenging mutations. Until then, my goal should never be to seek the be-all, end-all solution, because there’s never going to be one. Every design I create must be a fluid, organic way of understanding the world around me. Each experience I have is going to change my understanding of a particular user, and this, in turn, will change the respective solution in ways that I might not have considered. I’m very excited to reach this point in my career, because it is only then that I will be producing my highest quality of work. For now, I’m going to strive to adapt to the best of my ability. I’m going to stop obsessing over the nature of an answer and I’m going to focus my effort and skill on setting the correct expectations and educating both clients and my team members about the intangible nature and incredible value of perpetual design.
+</section>
 
-        </article>
+<a id="practice"></a>
 
+<section class="practice">
+
+    <div class="core__container--content core__content">
+        <h2>My Practice</h2>
+    </div>
+
+    <div class="core__container--content practice__grid">
+
+        <a href="http://codeandmortar.com" title="Visit Code + Mortar." target="_blank" class="practice__item--work tagPracticeCM">
+
+            <div class="practice__item-meta-wrapper">
+                <span class="practice__item-label">Full-time Work</span>
+                <h3 class="practice__item-title">Code + Mortar</h3>
+                <h5 class="practice__item-subtitle"><strong>Role</strong>: Jack of All Trades</h5>
+            </div>
+
+            <div class="practice__item-problem-wrapper">
+                <h5 class="practice__item-problem"><strong>Problem</strong>: Anything they'll throw at me!</h5>
+            </div>
+
+            <div class="practice__item-content-wrapper">
+                <h5 class="practice__item-subtitle">My current full-time work involves regularly swapping hats to meet the needs of clients at Code + Mortar. A majority of my time is spent discussing startup opportunities with potential clients, performing user research, wireframing, prototyping, writing technical documentation, and front-end development. At the end of the day, it's my job to ensure our clients understand their problem and align their project goals before they reach our development team.</h5>
+                <span class="practice__item-tag">Business Development</span>
+                <span class="practice__item-tag">User Experience Design</span>
+                <span class="practice__item-tag">Front-end Development</span>
+            </div>
+
+        </a>
+
+        <a href="http://ffxiv.joshdrink.com" title="View the Pocket Guide website." target="_blank" class="practice__item--ffxiv tagPracticePocketGuide">
+
+            <div class="practice__item-meta-wrapper">
+                <span class="practice__item-label">Community Project</span>
+                <h3 class="practice__item-title">The FFXIV Pocket Guide</h3>
+                <h5 class="practice__item-subtitle">Role: Founder, Manager</h5>
+            </div>
+
+            <div class="practice__item-problem-wrapper">
+                <h5 class="practice__item-problem"><strong>Problem</strong>: There is no consistent, mobile friendly source for text format content guides in the FFXIV community.</h5>
+            </div>
+
+            <div class="practice__item-content-wrapper">
+                <h5 class="practice__item-subtitle">Video games are serious business. Content in Final Fantasy XIV can be both intimidating and incredibly challenging, requiring ample preparation and teamwork to succeed. Guide content has always flourished in video format on YouTube, however, as someone who prefers text format guides, I took it upon myself to build and maintain a database of mobile friendly guides that could be accessed on the fly.</h5>
+                <span class="practice__item-tag">Community</span>
+                <span class="practice__item-tag">Jekyll</span>
+                <span class="practice__item-tag">HTML/CSS</span>
+                <span class="practice__item-tag">Analytics</span>
+            </div>
+
+        </a>
+
+        <a href="http://youthproject.ns.ca/" title="View the Youth Project website." target="_blank" class="practice__item--article tagPracticeYouthProject">
+
+            <div class="practice__item-meta-wrapper">
+                <span class="practice__item-label">Community Project</span>
+                <h3 class="practice__item-title">The Youth Project</h3>
+                <h5 class="practice__item-subtitle"><strong>Role</strong>: Outreach, Designer</h5>
+            </div>
+
+            <div class="practice__item-problem-wrapper">
+                <h5 class="practice__item-problem"><strong>Problem</strong>: Our web presence is dated, inaccessible on mobile devices, and no longer meeting the needs of our youth.</h5>
+                <h5 class="practice__item-problem"><strong>Problem</strong>: Our brand has stagnated and needs to be modernized so that it can be used on a variety of physical and digital platforms.</h5>
+            </div>
+
+            <div class="practice__item-content-wrapper">
+                <h5 class="practice__item-subtitle">The Youth Project is an advocacy and support group for LGBTQ2+ youth in the Halifax area. They actively participate in educating and promoting healthy behaviour in youth to ensure that they have access to the community and acceptance they need to navigate the difficulties associated with growing up LGBTQ2+. As a show of support, the Code + Mortar team and I reached out and helped strengthen the Youth Project's brand and digital presence to help alleviate numerous pain points that were being encountered by their staff and participants.</h5>
+                <span class="practice__item-tag">Community</span>
+                <span class="practice__item-tag">User Research</span>
+                <span class="practice__item-tag">Branding</span>
+                <span class="practice__item-tag">HTML/CSS</span>
+            </div>
+        </a>
+
+        <a href="https://medium.com/@joshdrink/perpetual-design-7d0c9659826c" title="Read Perpetual Design." target="_blank" class="practice__item--article tagPracticeArticle">
+
+            <div class="practice__item-meta-wrapper">
+                <span class="practice__item-label">Thought Leadership</span>
+                <h3 class="practice__item-title">Perpetual Design</h3>
+                <h5 class="practice__item-subtitle"><strong>Role</strong>: Author</h5>
+            </div>
+
+            <div class="practice__item-content-wrapper">
+                <h5 class="practice__item-subtitle">At a time when I was feeling particularly tied down by client constraints, I decided to explore what makes the design process so difficult to master. This lead to a fantastic discussion with Sohrab Vossoughi of Ziba about the endlessly evolving nature of design.</h5>
+                <span class="practice__item-tag">Writing</span>
+                <span class="practice__item-tag">Design Thinking</span>
+            </div>
+
+        </a>
+
+    </div>
+
+    <div class="core__container--content practice__copyright">
+        <h5 class="practice__copyright-title">&copy; Josh Beveridge {{ 'now' | date: "%Y" }}. Handcrafted by a person like you.</h5>
     </div>
 
 </section>
