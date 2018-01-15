@@ -1,0 +1,137 @@
+/* =============================================================================
+
+    JOSHDRINK: HOME
+    COMPONENTS - LANDING - WORK
+
+============================================================================= */
+.work {
+
+}
+
+.work__grid {
+
+}
+
+.work__item {
+    background-position: center;
+    background-size: cover;
+    border-bottom: 1px solid rgba(200, 200, 200, 1);
+    display: block;
+    padding: 4rem 0;
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+
+    @media screen and (min-width: 768px) {
+        padding: 6rem 0;
+    }
+
+    &:before {
+        background: rgba(0, 0, 15, .5);
+        content: " ";
+        display: block;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        transition: background .2s ease;
+        width: 100%;
+        z-index: 5;
+    }
+
+    &:last-child {
+        border-bottom: none;
+    }
+
+}
+
+.no-touchevents {
+
+    .work__item:hover {
+
+        &:before {
+            background: rgba(0, 0, 15, .8);
+            transition: background .2s ease;
+        }
+
+    }
+
+}
+
+.work__item-label {
+    color: $palette--pink;
+    display: block;
+    font-family: $font--pt-sans;
+    font-size: $font-scale--small;
+    font-weight: 700;
+    line-height: 1;
+    margin: 0 0 1.5rem;
+    position: relative;
+    z-index: 10;
+}
+
+.work__item-title {
+    color: white;
+    display: block;
+    font-family: $font--pt-sans;
+    font-size: $font-scale--h3;
+    font-weight: 700;
+    letter-spacing: -.1rem;
+    line-height: 1;
+    margin: 0 0 1.5rem;
+    position: relative;
+    text-decoration: underline;
+    z-index: 10;
+}
+
+.work__item-subtitle {
+    color: white;
+    display: block;
+    font-family: $font--pt-sans;
+    font-size: $font-scale--regular;
+    font-weight: 700;
+    line-height: 1;
+    margin: 0;
+    position: relative;
+    z-index: 10;
+}
+
+.work__item-copy {
+    color: white;
+    display: block;
+    font-family: $font--pt-serif;
+    font-size: $font-scale--regular;
+    font-weight: 400;
+    margin: 1.5rem 0;
+    position: relative;
+    text-align: left;
+    z-index: 10;
+}
+
+.work__item-tag {
+    color: rgba(180, 180, 195, 1);
+    display: inline-block;
+    font-family: $font--pt-sans;
+    font-size: $font-scale--small;
+    font-weight: 500;
+    line-height: 1;
+    margin: 1rem .5rem 0 .5rem;
+    position: relative;
+    text-decoration: none;
+    z-index: 10;
+}
+
+.practice__copyright {
+    padding: 5rem 0;
+    text-align: center;
+}
+
+.practice__copyright-title {
+    color: rgba(180, 180, 195, 1);
+    font-family: $font--pt-sans;
+    font-size: $font-scale--small;
+    font-weight: 500;
+    letter-spacing: initial;
+    line-height: 1;
+    margin: 0;
+}

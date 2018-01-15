@@ -1,0 +1,226 @@
+/* =============================================================================
+
+    JOSHDRINK: HOME
+    COMPONENTS - LANDING - SERVICES
+
+============================================================================= */
+.services {
+    background: rgba(250, 250, 250, 1);
+    padding: 4rem 0;
+
+    @media screen and (min-width: 768px) {
+        padding: 6rem 0;
+    }
+
+}
+
+.services__grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-row-gap: 2rem;
+    margin: 3rem auto;
+}
+
+.services__accordion {
+    border-bottom: 1px solid rgba(200, 200, 200, 1);
+    padding: 0 0 2rem 0;
+
+    &.active {
+
+        .services__accordion-trigger {
+
+            svg {
+                transform: translate(0, -25%) rotate(180deg);
+                transition: transform .2s ease;
+            }
+
+        }
+
+        .services__accordion-content {
+            display: block;
+        }
+
+    }
+
+    &:first-child {
+        border-top: 1px solid rgba(200, 200, 200, 1);
+        padding-top: 2rem;
+    }
+
+}
+
+.services__accordion-trigger {
+    background: none;
+    border: none;
+    box-sizing: border-box;
+    cursor: pointer;
+    display: block;
+    margin: 0;
+    padding: 0 0 0 4rem;
+    position: relative;
+    text-align: left;
+    text-decoration: none;
+    width: 100%;
+
+    h4 {
+        color: $font-color;
+        display: block;
+        font-family: $font--pt-sans;
+        font-size: $font-scale--h4;
+        font-weight: 700;
+        line-height: 1;
+        margin: 0;
+    }
+
+    svg {
+        position: absolute;
+        top: 0;
+        left: 0;
+        transform: translate(0, -25%) rotate(0);
+        transition: transform .2s ease;
+
+        g,
+        g path {
+            fill: $palette--pink;
+        }
+
+    }
+
+}
+
+.services__accordion-content {
+    display: none;
+    padding: 2rem 0 0 4rem;
+
+    >*:first-child {
+        margin-top: 0;
+    }
+
+    >*:last-child {
+        margin-bottom: 0;
+    }
+
+}
+
+.services__feeling {
+    color: $palette--pink;
+    font-family: $font--pt-sans;
+    font-weight: 700;
+}
+
+.services__contact--01,
+.services__contact--02,
+.services__contact--03,
+.services__contact--04 {
+
+    a {
+        position: relative;
+    }
+
+}
+
+.services__01-contact-tag,
+.services__02-contact-tag,
+.services__03-contact-tag,
+.services__04-contact-tag {
+    background: rgba(63, 63, 74, 1);
+    border-radius: 3px;
+    color: white;
+    font-family: $font--pt-sans;
+    font-size: $font-scale--small;
+    font-weight: 700;
+    line-height: 1rem;
+    min-width: 6rem;
+    opacity: 0;
+    padding: .6rem .5rem .5rem .5rem;
+    pointer-events: none;
+    position: absolute;
+    top: 150%;
+    left: 50%;
+    text-align: center;
+    transform: translate(-50%, 0);
+    transition: opacity .2s ease;
+
+    &:before {
+        background: rgba(63, 63, 74, 1);
+        content: " ";
+        display: block;
+        height: .5rem;
+        position: absolute;
+        top: 0;
+        left: 50%;
+        transform: translate(-50%, -50%) rotate(45deg);
+        width: .5rem;
+    }
+
+    &.active {
+        opacity: 1;
+        transition: opacity .2s ease;
+    }
+
+}
+
+.services__skill-accordion {
+
+    &.active {
+
+        .services__skill-accordion-see {
+            display: none;
+        }
+
+        .services__skill-accordion-hide {
+            display: inline;
+        }
+
+        .services__skill-accordion-content {
+            display: block;
+        }
+
+    }
+
+}
+
+.services__skill-accordion-trigger {
+    color: $palette--pink;
+    display: block;
+    font-family: $font--pt-serif;
+    font-size: $font-scale--regular;
+    margin: 0;
+    text-align: center;
+    transition: color .2s ease;
+}
+
+.no-touchevents {
+
+    .services__skill-accordion-trigger:hover {
+        color: $font-color;
+        transition: color .2s ease;
+    }
+
+}
+
+.services__skill-accordion-see {
+    display: inline;
+}
+
+.services__skill-accordion-hide {
+    display: none;
+}
+
+.services__skill-accordion-content {
+    display: none;
+    padding: 3rem 0 0 0;
+
+    >*:first-child {
+        margin-top: 0;
+    }
+
+    >*:last-child {
+        margin-bottom: 0;
+    }
+
+    h5 {
+        text-align: left;
+    }
+
+}

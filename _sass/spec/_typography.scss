@@ -23,6 +23,11 @@ body {
         font-size: 112.5%;
     }
 
+    *::selection {
+        background: $palette--pink--transparent !important;
+        color: white !important;
+    }
+
 }
 
 $font-color: rgba(0, 0, 15, .75);
@@ -115,7 +120,7 @@ $font-scale--small: calc(1rem*(#{$font-scale}/2));
 
     /* Blockquote */
     blockquote {
-        background: rgba(0, 0, 15, .75);
+        background: $palette--blue;
         border-radius: 3px;
         margin: 1.7rem 0;
         padding: 1.5rem 1.8rem;
@@ -151,6 +156,7 @@ $font-scale--small: calc(1rem*(#{$font-scale}/2));
         color: $font-color;
         display: grid;
         grid-template-columns: 1fr 1fr;
+        grid-column-gap: 2rem;
         margin: 1.5rem 0;
         padding: 0;
 

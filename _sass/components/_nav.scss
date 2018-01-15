@@ -9,8 +9,18 @@ nav {
     position: fixed;
     top: 0;
     text-align: center;
+    transition: background .2s ease;
     width: 100%;
     z-index: 15;
+}
+
+.no-touchevents {
+
+    nav:hover {
+        background: white;
+        transition: background .2s ease;
+    }
+
 }
 
 .nav__item {
