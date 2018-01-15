@@ -138,7 +138,6 @@ $font-scale--small: calc(1rem*(#{$font-scale}/2));
             font-family: $font--pt-sans;
             font-size: $font-scale--regular;
             font-weight: 700;
-            line-height: 1;
             margin: 1rem 0;
 
             &:last-child {
