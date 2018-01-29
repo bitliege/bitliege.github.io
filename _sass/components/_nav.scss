@@ -66,14 +66,17 @@ nav {
 .no-touchevents {
 
     .nav__item:hover {
-        color: $palette--pink;
-        font-weight: 700;
+        // color: $palette--pink;
+        // color: rgba(0, 0, 0, 1);
+        // font-weight: 700;
+        text-decoration: underline;
         transition: all .2s ease;
 
         svg {
 
             path {
-                fill: $palette--pink;
+                // fill: $palette--pink;
+                // fill: rgba(0, 0, 15, 1);
                 transition: all .2s ease;
             }
 
@@ -111,6 +114,7 @@ nav {
     position: absolute;
     top: 90%;
     left: 50%;
+    text-align: center;
     transform: translate(-50%, 0);
     transition: opacity .2s ease;
 
