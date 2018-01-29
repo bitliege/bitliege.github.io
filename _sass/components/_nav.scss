@@ -5,43 +5,57 @@
 
 ============================================================================= */
 nav {
-    padding: 1rem 0;
+    background: rgba(0, 0, 15, .5);
+    box-sizing: border-box;
+    padding: 0 1rem 0 0;
     position: fixed;
     top: 0;
     text-align: center;
     transition: background .2s ease;
     width: 100%;
     z-index: 15;
+
+    @media screen and (min-width: 768px) {
+        text-align: right;
+    }
+
 }
 
 .no-touchevents {
 
     nav:hover {
-        background: white;
-        transition: background .2s ease;
+        // background: rgba(255, 255, 255, 1);
+        // background: rgba(0, 0, 15, .5);
+        // transition: background .2s ease;
     }
 
 }
 
 .nav__item {
-    color: rgba(180, 180, 195, 1);
+    // color: rgba(180, 180, 195, 1);
+    color: white;
     display: inline-block;
     font-family: $font--pt-sans;
     font-size: $font-scale--small;
     font-weight: 500;
     line-height: 1;
     margin: 0;
-    padding: 1rem .5rem;
+    padding: 1rem .3rem;
     position: relative;
     text-decoration: none;
     transition: all .2s ease;
     vertical-align: middle;
 
+    @media screen and (min-width: 350px) {
+        padding: 1rem .5rem;
+    }
+
     svg {
         width: 13px;
 
         path {
-            fill: rgba(180, 180, 195, 1);
+            // fill: rgba(180, 180, 195, 1);
+            fill: white;
             transition: all .2s ease;
         }
 
@@ -70,7 +84,8 @@ nav {
 }
 
 .nav__divider {
-    color: rgba(180, 180, 195, 1);
+    // color: rgba(180, 180, 195, 1);
+    color: white;
     display: inline-block;
     font-family: $font--pt-sans;
     font-size: $font-scale--small;
