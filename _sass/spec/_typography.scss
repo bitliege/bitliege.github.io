@@ -12,15 +12,15 @@ $font--pt-sans: 'PT Sans', sans-serif;
 /* Font Standard ============================================================ */
 html,
 body {
-    font-size: 90%;
+    font-size: 100%;
     -webkit-font-smoothing: antialiased;
 
     @media screen and (min-width: 768px) {
-        font-size: 100%;
+        font-size: 115%;
     }
 
     @media screen and (min-width: 1025px) {
-        font-size: 112.5%;
+        font-size: 125%;
     }
 
     *::selection {
@@ -30,7 +30,7 @@ body {
 
 }
 
-$font-color: rgba(0, 0, 15, .75);
+$font-color: rgba(0, 0, 15, .80);
 
 /* 1.414 Scale */
 
@@ -68,7 +68,6 @@ $font-scale--small: calc(1rem*(#{$font-scale}/2));
         letter-spacing: -.1rem;
         line-height: 1;
         margin: 3rem 0 1.5rem 0;
-        text-align: center;
     }
 
     h1 {
@@ -108,7 +107,7 @@ $font-scale--small: calc(1rem*(#{$font-scale}/2));
         color: $font-color;
         font-family: $font--pt-serif;
         font-size: $font-scale--regular;
-        line-height: 1.4;
+        line-height: 1.6;
         margin: 1.5rem 0;
 
         +ul,
@@ -163,7 +162,7 @@ $font-scale--small: calc(1rem*(#{$font-scale}/2));
             color: $font-color;
             font-family: $font--pt-serif;
             font-size: $font-scale--regular;
-            line-height: 1.4;
+            line-height: 1.6;
             margin: 0 0 0 1.75rem;
 
             >*:first-child {
@@ -191,7 +190,7 @@ $font-scale--small: calc(1rem*(#{$font-scale}/2));
             color: $font-color;
             font-family: $font--pt-serif;
             font-size: $font-scale--regular;
-            line-height: 1.4;
+            line-height: 1.6;
             margin: 0 0 0 1.75rem;
 
             >*:first-child {
@@ -236,6 +235,15 @@ $font-scale--small: calc(1rem*(#{$font-scale}/2));
             transition: color .2s ease;
         }
 
+    }
+
+}
+
+.content__center {
+    text-align: center;
+
+    >*:first-child {
+        margin-top: 0;
     }
 
 }

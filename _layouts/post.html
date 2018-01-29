@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+
+    {% include head.html %}
+
+    <body>
+
+        {% include google_tag_manager.html %}
+
+        {% include navigation.html %}
+
+        {% if page.image %}
+            {% assign img = page.image %}
+        {% else %}
+            {% assign img = "/img/texture_post.jpg" %}
+        {% endif %}
+
+        {% include post_header.html %}
+
+        <a id="read"></a>
+
+        <div class="post__wrapper">
+
+            <div class="core__container--content core__content">
+
+                {{ content }}
+
+            </div>
+
+            <div class="core__button-wrapper">
+
+                <a href="/" title="Return to the home page." class="core__button">Return Home</a>
+
+            </div>
+
+        </div>
+
+        {% include footer.html %}
+
+        {% include scripts.html %}
+
+    </body>
+
+</html>

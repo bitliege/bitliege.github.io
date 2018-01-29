@@ -13,7 +13,7 @@
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
-title: Josh Beveridge - UX & FFXIV
+title: Josh Beveridge - UX Designer
 email: imjoshdrink@gmail.com
 description: > # this means to ignore newlines until "baseurl:"
   User Experience and Design Strategy
@@ -30,8 +30,7 @@ gems:
 sass:
     sass_dir: _sass
     style: compressed
-include:
-  - _pages
 exclude:
   - Gemfile
   - Gemfile.lock
+permalink: /writing/:year/:title
