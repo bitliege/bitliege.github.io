@@ -8,6 +8,10 @@
 
     </div>
 
-    <span class="post__photo-credit">Photo by <a href="https://unsplash.com/@marcojodoin" title="See more photos by Marc-Olivier." target="_blank">Marc-Olivier Jodoin</a>.</span>
+    {% if page.image %}
+        <!-- Nothing -->
+    {% else %}
+        <span class="post__photo-credit">Photo by <a href="https://unsplash.com/@marcojodoin" title="See more photos by Marc-Olivier." target="_blank">Marc-Olivier Jodoin</a>.</span>
+    {% endif %}
 
 </header>
