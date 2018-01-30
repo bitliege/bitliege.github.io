@@ -94,6 +94,20 @@
             }, 1400);
         });
 
+        // About Alert Contact Trigger =========================================
+        $("#aboutAlertTrigger").on("click", function(e) {
+            e.preventDefault();
+            var $temp = $("<input>");
+            $("body").append($temp);
+            $temp.val("imjoshdrink@gmail.com").select();
+            document.execCommand("copy");
+            $temp.remove();
+            $(this).find(".about__alert-contact-tag").addClass("active");
+            setTimeout(function() {
+                $(".about__alert-contact-tag").removeClass("active");
+            }, 1400);
+        });
+
         // Services 01 Contact Trigger =========================================
         $("#services01Trigger").on("click", function(e) {
             e.preventDefault();

@@ -13,3 +13,73 @@
     }
 
 }
+
+.about__alert {
+    border: 1px solid $palette--pink;
+    border-radius: 3px;
+    margin: 2rem 0;
+    padding: 1rem;
+
+    >*:first-child {
+        margin-top: 0;
+    }
+
+    >*:last-child {
+        margin-bottom: 0;
+    }
+
+    p {
+        color: $palette--pink;
+        display: block;
+        font-family: $font--pt-sans;
+        font-size: $font-scale--h5;
+        margin: 1rem 0;
+    }
+
+}
+
+.about__alert-contact {
+
+    a {
+        position: relative;
+    }
+
+}
+
+.about__alert-contact-tag {
+    background: rgba(63, 63, 74, 1);
+    border-radius: 3px;
+    color: white;
+    font-family: $font--pt-sans;
+    font-size: $font-scale--small;
+    font-weight: 700;
+    line-height: 1rem;
+    min-width: 6rem;
+    opacity: 0;
+    padding: .6rem .5rem .5rem .5rem;
+    pointer-events: none;
+    position: absolute;
+    top: 150%;
+    left: 50%;
+    text-align: center;
+    transform: translate(-50%, 0);
+    transition: opacity .2s ease;
+
+    &:before {
+        background: rgba(63, 63, 74, 1);
+        content: " ";
+        display: block;
+        height: .5rem;
+        position: absolute;
+        top: 0;
+        left: 50%;
+        transform: translate(-50%, -50%) rotate(45deg);
+        width: .5rem;
+    }
+
+    &.active {
+        opacity: 1;
+        transition: opacity .2s ease;
+    }
+
+}
