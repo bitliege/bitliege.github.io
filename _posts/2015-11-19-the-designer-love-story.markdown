@@ -7,7 +7,7 @@ time: "8"
 ---
 Have you ever experienced one of those reality-shifting, earth-shattering moments that change how you perceive a given subject? For example, it’s the moment in which you discover sprinkling breadcrumbs on top of your macaroni and cheese, or when you first discover how much easier life is using [SASS](http://sass-lang.com/) to write your CSS. Occasionally, these realizations happen upon us in the most unsuspecting times, and it’s possible that their timing is what makes them so memorable. Within the last few months, I’ve had one of these moments. This particular moment stands out from the ordinary medley of learning opportunities I tend to find myself involved with because it very simply flipped my entire perception of design on its head.
 
-If we backtrack for a moment, let’s review the definition of design I had settled on in my prior article, [Reclaiming Design](/writing/2015/reclaiming-design/):
+If we backtrack for a moment, let’s review the definition of design I had settled on in my prior article, [Reclaiming Design](/writing/2015/reclaiming-design):
 
 >“Design is the intentional conception and/or iteration of an idea that prioritizes user needs in order to facilitate meeting a defined goal.”
 >

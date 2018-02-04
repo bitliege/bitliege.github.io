@@ -194,8 +194,10 @@
 }
 
 .partners__link {
+    border-radius: 3px;
     display: block;
     margin: 0 0 2rem 0;
+    overflow: hidden;
     transition: all .2s ease;
 
     img {

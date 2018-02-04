@@ -54,17 +54,27 @@
 }
 
 .profile__image {
+    border-radius: 3px;
+    display: block;
     width: 100%;
 }
 
 .profile__title {
+    // background: $palette--pink;
+    // background: white;
+    // border: 1px solid rgba(200, 200, 200, 1);
+    border-top: none;
+    // border-radius: 0 0 3px 3px;
     color: $font-color;
+    // color: $palette--pink;
     display: block;
     font-family: $font--pt-sans;
     font-size: $font-scale--h3;
     font-weight: 700;
     line-height: 1;
     margin: 2rem 0;
+    // text-align: center;
+    // text-transform: uppercase;
 }
 
 .profile__subtitle {
