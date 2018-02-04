@@ -159,11 +159,11 @@
 .partners__wrapper {
     box-sizing: border-box;
     margin: 0 auto;
+    max-width: 20rem;
     width: 90%;
 
     @media screen and (min-width: 1024px) {
         margin: 0 auto 0 0;
-        max-width: 20rem;
         padding: 0 0 0 4rem;
     }
 

@@ -34,12 +34,12 @@
 .profile__wrapper {
     box-sizing: border-box;
     margin: 0 auto;
+    max-width: 20rem;
     text-align: center;
     width: 90%;
 
     @media screen and (min-width: 1024px) {
         margin: 0 0 0 auto;
-        max-width: 20rem;
         padding: 0 4rem 0 0;
         text-align: left;
     }
