@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Reclaiming 'Design'"
-description: ""
+description: "In an effort to establish a foundation on which to intepret design as a career path, I found myself conflicted with the definitions of the word and how it is perceived in daily life."
 date: 2015-07-21
 time: "5"
 ---

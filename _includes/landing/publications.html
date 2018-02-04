@@ -1,0 +1,62 @@
+<section class="publication-grid">
+
+    <div class="publications">
+
+        <div class="publications__wrapper">
+
+            <h3 class="publications__title">Publications</h3>
+
+            {% for post in site.posts %}
+
+                <a href="{{ post.url }}" title="Read {{ post.title }}." class="publications__item">
+
+                    <span class="publications__item-meta">{{ post.date | date: '%B %d, %Y' }}   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;~ {{ post.time }} Minute Read</span>
+
+                    <h5 class="publications__item-title">{{ post.title }}</h5>
+
+                    {% if post.description %}
+                        <p class="publications__item-excerpt">{{ post.description }}</p>
+                    {% endif %}
+
+                </a>
+
+            {% endfor %}
+
+            <div class="core__button-wrapper">
+
+                <a href='#' title='Show all posts.' class='publications__button core__button disabled'>
+                    <span class="publications__button-load-more">Load All Posts</span>
+                    <span class="publications__button-disabled">Showing All Posts</span>
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="partners">
+
+        <div class="partners__wrapper">
+
+            <h3 class="partners__title">Awesome People</h3>
+
+            <p class="partners__copy">Below are a few great organizations I've worked with who are tackling important problems in their communities.</p>
+
+            <a href="https://ottawa.impacthub.net/" title="Visit the Impact Hub." class="partners__link" target="_blank">
+                <img src="/img/partner_hub.svg" alt="The Impact Hub's Logo">
+            </a>
+
+            <a href="http://youthproject.ns.ca/" title="Visit the Youth Project." class="partners__link" target="_blank">
+                <img src="/img/partner_yp.svg" alt="The Youth Project's Logo">
+            </a>
+
+            <a href="http://squigglepark.com/" title="Visit Squiggle Park." class="partners__link" target="_blank">
+                <img src="/img/partner_sp.svg" alt="Squiggle Park's Logo">
+            </a>
+
+        </div>
+
+    </div>
+
+</section>

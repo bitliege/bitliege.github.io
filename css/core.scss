@@ -26,6 +26,10 @@ body {
     text-align: center;
     width: 100%;
 
+    @media screen and (min-width: 768px) {
+        margin: 4rem 0;
+    }
+
     &:first-child {
         margin-top: 0;
     }
@@ -51,6 +55,13 @@ button.core__button {
     text-decoration: none;
     transform: scale(1);
     transition: all .2s ease;
+
+    &.disabled {
+        border: 1px solid rgba(200, 200, 200, 1);
+        color: rgba(200, 200, 200, 1);
+        pointer-events: none;
+    }
+
 }
 
 .no-touchevents {
@@ -122,6 +133,9 @@ button.core__button {
 
 /* Landing - Work */
 @import "components/landing/work";
+
+/* Landing - Publications */
+@import "components/landing/publications";
 
 /* Post - Header */
 @import "components/post/header";

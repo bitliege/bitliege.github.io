@@ -192,6 +192,23 @@
             $(".services__skill-accordion").removeClass("active");
         });
 
+        // Publications ========================================================
+        $(".publications__button").on("click", function(e) {
+            if ($(this).hasClass("disabled")) {
+                // Nothing
+            }
+            else {
+                e.preventDefault();
+                $(".publications__item").removeClass("hidden");
+                $(".publications__button").addClass("disabled");
+            }
+        });
+
+        $(window).on("load", function(e) {
+            $(".publications__item:nth-child(n+5)").addClass("hidden");
+            $(".publications__button").removeClass("disabled");
+        });
+
     });
 
 })(jQuery);

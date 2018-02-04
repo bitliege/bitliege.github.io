@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Why I Prefer 'Flat' Design"
-description: ""
+description: "An opinion on why I believe that the migration towards “flat” design is better suited to the medium of the screen and where this will lead as digital media evolve."
 date: 2015-02-09
 time: "5"
 ---
