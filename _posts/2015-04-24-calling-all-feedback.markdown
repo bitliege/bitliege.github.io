@@ -4,6 +4,8 @@ title: "Calling All Feedback"
 description: "Feedback is a powerful tool that is often underused because of a negative misconception. When giving and receiving feedback, a thorough understanding of how that feedback is presented can make a world of difference in ensuring that the feedback is acted upon."
 date: 2015-04-24
 time: "7"
+socialImage: "/img/posts/social_calling_all_feedback.jpg"
+type: "post"
 ---
 ## Feedback Makes Me Nervous
 

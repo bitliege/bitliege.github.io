@@ -77,6 +77,17 @@
     // text-transform: uppercase;
 }
 
+.profile__status {
+    color: $palette--pink;
+    display: block;
+    font-family: $font--pt-sans;
+    font-size: $font-scale--small;
+    font-weight: 700;
+    letter-spacing: initial;
+    line-height: 1;
+    margin: 0 0 2rem 0;
+}
+
 .profile__subtitle {
     color: $font-color;
     font-family: $font--pt-sans;

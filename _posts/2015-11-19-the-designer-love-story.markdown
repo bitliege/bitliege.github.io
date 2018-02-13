@@ -4,6 +4,8 @@ title: "The Designer Love Story"
 description: "Everyone gets excited about a project's solution when it becomes seemingly apparent. Recently however, I've learned that there is a much more effective piece of every project all designers should be far more excited about: the problem. Solutions confirm our beliefs and are something to be proud of, and it is precisely for these reasons that you should let them go."
 date: 2015-11-19
 time: "8"
+socialImage: "/img/posts/social_designer_love_story.jpg"
+type: "post"
 ---
 Have you ever experienced one of those reality-shifting, earth-shattering moments that change how you perceive a given subject? For example, it’s the moment in which you discover sprinkling breadcrumbs on top of your macaroni and cheese, or when you first discover how much easier life is using [SASS](http://sass-lang.com/) to write your CSS. Occasionally, these realizations happen upon us in the most unsuspecting times, and it’s possible that their timing is what makes them so memorable. Within the last few months, I’ve had one of these moments. This particular moment stands out from the ordinary medley of learning opportunities I tend to find myself involved with because it very simply flipped my entire perception of design on its head.
 

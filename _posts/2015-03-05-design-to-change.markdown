@@ -4,6 +4,8 @@ title: "Design to Change, Change to Design"
 description: "As a team building exercise, leadership had us construct towers out of spaghetti, tape, string and a marshmallow. Despite the chaos that ensued, I discovered something very fundamental about myself."
 date: 2015-03-05
 time: "6"
+socialImage: "/img/posts/social_design_to_change.jpg"
+type: "post"
 ---
 ## The Rut
 

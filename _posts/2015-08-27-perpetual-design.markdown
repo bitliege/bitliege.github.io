@@ -4,7 +4,9 @@ title: "Perpetual Design"
 description: "At a time when I was feeling particularly tied down by client constraints, I decided to explore what makes the design process so difficult to master. This lead to a fantastic discussion with Sohrab Vossoughi of Ziba about the endlessly evolving nature of design."
 date: 2015-08-27
 time: "7"
-image: "/img/texture_perpetual_design.jpg"
+image: "/img/posts/texture_perpetual_design.jpg"
+socialImage: "/img/posts/social_perpetual_design.jpg"
+type: "post"
 ---
 ## Design is Fluid
 

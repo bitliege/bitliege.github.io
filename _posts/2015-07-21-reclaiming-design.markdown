@@ -4,6 +4,8 @@ title: "Reclaiming 'Design'"
 description: "In an effort to establish a foundation on which to intepret design as a career path, I found myself conflicted with the definitions of the word and how it is perceived in daily life."
 date: 2015-07-21
 time: "5"
+socialImage: "/img/posts/social_reclaiming_design.jpg"
+type: "post"
 ---
 Design has become a muddled word. Among its many, varied, definitions one can quite easily find a niche in which to exist. Graphic design, interior design, brand design, web design, the list goes on. Each is different and corresponds to a distinct skill set. There is however, a core to these systems; one that has been stretched and manipulated in order to cut costs and create efficient processes that allow design to exist within ever-shrinking budgets. The core of design has eroded as a result of these efforts, and it’s time that those calling themselves as designers start fighting for the ability to really do their job, or start looking for a better, more definitive term for the role they occupy.
 

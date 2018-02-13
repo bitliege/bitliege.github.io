@@ -7,6 +7,19 @@
     <title>{% if page.title %}Josh Beveridge | {{ page.title | escape }}{% else %}{{ site.title | escape }}{% endif %}</title>
     <meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
 
+    <!-- Open Graph & Twitter Tags -->
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:site" content="@joshdrink" />
+    <meta name="twitter:creator" content="@joshdrink" />
+    <meta property="og:url" content="{{ site.url }}{{ page.url }}" />
+    <meta property="og:title" content="{{ page.title }}" />
+    <meta property="og:description" content="{% if page.description %}{{ page.description | strip_html | strip_newlines | truncate: 300 }}{% else %}{{ site.description }}{% endif %}" />
+    {% if page.type == "post" %}
+    <meta property="og:image" content="{{ site.url }}{{ page.socialImage }}" />
+    {% else %}
+    <meta property="og:image" content="{{ site.url }}/img/profile_social.jpg" />
+    {% endif %}
+
     <!-- Google Tag Manager -->
     <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
     new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
@@ -37,6 +50,34 @@
         ga('send', 'pageview');
 
     </script>
+
+    <!-- Google Search Structured Pages -->
+    {% if page.type == "post" %}
+    <script type="application/ld+json">
+    {
+      "@context": "http://schema.org",
+      "@type": "NewsArticle",
+      "headline": "{{ page.title }}",
+      "image": [
+        "{{ site.url }}{{ page.socialImage }}"
+      ]
+    }
+    </script>
+    {% else %}
+    <script type="application/ld+json">
+    {
+      "@context": "http://schema.org",
+      "@type": "Organization",
+      "name": "Josh Beveridge",
+      "url": "http://joshdrink.com",
+      "sameAs": [
+        "https://twitter.com/joshdrink",
+        "https://www.instagram.com/joshdrink/",
+        "https://github.com/joshdrink"
+      ]
+    }
+    </script>
+    {% endif %}
 
     <!-- jQuery -->
     <script
