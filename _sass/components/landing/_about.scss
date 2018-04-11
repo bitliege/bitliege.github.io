@@ -104,6 +104,24 @@
         vertical-align: middle;
     }
 
+    a {
+        color: $palette--pink;
+        transition: color .2s ease;
+    }
+
+}
+
+.no-touchevents {
+
+    .profile__subtitle {
+
+        a:hover {
+            color: $font-color;
+            transition: color .2s ease;
+        }
+
+    }
+
 }
 
 .about {
