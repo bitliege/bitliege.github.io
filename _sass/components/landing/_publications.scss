@@ -41,7 +41,7 @@
 }
 
 .publications__title {
-    color: $font-color;
+    color: $title-color;
     display: block;
     font-family: $font--pt-sans;
     font-size: $font-scale--h3;
@@ -170,7 +170,7 @@
 }
 
 .partners__title {
-    color: $font-color;
+    color: $title-color;
     display: block;
     font-family: $font--pt-sans;
     font-size: $font-scale--h3;
@@ -194,7 +194,7 @@
 }
 
 .partners__link {
-    border-radius: 3px;
+    border-radius: 5px;
     display: block;
     margin: 0 0 2rem 0;
     overflow: hidden;

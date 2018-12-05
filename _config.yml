@@ -14,11 +14,11 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 title: Josh Beveridge - UX Designer
-email: imjoshdrink@gmail.com
+email: joshua.w.beveridge@gmail.com
 description: > # this means to ignore newlines until "baseurl:"
   User Experience and Design Strategy
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "http://joshdrink.com" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://joshbeveridge.ca" # the base hostname & protocol for your site, e.g. http://example.com
 
 repository: joshdrink/joshdrink.github.io
 
