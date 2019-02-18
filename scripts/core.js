@@ -71,7 +71,7 @@
             e.preventDefault();
             var $temp = $("<input>");
             $("body").append($temp);
-            $temp.val("joshua.w.beveridge@gmail.com").select();
+            $temp.val("hello@joshbeveridge.ca").select();
             document.execCommand("copy");
             $temp.remove();
             $(this).find(".nav__item-tag").addClass("active");
@@ -85,7 +85,7 @@
             e.preventDefault();
             var $temp = $("<input>");
             $("body").append($temp);
-            $temp.val("joshua.w.beveridge@gmail.com").select();
+            $temp.val("hello@joshbeveridge.ca").select();
             document.execCommand("copy");
             $temp.remove();
             $(this).find(".core__button-tag").addClass("active");
@@ -99,7 +99,7 @@
             e.preventDefault();
             var $temp = $("<input>");
             $("body").append($temp);
-            $temp.val("joshua.w.beveridge@gmail.com").select();
+            $temp.val("hello@joshbeveridge.ca").select();
             document.execCommand("copy");
             $temp.remove();
             $(this).find(".about__alert-contact-tag").addClass("active");
@@ -113,7 +113,7 @@
             e.preventDefault();
             var $temp = $("<input>");
             $("body").append($temp);
-            $temp.val("joshua.w.beveridge@gmail.com").select();
+            $temp.val("hello@joshbeveridge.ca").select();
             document.execCommand("copy");
             $temp.remove();
             $(this).find(".services__01-contact-tag").addClass("active");
@@ -127,7 +127,7 @@
             e.preventDefault();
             var $temp = $("<input>");
             $("body").append($temp);
-            $temp.val("joshua.w.beveridge@gmail.com").select();
+            $temp.val("hello@joshbeveridge.ca").select();
             document.execCommand("copy");
             $temp.remove();
             $(this).find(".services__02-contact-tag").addClass("active");
@@ -141,7 +141,7 @@
             e.preventDefault();
             var $temp = $("<input>");
             $("body").append($temp);
-            $temp.val("joshua.w.beveridge@gmail.com").select();
+            $temp.val("hello@joshbeveridge.ca").select();
             document.execCommand("copy");
             $temp.remove();
             $(this).find(".services__03-contact-tag").addClass("active");
@@ -155,7 +155,7 @@
             e.preventDefault();
             var $temp = $("<input>");
             $("body").append($temp);
-            $temp.val("joshua.w.beveridge@gmail.com").select();
+            $temp.val("hello@joshbeveridge.ca").select();
             document.execCommand("copy");
             $temp.remove();
             $(this).find(".services__04-contact-tag").addClass("active");

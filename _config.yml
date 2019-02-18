@@ -14,7 +14,7 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 title: Josh Beveridge - UX Designer
-email: joshua.w.beveridge@gmail.com
+email: hello@joshbeveridge.ca
 description: > # this means to ignore newlines until "baseurl:"
   User Experience and Design Strategy
 baseurl: "" # the subpath of your site, e.g. /blog
@@ -34,4 +34,5 @@ sass:
 exclude:
   - Gemfile
   - Gemfile.lock
+  - vendor
 permalink: /writing/:year/:title

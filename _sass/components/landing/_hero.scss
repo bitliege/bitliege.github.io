@@ -48,30 +48,30 @@
 }
 
 .hero__trigger {
-    animation: glow 4s ease infinite;
-    animation-delay: 2s;
+    // animation: glow 4s ease infinite;
+    // animation-delay: 2s;
     color: $palette--pink;
     font-family: $font--pt-serif;
     font-size: $font-scale--regular;
     margin: 0;
-    text-shadow: 0 1px 10px $palette--pink;
+    // text-shadow: 0 1px 10px $palette--pink;
     transition: all .2s ease;
 }
 
-@keyframes glow {
-    0% {opacity: 1;}
-    5% {opacity: .2;}
-    6.3% {opacity: 1;}
-    7.5% {opacity: .2;}
-    10% {opacity: 1;}
-    17.5% {opacity: .2;}
-    18.8% {opacity: 1;}
-    20% {opacity: .2;}
-    21.3% {opacity: 1;}
-    22.5% {opacity: .2;}
-    25% {opacity: 1;}
-    100% {opacity: 1;}
-}
+// @keyframes glow {
+//     0% {opacity: 1;}
+//     5% {opacity: .2;}
+//     6.3% {opacity: 1;}
+//     7.5% {opacity: .2;}
+//     10% {opacity: 1;}
+//     17.5% {opacity: .2;}
+//     18.8% {opacity: 1;}
+//     20% {opacity: .2;}
+//     21.3% {opacity: 1;}
+//     22.5% {opacity: .2;}
+//     25% {opacity: 1;}
+//     100% {opacity: 1;}
+// }
 
 .no-touchevents {
 
