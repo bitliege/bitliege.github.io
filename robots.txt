@@ -1,0 +1,3 @@
+User-agent: *
+Disallow: /tc-browse/*
+Disallow: /tc-hr-home/*
