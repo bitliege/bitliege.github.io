@@ -2,3 +2,5 @@ User-agent: *
 Disallow: /tc-browse/*
 Disallow: /tc-hr-home/*
 Disallow: /tc-account/*
+Disallow: /tc-job-preview/*
+Disallow: /tc-manager-dash/*
