@@ -1,0 +1,72 @@
+I"7"<p>One of <a href="https://talent.canada.ca/">Talent Cloud</a>’s key tenets is transparency.</p>
+
+<p>Our project is considered “open by default” and this is primarily showcased through our use of a public code repository on the Github platform. All of our bugs, issues, and concerns about the platform and its development are centralized there. Recently however, with the expansion of our design team, we’ve sought out a way to translate this open source mindset to our design practice.</p>
+
+<h2 id="organizing-chaos">Organizing Chaos</h2>
+
+<p>Design work is a bit of an unruly beast. Designers have preferred tools, methods, documentation, etc. that typically expedites their volume and quality of work. Documenting data, discussion, prototypes, updates, and the like isn’t an easy task when you have multiple designers working on multiple features using different software or methods. We didn’t necessarily want to limit our team to a strict set of tools, which might result in a subpar experience for both them and our end users. To that effect, we needed to come up with a simplified way of documenting the outcomes of our design work without dictating the use of particular design tools. Beyond that, we had to meet a few other general requirements: we needed the documentation to be consistent between features/design work, we needed it to be easily translated to the development team come time to build, and we needed it to be publicly available so that we’re being as transparent as possible about how the platform evolves over time.</p>
+
+<p>Our existing methods of collecting our research notes and prototypes varied from person to person, so it became difficult to coordinate knowledge transfer, share prototypes, or learn what version of a particular feature was the most up to date. This confusion led to internal discussions about efficiency and eventually branched out into how we might be able to make this research more broadly available to the community.</p>
+
+<h2 id="moving-towards-open-source-design-research">Moving Towards Open Source Design Research</h2>
+
+<p>After some discussion, we decided to start by integrating our documentation into Github’s issue tracker. Github issues allow us to create a historical record of a feature’s evolution over time. Github’s suite of tools make this as easy as possible on us. We can leverage the issue template (explained below), discussion threads, linking related features, assigning issues to team members, etc. to facilitate a proper record.</p>
+
+<p>In order to maintain consistency, our intial issue template followed a particular structure:</p>
+
+<p><strong>Status</strong><br />
+The status section allows us to highlight where the feature is in the design process. We’ve also elaborated on this section once a feature is ready for development to highlight certain elements or interactions that shouldn’t be forgotten in checklist format.</p>
+
+<p><strong>Design Goal</strong><br />
+The design goal section is where we describe the initial goal of the feature or request. This allows us to have a record of where the product started so that we can observe its evolution over time, as well as refer back to this primary goal when clarity is required.</p>
+
+<p><strong>Research</strong><br />
+In the research section, we record notes from any discussion, research, and testing we perform, as well as any potential impacts to the feature. The design team is expected to keep this section up-to-date as they progress through their work.</p>
+
+<p><strong>Important Notes</strong><br />
+The important notes section is useful for providing extra context, particularly for copywriters or developers.</p>
+
+<p><strong>Wireframes/Prototypes</strong><br />
+The wireframe/prototype section allows us to track screenshots or links to prototype versions, as well as document changes that have been made and why they were made per version. An individual version should contain the number of the version, a list of changes that were made (and why!), and a screenshot or link to the new prototype.</p>
+
+<p><strong>Data Story</strong><br />
+The data story section is completed when the feature has been approved and is ready for development. This section provides an opportunity to summarize the journey to date, and explain why we’ve reached the current iteration and why we feel it’s the best way forward.</p>
+
+<p>You can find a real example of this template in action here: <a href="https://github.com/GCTC-NTGC/TalentCloud/issues/1533">Issue #1533</a></p>
+
+<p>We used this template for a period of time to test its effects on tracking our work. It turned out to be effective, however it was also cumbersome and felt intimidating to open a new design feature issue because of the required initial input. This led to hesitation and a reluctance to maintain consistency and add detail over time. We also received feedback from the developers that these issues were often chaotic and hard to follow. Context wasn’t always immediatly apparent and it was hard to link research to particular decisions. As a result, we made some changes.</p>
+
+<h2 id="streamlining-information">Streamlining Information</h2>
+
+<p>With our original goals of transparency and documentation in mind, we set out to reconstruct our template to be more efficient, while also providing a clearer path from the start of the design process to the current iteration. We began by removing the “status” and “data story” sections because they lacked practical use. The status wasn’t updated regularly enough to mean anything substantial, and the data story was simply an extra step that required the designer to summarize the issue. The new template includes the following:</p>
+
+<p><strong>Design Goal &amp; User Groups</strong><br />
+This section maintained its goal of summarizing the primary objective of the design work, but now includes a list of user groups (and links to their personas) to help add extra context for both the design and development team.</p>
+
+<p><strong>Initial Research &amp; Notes</strong><br />
+This section now prioritizes research and notes taken prior to the issue being created. The intent here is to ensure that all previous context is captured when the issue is created.</p>
+
+<p><strong>Design Versions</strong><br />
+The rest of the context has been consolidated per design version in this section. This is handled by each version containing the following content:</p>
+<ul>
+  <li>a version number</li>
+  <li>a link to a prototype if one exists</li>
+  <li>a list of changes and why they were made</li>
+  <li>a screenshot to document the state of the design</li>
+  <li>an area to document research, testing, and outcomes from this version that should be reflected in the next version</li>
+</ul>
+
+<p>By keeping this information packaged together, we’re now providing a step-by-step flow of how each version has evolved into the next. Developers can skip to the bottom to find the most recent version, but also have the opportunity to read through the evolution of the feature or interface to get a better understanding of why design decisions were made.</p>
+
+<p>An example of this new template can be found here: <a href="https://github.com/GCTC-NTGC/TalentCloud/issues/2120">Issue #2120</a></p>
+
+<h2 id="the-benefits-of-open-data">The Benefits of Open Data</h2>
+
+<p>Moving our research documentation to Github was helpful for our internal process, but it also plays a larger role in how Talent Cloud is making an effort to be more transparent with citizens. Design work on any project can sometimes feel overwhelming or obfuscated. Our aim here to to be as honest and clear about the research we <em>have</em> and <em>have not</em> done, to ensure that our platform can be effectively challenged and discussed based on real user feedback. No design process is perfect, and by opening ours up, we hope that we’re held more accountable for our decisions.</p>
+
+<p>As a result, anyone can now learn more about how our features are being developed. You can follow along by starring our project on Github, or bookmarking issues you feel particularly passionate about. If you’d like to join the discussion or volunteer for design research testing, feel free to leave a comment on the issue you’d like to chat about.</p>
+
+<hr />
+
+<p>It’s always important to note that this process is constantly in flux. As a team, we’re always adapting to new efficiencies, methodologies, or tools that might help us organize ourselves better. Moving our design documentation to Github was a first step in our effort to make this work transparent on a public level, while providing our entire team with a centralized location for finding information and prototypes on upcoming features.</p>
+:ET

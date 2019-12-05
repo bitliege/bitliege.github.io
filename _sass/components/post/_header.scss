@@ -54,17 +54,17 @@
     font-weight: 700;
     letter-spacing: -.1rem;
     line-height: 1;
-    margin: 0 0 1.5rem 0;
+    margin: 0 0 2.5rem 0;
 }
 
 .post__trigger {
-    animation: glow 4s ease infinite;
-    animation-delay: 2s;
-    color: $palette--pink;
+    // animation: glow 4s ease infinite;
+    // animation-delay: 2s;
+    color: white;
     font-family: $font--pt-serif;
     font-size: $font-scale--regular;
     margin: 0;
-    text-shadow: 0 1px 10px $palette--pink;
+    // text-shadow: 0 1px 10px $palette--pink;
     transition: all .2s ease;
 }
 

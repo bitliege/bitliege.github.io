@@ -27,7 +27,7 @@
     }
 
     &:before {
-        background: rgba(0, 0, 15, .5);
+        background: rgba(0, 0, 15, .7);
         content: " ";
         display: block;
         height: 100%;
@@ -50,7 +50,7 @@
     .work__item:hover {
 
         &:before {
-            background: rgba(0, 0, 15, .8);
+            background: rgba(0, 0, 15, .9);
             transition: background .2s ease;
         }
 
