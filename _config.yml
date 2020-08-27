@@ -14,7 +14,7 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 title: Josh Beveridge - UX Designer
-email: hello@joshbeveridge.ca
+email: josh.beveridge@outlook.com
 description: > # this means to ignore newlines until "baseurl:"
   User Experience and Design Strategy
 baseurl: "" # the subpath of your site, e.g. /blog
